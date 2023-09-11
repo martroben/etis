@@ -48,11 +48,11 @@ CYRILLIC NAMES TRANSLITERATED TO LATIN:
 +==========================================+==========================================+\
 """
 
-logger.info(transliteration_header_log)
-
 transliterate_ru = transliterate.get_translit_function("ru")
 cyrillic_pattern = regex.compile(r"\p{IsCyrillic}")
+
 authors_latin = list()
+logger.info(transliteration_header_log)
 for author in authors:
     if cyrillic_pattern.search(author):
         original = author
