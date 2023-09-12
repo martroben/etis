@@ -1,9 +1,9 @@
-import logging
 
 # local
 import sql_operations
 # standard
 import json
+import logging
 import sys
 # external
 import regex
@@ -69,3 +69,30 @@ for author in authors:
         logger.info(f"{'+' :-<43}{'+' :-<43}+")
     else:
         authors_latin += [author]
+
+
+# Replace "C. ..." with "C. ;", otherwise remove "..."
+# Replace "\r\n" with ";"
+# Remove "(text text text)"
+# Remove "i dr" (abbreviation of i drugije from Russian transliteration) - do before transliteration?
+# Remove "appendix"
+# Remove all digits and periods following digits
+
+erase_pattern = regex.compile(r"\(.*?\)|i dr|appendix", regex.IGNORECASE)
+
+replace_pattern = regex.compile("\r|\n", regex.IGNORECASE)
+
+"[a-z]\. +\.{3}"
+
+authors_cleaned = []
+authors_check = []
+
+for author in authors_latin:
+    author_erased = erase_pattern.sub("", author)
+    authors_cleaned += [author_erased]
+
+    replace_match = replace_pattern.search(author_erased)
+    if replace_match:
+        authors_check += [author_erased]
+
+
