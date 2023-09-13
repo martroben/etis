@@ -29,9 +29,30 @@ sql_connection = sql_operations.get_connection(database_path)
 authors_sql = "SELECT Guid, Authors, AuthorsText FROM PublicationRaw"
 publication_authors = sql_connection.cursor().execute(authors_sql).fetchall()
 
-authors = []
-for publication in publication_authors:
-    authors += str.split(publication[2], ";")
+
+#################
+# Clean strings #
+#################
+
+discard_substrings = regex.compile(r"\s*(appendix|и\s+др)\s*", regex.IGNORECASE)
+
+authors_cleaned = list()
+for uuid, authors, authors_string in publication_authors:
+    # Remove all substrings in parentheses: "Peel, E. (Random text.)" --> "Peel, E. "
+    authors_string = regex.sub(r"\s*\(.*?\)\s*", " ", authors_string)
+    # Replace line breaks with name delimiters: "\r\n" --> ";"
+    authors_string = regex.sub(r"\r\n|\n", ";", authors_string)
+    # Remove all digits and periods following digits: " 1990. " --> " "
+    authors_string = regex.sub(r"\s*\d+\.*\s*", " ", authors_string)
+    # Replace ellipsis that might be name delimiteres with ";":
+    # "Thomas,  D.. ..." --> "Thomas,  D. ;"
+    authors_string = regex.sub(r"(?!\s\p{Lu})\.\.*\s+\.{3}\.*", ". ;", authors_string)
+    # Remove all remaining instances of several periods in a row: "...." --> ""
+    authors_string = regex.sub(r"\s*\.{2,}\s*", " ", authors_string)
+    # Remove unwanted substrings
+    authors_string = discard_substrings.sub(" ", authors_string)
+
+    authors_cleaned += [(uuid, authors, authors_string)]
 
 
 ##################################
@@ -40,59 +61,27 @@ for publication in publication_authors:
 
 # Using transliterate package: https://pypi.org/project/transliterate/
 
-transliteration_header_log = """
-
+transliterate_ru = transliterate.get_translit_function("ru")
+cyrillic_pattern = regex.compile(r"\p{IsCyrillic}")
+transliteration_header_log = """\n
 CYRILLIC NAMES TRANSLITERATED TO LATIN:
 +==========================================+==========================================+
 | original cyrillic                        | latin replacement                        |
 +==========================================+==========================================+\
 """
 
-transliterate_ru = transliterate.get_translit_function("ru")
-cyrillic_pattern = regex.compile(r"\p{IsCyrillic}")
-
 authors_latin = list()
 logger.info(transliteration_header_log)
-for author in authors:
-    if cyrillic_pattern.search(author):
-        original = author
-        # Removing signs to avoid ' characters in transliteration
-        author_signs_removed = regex.sub(r"[ьъ]", "", author, regex.IGNORECASE)
-        author_latin = transliterate.translit(
-            author_signs_removed,
-            language_code='ru',
-            reversed=True)
-        authors_latin += [author_latin]
+for uuid, authors, authors_string in authors_cleaned:
+    if cyrillic_pattern.search(authors_string):
+        original = authors_string
+        # Remove sign characters to avoid ' characters in transliteration
+        authors_string = regex.sub(r"[ьъ]", "", authors_string, regex.IGNORECASE)
+        authors_string = transliterate_ru(authors_string, reversed=True)
 
-        transliteration_log = f"| {original :<40} | {author_latin :<40} |"
+        transliteration_log = f"| {original :<50} | {authors_string :<50} |"
         logger.info(transliteration_log)
-        logger.info(f"{'+' :-<43}{'+' :-<43}+")
-    else:
-        authors_latin += [author]
+        logger.info(f"{'+' :-<53}{'+' :-<53}+")
 
-
-# Replace "C. ..." with "C. ;", otherwise remove "..."
-# Replace "\r\n" with ";"
-# Remove "(text text text)"
-# Remove "i dr" (abbreviation of i drugije from Russian transliteration) - do before transliteration?
-# Remove "appendix"
-# Remove all digits and periods following digits
-
-erase_pattern = regex.compile(r"\(.*?\)|i dr|appendix", regex.IGNORECASE)
-
-replace_pattern = regex.compile("\r|\n", regex.IGNORECASE)
-
-"[a-z]\. +\.{3}"
-
-authors_cleaned = []
-authors_check = []
-
-for author in authors_latin:
-    author_erased = erase_pattern.sub("", author)
-    authors_cleaned += [author_erased]
-
-    replace_match = replace_pattern.search(author_erased)
-    if replace_match:
-        authors_check += [author_erased]
-
+    authors_latin += [(uuid, authors, authors_string)]
 
