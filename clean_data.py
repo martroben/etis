@@ -34,7 +34,9 @@ publication_authors = sql_connection.cursor().execute(authors_sql).fetchall()
 # Clean strings #
 #################
 
-discard_substrings = regex.compile(r"\s*(appendix|и\s+др)\s*", regex.IGNORECASE)
+discard_substrings = regex.compile(
+    r"\s*appendix\s*|,*\s*и\s+др|,*\s*juhendaja|,*\s*koostaja\s*|,*\s+et\s+al\s*",
+    regex.IGNORECASE)
 
 authors_cleaned = list()
 for uuid, authors, authors_string in publication_authors:
@@ -42,10 +44,13 @@ for uuid, authors, authors_string in publication_authors:
     authors_string = regex.sub(r"\s*\(.*?\)\s*", " ", authors_string)
     # Replace line breaks with name delimiters: "\r\n" --> ";"
     authors_string = regex.sub(r"\r\n|\n", ";", authors_string)
+    # Replace ampersands with name delimiters: "Quick & Easy" --> "Quick; Easy"
+    authors_string = regex.sub(r"\s*&\s*", "; ", authors_string)
+    # Replace "and" with name delimiter: "Quick and Easy" --> "Quick; Easy"
+    authors_string = regex.sub(r"\s+and\s+", "; ", authors_string)
     # Remove all digits and periods following digits: " 1990. " --> " "
     authors_string = regex.sub(r"\s*\d+\.*\s*", " ", authors_string)
-    # Replace ellipsis that might be name delimiteres with ";":
-    # "Thomas,  D.. ..." --> "Thomas,  D. ;"
+    # Replace ellipsis with name delimiteres: "Thomas,  D.. ..." --> "Thomas,  D. ;"
     authors_string = regex.sub(r"(?!\s\p{Lu})\.\.*\s+\.{3}\.*", ". ;", authors_string)
     # Remove all remaining instances of several periods in a row: "...." --> ""
     authors_string = regex.sub(r"\s*\.{2,}\s*", " ", authors_string)
@@ -85,3 +90,37 @@ for uuid, authors, authors_string in authors_cleaned:
 
     authors_latin += [(uuid, authors, authors_string)]
 
+
+###############
+# Parse names #
+###############
+
+authors = list()
+for _, _, authors_string in authors_latin:
+    authors += authors_string.split(";")
+
+# regex.search("^[\pL-]+\.*,\s*[\pL-]+\.*$", author)
+# regex.search("[^,]*,[^,]*,.*", "")
+
+# Maybe?:
+# Tiiu Kuurme, Gertrud Kasemaa, Elo-Maria Roots
+# Sotgiu G, D'Ambrosio L, Centis R
+# Migliori GB, Zellweger JP, Abubakar I
+# Liuhto, K. Sõrg, M.
+# Spiridonov A., Brazauskas A., Radzevičius S.
+
+
+yes_match = list()
+no_match = list()
+for author in authors:
+    author = author.strip()
+    author = regex.sub("^\s*,|,\s*$", "", author)
+    author = regex.sub("\s{2,}", " ", author)
+    # Handle cases where names are sepparated by commas ("Chapajev, V., Pustota, P.")
+    if regex.search("[^,]*,[^,]*,.*", author):
+        split_by_commas = author.split(",")
+        if (len(split_by_commas) % 2 == 0):
+            name_element_iterator = iter(split_by_commas)
+            yes_match += [name_element + ", " + next(name_element_iterator, "") for name_element in name_element_iterator]
+        else:
+            no_match += [author]
