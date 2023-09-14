@@ -110,17 +110,47 @@ for _, _, authors_string in authors_latin:
 # Spiridonov A., Brazauskas A., Radzevičius S.
 
 
+# Handle cases where names are sepparated by commas ("Chapajev, V., Pustota, P.")
+
+name = r"\p{Lu}[\p{L}'-]+"
+initial = r"(\p{Lu}\.*-*){1,2}"
+
+# Name, initial (e.g. Dickus, B.)
+name_initial = f"{name}[,\s]\s*{initial}"
+# Initial, name (e.g. F.G. Superman)
+initial_name = f"{initial}[,\s]\s*{name}"
+# Full name (e.g. David Thomas Shore)
+full_name = f"{name}\s+{name}(\s+{name})?"
+# Last name, first name (e.g. Nudge, Arthur)
+last_first = f"{name},\s*{name}(\s*{name})?"
+
+
 yes_match = list()
 no_match = list()
 for author in authors:
     author = author.strip()
-    author = regex.sub("^\s*,|,\s*$", "", author)
+    # Remove trailing and leading commas
+    author = regex.sub("^\s*,+|,+\s*$", "", author)
+    # Trim consecutive whitespaces
     author = regex.sub("\s{2,}", " ", author)
-    # Handle cases where names are sepparated by commas ("Chapajev, V., Pustota, P.")
+    # Detect strings that have a known name format
+    if regex.match(f"^{name_initial}$", author):
+        yes_match += [author]
+    if regex.match(f"^{initial_name}$", author):
+        yes_match += [author]
+    if regex.match(f"^{full_name}$", author):
+        yes_match += [author]
+    if regex.match(f"^{last_first}$", author):
+        yes_match += [author]
+    ############## Detect the pattern and capture the split character
+
     if regex.search("[^,]*,[^,]*,.*", author):
         split_by_commas = author.split(",")
+        # Doesn't handle "Tiiu Kuurme, Gertrud Kasemaa"
         if (len(split_by_commas) % 2 == 0):
             name_element_iterator = iter(split_by_commas)
             yes_match += [name_element + ", " + next(name_element_iterator, "") for name_element in name_element_iterator]
         else:
             no_match += [author]
+    else:
+        yes_match += [author]
