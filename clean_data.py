@@ -2,7 +2,6 @@
 # local
 import sql_operations
 # standard
-import json
 import logging
 import sys
 # external
@@ -35,7 +34,17 @@ publication_authors = sql_connection.cursor().execute(authors_sql).fetchall()
 #################
 
 discard_substrings = regex.compile(
-    r"\s*appendix\s*|,*\s*и\s+др|,*\s*juhendaja|,*\s*koostaja\s*|,*\s+et\s+al\s*",
+    "|".join([
+        r"\s*appendix\s*",
+        r",*\s*и\s+др",
+        r",*\s*juhendaja",
+        r",*\s*koostaja\s*",
+        r",*\s+et\s+al",
+        r"\s*DIRECT\s*",
+        r"\s*Programme\s*",
+        r"\s*Study\s*",
+        r"\s*Group\s*",
+        r"\s*küsitl\s*"]),
     regex.IGNORECASE)
 
 authors_cleaned = list()
@@ -52,6 +61,8 @@ for uuid, authors, authors_string in publication_authors:
     authors_string = regex.sub(r"\s*\d+\.*\s*", " ", authors_string)
     # Replace ellipsis with name delimiteres: "Thomas,  D.. ..." --> "Thomas,  D. ;"
     authors_string = regex.sub(r"(?!\s\p{Lu})\.\.*\s+\.{3}\.*", ". ;", authors_string)
+    # Remove whitespace from inbetween initials
+    authors_string = regex.sub(r"(\p{Lu}\.)\s+(-?\p{Lu}\.)", "\g<1>\g<2>", authors_string)
     # Remove all remaining instances of several periods in a row: "...." --> ""
     authors_string = regex.sub(r"\s*\.{2,}\s*", " ", authors_string)
     # Remove unwanted substrings
@@ -70,10 +81,16 @@ transliterate_ru = transliterate.get_translit_function("ru")
 cyrillic_pattern = regex.compile(r"\p{IsCyrillic}")
 transliteration_header_log = """\n
 CYRILLIC NAMES TRANSLITERATED TO LATIN:
-+==========================================+==========================================+
++------------------------------------------+------------------------------------------+
 | original cyrillic                        | latin replacement                        |
-+==========================================+==========================================+\
++------------------------------------------+------------------------------------------+\
 """
+###################### Don't use separators between rows
+###################### Save changes as tuples or dicts to a namespace variable. Log after cycle
+############## globals()["_log_transliterated"]
+# if globals().get("initial"):
+#     print("jah")
+
 
 authors_latin = list()
 logger.info(transliteration_header_log)
@@ -86,9 +103,10 @@ for uuid, authors, authors_string in authors_cleaned:
 
         transliteration_log = f"| {original :<50} | {authors_string :<50} |"
         logger.info(transliteration_log)
-        logger.info(f"{'+' :-<53}{'+' :-<53}+")
 
     authors_latin += [(uuid, authors, authors_string)]
+
+logger.info(f"{'+' :-<53}{'+' :-<53}+")
 
 
 ###############
@@ -99,18 +117,10 @@ authors = list()
 for _, _, authors_string in authors_latin:
     authors += authors_string.split(";")
 
-# regex.search("^[\pL-]+\.*,\s*[\pL-]+\.*$", author)
-# regex.search("[^,]*,[^,]*,.*", "")
 
 # Maybe?:
-# Tiiu Kuurme, Gertrud Kasemaa, Elo-Maria Roots
-# Sotgiu G, D'Ambrosio L, Centis R
-# Migliori GB, Zellweger JP, Abubakar I
-# Liuhto, K. Sõrg, M.
-# Spiridonov A., Brazauskas A., Radzevičius S.
+# Goodson, I.F., Anstead. C.
 
-
-# Handle cases where names are sepparated by commas ("Chapajev, V., Pustota, P.")
 
 name = r"\p{Lu}[\p{L}'-]+"
 initial = r"(\p{Lu}\.*-*){1,2}"
@@ -121,8 +131,21 @@ name_initial = f"{name}[,\s]\s*{initial}"
 initial_name = f"{initial}[,\s]\s*{name}"
 # Full name (e.g. David Thomas Shore)
 full_name = f"{name}\s+{name}(\s+{name})?"
-# Last name, first name (e.g. Nudge, Arthur)
+# Last name, first name (e.g. Nudge, Arthur Nudge)
 last_first = f"{name},\s*{name}(\s*{name})?"
+# Single last name, first name (e.g. Lewis, Fiona)
+last_first_single = f"{name},\s*{name}"
+
+def parse_patterns(string, pattern):
+    matches = []
+    while match := regex.search(pattern, string):
+        matches += match.captures()
+        string = string[match.span()[1]:]
+    # Check if there is anything left unparsed
+    residue = regex.sub(r"[\.,\s]", "", string)
+    if len(residue) > 0:
+        return list()
+    return matches
 
 
 yes_match = list()
@@ -133,24 +156,45 @@ for author in authors:
     author = regex.sub("^\s*,+|,+\s*$", "", author)
     # Trim consecutive whitespaces
     author = regex.sub("\s{2,}", " ", author)
-    # Detect strings that have a known name format
+    # Detect strings that have a single known name format
     if regex.match(f"^{name_initial}$", author):
         yes_match += [author]
-    if regex.match(f"^{initial_name}$", author):
+    elif regex.match(f"^{initial_name}$", author):
         yes_match += [author]
-    if regex.match(f"^{full_name}$", author):
+    elif regex.match(f"^{full_name}$", author):
         yes_match += [author]
-    if regex.match(f"^{last_first}$", author):
+    elif regex.match(f"^{last_first}$", author):
         yes_match += [author]
-    ############## Detect the pattern and capture the split character
-
-    if regex.search("[^,]*,[^,]*,.*", author):
-        split_by_commas = author.split(",")
-        # Doesn't handle "Tiiu Kuurme, Gertrud Kasemaa"
-        if (len(split_by_commas) % 2 == 0):
-            name_element_iterator = iter(split_by_commas)
-            yes_match += [name_element + ", " + next(name_element_iterator, "") for name_element in name_element_iterator]
+    # Detect the first name pattern and capture the split character
+    elif regex.match(f"^{name_initial}[\s,]+{name_initial}", author):
+        if parsed := parse_patterns(author, name_initial):
+            yes_match += parsed
+        else:
+            no_match += [author]
+    elif regex.match(f"^{initial_name}[\s,]+{initial_name}", author):
+        if parsed := parse_patterns(author, initial_name):
+            yes_match += parsed
+        else:
+            no_match += [author]
+    elif regex.match(f"^{full_name}[\s,]+{full_name}", author):
+        if parsed := parse_patterns(author, full_name):
+            yes_match += parsed
+        else:
+            no_match += [author]
+    elif regex.match(f"^{last_first}[\s,]+{last_first}", author):
+        if parsed := parse_patterns(author, last_first_single):
+            yes_match += parsed
         else:
             no_match += [author]
     else:
-        yes_match += [author]
+        no_match += [author]
+
+
+
+regex.match(f"^{name_initial}[\s,]{name_initial}", "Liiv, Juhan Runnel, Hando")
+regex.match(f"^{initial_name}[\s,]+{initial_name}", "Liiv, Juhan Runnel, Hando")
+regex.match(f"^{full_name}[\s,]+{full_name}", "Liiv, Juhan Runnel, Hando")
+regex.match(f"^{last_first}[\s,]+{last_first}", "Liiv, Juhan Runnel, Hando")
+
+
+parse_patterns("Liiv, Juhan Runnel, Hando", last_first_single)
