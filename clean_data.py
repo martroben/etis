@@ -55,8 +55,8 @@ for uuid, authors, authors_string in publication_authors:
     authors_string = regex.sub(r"\r\n|\n", ";", authors_string)
     # Replace ampersands with name delimiters: "Quick & Easy" --> "Quick; Easy"
     authors_string = regex.sub(r"\s*&\s*", "; ", authors_string)
-    # Replace "and" with name delimiter: "Quick and Easy" --> "Quick; Easy"
-    authors_string = regex.sub(r"\s+and\s+", "; ", authors_string)
+    # Replace "and" or "with" by name delimiter: "Quick and Easy" --> "Quick; Easy"
+    authors_string = regex.sub(r"\s+(and|with)\s+", "; ", authors_string)
     # Remove all digits and periods following digits: " 1990. " --> " "
     authors_string = regex.sub(r"\s*\d+\.*\s*", " ", authors_string)
     # Replace ellipsis with name delimiteres: "Thomas,  D.. ..." --> "Thomas,  D. ;"
@@ -119,8 +119,16 @@ for _, _, authors_string in authors_latin:
 
 
 # Maybe?:
-# Goodson, I.F., Anstead. C.
-
+# Ess , Margus  <-- remove whitespace before comma
+# De Pascale, Stefania, de Tommasi, Nunziatina
+# van Name, von der Gathen, P., van de Vijver, Ewijk, H. van, Van der Auwera, L., von Dossow, V., Hellermann, Dorothee von
+# La Torre, M.
+# 'E.Eltang, A.Kabakov, G.Kanevskij, M.Gofaisen'
+# 'National Contact Points for the ECD, Collective', 'Hospital Contact Points for the ECD, Collective'
+# O’Hea, Brendan
+# 'Surname , Plekhanov', 'Firstname , Vladimir'
+# Make russian initials only one letter
+# 'Riet, Ene küsitl', 'Kruus, Ülle jne', Vasama, J. jt., Haljasorg, Heiki jt
 
 name = r"\p{Lu}[\p{L}'-]+"
 initial = r"(\p{Lu}\.*-*){1,2}"
@@ -131,7 +139,7 @@ name_initial = f"{name}[,\s]\s*{initial}"
 initial_name = f"{initial}[,\s]\s*{name}"
 # Full name (e.g. David Thomas Shore)
 full_name = f"{name}\s+{name}(\s+{name})?"
-# Last name, first name (e.g. Nudge, Arthur Nudge)
+# Last name, first name (e.g. Shore, David Thomas)
 last_first = f"{name},\s*{name}(\s*{name})?"
 # Single last name, first name (e.g. Lewis, Fiona)
 last_first_single = f"{name},\s*{name}"
