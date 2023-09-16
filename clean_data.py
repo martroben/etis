@@ -1,4 +1,3 @@
-
 # local
 import sql_operations
 # standard
@@ -29,180 +28,168 @@ authors_sql = "SELECT Guid, Authors, AuthorsText FROM PublicationRaw"
 publication_authors = sql_connection.cursor().execute(authors_sql).fetchall()
 
 
-#################
-# Clean strings #
-#################
+##########################################
+# Clean and transliterate authors string #
+##########################################
 
-discard_substrings = regex.compile(
-    "|".join([
-        r"\s*appendix\s*",
-        r",*\s*и\s+др",
-        r",*\s*juhendaja",
-        r",*\s*koostaja\s*",
-        r",*\s+et\s+al",
-        r"\s*DIRECT\s*",
-        r"\s*Programme\s*",
-        r"\s*Study\s*",
-        r"\s*Group\s*",
-        r"\s*küsitl\s*"]),
-    regex.IGNORECASE)
+class AuthorsStringCleaner():
 
-authors_cleaned = list()
-for uuid, authors, authors_string in publication_authors:
-    # Remove all substrings in parentheses: "Peel, E. (Random text.)" --> "Peel, E. "
-    authors_string = regex.sub(r"\s*\(.*?\)\s*", " ", authors_string)
-    # Replace line breaks with name delimiters: "\r\n" --> ";"
-    authors_string = regex.sub(r"\r\n|\n", ";", authors_string)
-    # Replace ampersands with name delimiters: "Quick & Easy" --> "Quick; Easy"
-    authors_string = regex.sub(r"\s*&\s*", "; ", authors_string)
-    # Replace "and" or "with" by name delimiter: "Quick and Easy" --> "Quick; Easy"
-    authors_string = regex.sub(r"\s+(and|with)\s+", "; ", authors_string)
-    # Remove all digits and periods following digits: " 1990. " --> " "
-    authors_string = regex.sub(r"\s*\d+\.*\s*", " ", authors_string)
-    # Replace ellipsis with name delimiteres: "Thomas,  D.. ..." --> "Thomas,  D. ;"
-    authors_string = regex.sub(r"(?!\s\p{Lu})\.\.*\s+\.{3}\.*", ". ;", authors_string)
-    # Remove whitespace from inbetween initials
-    authors_string = regex.sub(r"(\p{Lu}\.)\s+(-?\p{Lu}\.)", "\g<1>\g<2>", authors_string)
-    # Remove all remaining instances of several periods in a row: "...." --> ""
-    authors_string = regex.sub(r"\s*\.{2,}\s*", " ", authors_string)
-    # Remove unwanted substrings
-    authors_string = discard_substrings.sub(" ", authors_string)
+    discard_substrings = regex.compile(
+        "|".join([
+            r"\s*appendix\s*",
+            r",*\s*и\s+др",
+            r",*\s*juhendaja",
+            r",*\s*koostaja\s*",
+            r",*\s+et\s+al",
+            r"\s*DIRECT\s*",
+            r"\s*Programme\s*",
+            r"\s*Study\s*",
+            r"\s*Group\s*",
+            r"\s*\bküsitl\.?\s*",
+            r"\s*tõlkija\s*",
+            r"\s*tõlge\s.+?\skeelest\s*",
+            r"\s*\bkoost\.\s*",
+            r"\s*surname\s*",
+            r"\s*firstname\s*",
+            r"\s*\bjne\b\.?",
+            r"\s*\bjt\b\.?"]),
+        regex.IGNORECASE)
 
-    authors_cleaned += [(uuid, authors, authors_string)]
+    # transliterate package: https://pypi.org/project/transliterate/
+    transliterate_ru = transliterate.get_translit_function("ru")
+    cyrillic_pattern = regex.compile(r"\p{IsCyrillic}")
 
+    # Parsing patterns
+    prefix = r"|".join([
+    "[Vv]an\s[Dd]er",
+    "[Vv]an",
+    "[Vv]on",
+    "[Ll]a",
+    "[Dd]e"])
+    name = r"\p{Lu}[\p{L}'’-—]+"
+    initial = r"(\p{Lu}\.*-*){1,2}"
 
-##################################
-# Transliterate cyrillic strings #
-##################################
+    # Name, initial (e.g. Dickus, B.)
+    name_initial = rf"({prefix})?\s?{name}[,\s]\s*{initial}"
+    # Initial, name (e.g. F.G. Superman)
+    initial_name = rf"{initial}[,\s]\s*({prefix})?\s?{name}"
+    # Full name (e.g. David Thomas Shore)
+    full_name = rf"{name}\s+({prefix})?\s?{name}(\s+{name})?"
+    # Last name, first name (e.g. Shore, David Thomas)
+    last_first = rf"({prefix})?\s?{name},\s*{name}(\s*{name})?"
+    # Single last name, first name (e.g. Lewis, Fiona)
+    last_first_single = rf"({prefix})?\s?{name},\s*{name}"
 
-# Using transliterate package: https://pypi.org/project/transliterate/
+    patterns_exact = [
+        rf"^{name_initial}$",
+        rf"^{initial_name}$",
+        rf"^{full_name}$",
+        rf"^{last_first}$"]
+    
+    patterns_detect = [
+        rf"^{name_initial}[\s,]+{name_initial}"
+        rf"^{initial_name}[\s,]+{initial_name}",
+        rf"^{full_name}[\s,]+{full_name}",
+        rf"^{last_first}[\s,]+{last_first}"]
 
-transliterate_ru = transliterate.get_translit_function("ru")
-cyrillic_pattern = regex.compile(r"\p{IsCyrillic}")
-transliteration_header_log = """\n
-CYRILLIC NAMES TRANSLITERATED TO LATIN:
-+------------------------------------------+------------------------------------------+
-| original cyrillic                        | latin replacement                        |
-+------------------------------------------+------------------------------------------+\
-"""
-###################### Don't use separators between rows
-###################### Save changes as tuples or dicts to a namespace variable. Log after cycle
-############## globals()["_log_transliterated"]
-# if globals().get("initial"):
-#     print("jah")
+    def __init__(self) -> None:
+        pass
 
+    def clean_delimiter(self, string: str) -> str:
+        # Replace line breaks with name delimiters: "\r\n" --> ";"
+        string = regex.sub(r"\r\n|\n", ";", string)
+        # Replace ampersands with name delimiters: "Quick & Easy" --> "Quick; Easy"
+        string = regex.sub(r"\s*&\s*", "; ", string)
+        # Replace "and" or "with" by name delimiter: "Quick and Easy" --> "Quick; Easy"
+        string = regex.sub(r"\s+(and|with)\s+", "; ", string)
+        # Replace ellipsis with name delimiteres: "Thomas,  D.. ..." --> "Thomas,  D. ;"
+        string = regex.sub(r"(?!\s\p{Lu})\.\.*\s+\.{3}\.*", ". ;", string)
+        return string
 
-authors_latin = list()
-logger.info(transliteration_header_log)
-for uuid, authors, authors_string in authors_cleaned:
-    if cyrillic_pattern.search(authors_string):
-        original = authors_string
-        # Remove sign characters to avoid ' characters in transliteration
-        authors_string = regex.sub(r"[ьъ]", "", authors_string, regex.IGNORECASE)
-        authors_string = transliterate_ru(authors_string, reversed=True)
+    def clean(self, string: str) -> str:
+        # Remove unwanted substrings
+        string = self.discard_substrings.sub(" ", string)
 
-        transliteration_log = f"| {original :<50} | {authors_string :<50} |"
-        logger.info(transliteration_log)
+        # Remove substrings in parentheses: "Peel, E. (text in parentheses.)" --> "Peel, E. "
+        string = regex.sub(r"\s*\(.*?\)\s*", " ", string)
+        # Remove substrings in brackets: "Steed, J. [text in brackets.]" --> "Steed, J. "
+        string = regex.sub(r"\s*\[.*?\]\s*", " ", string)
+        # Remove all digits and periods following digits: " 1990. " --> " "
+        string = regex.sub(r"\s*\d+\.*\s*", " ", string)
+        # Remove repeating periods: "...." --> ""
+        string = regex.sub(r"\s*\.{2,}\s*", " ", string)
+        # Remove whitespace from inbetween initials
+        string = regex.sub(r"(\p{Lu}\.)\s+(-?\p{Lu}\b\.?)", "\g<1>\g<2>", string)
+        # Remove whitespace before comma: "Duke , Raoul" --> "Duke, Raoul"
+        string = regex.sub(r"\s+,\s", r", ", string)
+        # Remove consecutive, trailing and leading whitespaces: " Dornic,  G" --> "Dornic, G"
+        string = regex.sub(r"\s{2,}", " ", string).strip()
+        # Remove duplicate commas: "Malyanov,,, Dmitri" --> "Malyanov, Dmitri"
+        string = regex.sub(r",{2,}", ",", string)
+        # Remove quotation marks: ""Kreek, Valdis" --> "Kreek, Valdis"
+        string = regex.sub(r"\"", "", string)
+        # Preserve only first letter from two letter initials: "Systra, Ju.J" --> "Systra, J.J"
+        string = regex.sub(r"\b(\p{Lu})\p{L}\b", "\g<1>", string)
+        # Remove trailing and leading commas and periods: ", Sergey Vecherovski." --> " Sergey Vecherovski"
+        string = regex.sub(r"^\s*[,\.]+|[,\.]+\s*$", "", string)
+        return string
+    
+    def latinize(self, string: str) -> str:
+        if self.cyrillic_pattern.search(string):
+            original = string
+            string = self.transliterate_ru(string, reversed=True)
+            # Remove accent characters: "Natal'ya" --> "Natalya"
+            string = regex.sub(r"\'", "", string)
+            # Preserve only first letter from two letter initials: "Systra, Ju.J" --> "Systra, J.J"
+            string = regex.sub(r"\b(\p{Lu})\p{L}\b", "\g<1>", string)
+        return string
 
-    authors_latin += [(uuid, authors, authors_string)]
+    def parse_pattern(string: str, pattern: str) -> list[str]:
+        """Helper to parse names"""
+        matches = []
+        while match := regex.search(pattern, string):
+            matches += match.captures()
+            string = string[match.span()[1]:]
+        # Check if there is anything left unparsed
+        residue = regex.sub(r"[\.,\s]", "", string)
+        if len(residue) > 0:
+            return list()
+        return matches
 
-logger.info(f"{'+' :-<53}{'+' :-<53}+")
+    def parse(self, string: str) -> list[str]:
+        authors = string.split(";")
+        cleaned_authors = [self.clean(author) for author in authors]
 
+        parsed_authors = list()
+        exact_match_failed = list()
+        for author in authors:
+            exact_match = str()
+            for pattern in self.patterns_exact:
+                if exact_match := regex.match(pattern, author):
+                    break
+            if exact_match:
+                parsed_authors += [exact_match]
+                continue
+            # If no exact match, add to failed list for algorythmic processing
+            exact_match_failed += [author]
 
-###############
-# Parse names #
-###############
+        for element in exact_match_failed:
+            for pattern in self.patterns_detect:
+                # If matches, parse elements with function and add to parsed_authors
+                # If not or parse fails, make parsed_authors an empty list
+                pass
 
-authors = list()
-for _, _, authors_string in authors_latin:
-    authors += authors_string.split(";")
-
-
-# Maybe?:
-# Ess , Margus  <-- remove whitespace before comma
-# De Pascale, Stefania, de Tommasi, Nunziatina
-# van Name, von der Gathen, P., van de Vijver, Ewijk, H. van, Van der Auwera, L., von Dossow, V., Hellermann, Dorothee von
-# La Torre, M.
-# 'E.Eltang, A.Kabakov, G.Kanevskij, M.Gofaisen'
-# 'National Contact Points for the ECD, Collective', 'Hospital Contact Points for the ECD, Collective'
-# O’Hea, Brendan
-# 'Surname , Plekhanov', 'Firstname , Vladimir'
-# Make russian initials only one letter
-# 'Riet, Ene küsitl', 'Kruus, Ülle jne', Vasama, J. jt., Haljasorg, Heiki jt
-
-name = r"\p{Lu}[\p{L}'-]+"
-initial = r"(\p{Lu}\.*-*){1,2}"
-
-# Name, initial (e.g. Dickus, B.)
-name_initial = f"{name}[,\s]\s*{initial}"
-# Initial, name (e.g. F.G. Superman)
-initial_name = f"{initial}[,\s]\s*{name}"
-# Full name (e.g. David Thomas Shore)
-full_name = f"{name}\s+{name}(\s+{name})?"
-# Last name, first name (e.g. Shore, David Thomas)
-last_first = f"{name},\s*{name}(\s*{name})?"
-# Single last name, first name (e.g. Lewis, Fiona)
-last_first_single = f"{name},\s*{name}"
-
-def parse_patterns(string, pattern):
-    matches = []
-    while match := regex.search(pattern, string):
-        matches += match.captures()
-        string = string[match.span()[1]:]
-    # Check if there is anything left unparsed
-    residue = regex.sub(r"[\.,\s]", "", string)
-    if len(residue) > 0:
-        return list()
-    return matches
-
-
-yes_match = list()
-no_match = list()
-for author in authors:
-    author = author.strip()
-    # Remove trailing and leading commas
-    author = regex.sub("^\s*,+|,+\s*$", "", author)
-    # Trim consecutive whitespaces
-    author = regex.sub("\s{2,}", " ", author)
-    # Detect strings that have a single known name format
-    if regex.match(f"^{name_initial}$", author):
-        yes_match += [author]
-    elif regex.match(f"^{initial_name}$", author):
-        yes_match += [author]
-    elif regex.match(f"^{full_name}$", author):
-        yes_match += [author]
-    elif regex.match(f"^{last_first}$", author):
-        yes_match += [author]
-    # Detect the first name pattern and capture the split character
-    elif regex.match(f"^{name_initial}[\s,]+{name_initial}", author):
-        if parsed := parse_patterns(author, name_initial):
-            yes_match += parsed
-        else:
-            no_match += [author]
-    elif regex.match(f"^{initial_name}[\s,]+{initial_name}", author):
-        if parsed := parse_patterns(author, initial_name):
-            yes_match += parsed
-        else:
-            no_match += [author]
-    elif regex.match(f"^{full_name}[\s,]+{full_name}", author):
-        if parsed := parse_patterns(author, full_name):
-            yes_match += parsed
-        else:
-            no_match += [author]
-    elif regex.match(f"^{last_first}[\s,]+{last_first}", author):
-        if parsed := parse_patterns(author, last_first_single):
-            yes_match += parsed
-        else:
-            no_match += [author]
-    else:
-        no_match += [author]
+        return parsed_authors
 
 
+latinized_log_variable = "log_latinized"
+authors_cleaner = AuthorsStringCleaner()
+publication_authors_cleaned = list()
+for id, authors, authors_string in publication_authors:
+    authors_cleaned = authors_cleaner.clean_delimiter(authors_string)
+    authors_latinized = authors_cleaner.latinize(authors_cleaned)
+    # Record changes to log
+    if authors_latinized != authors_cleaned:
+        globals()[latinized_log_variable] += (id, authors_cleaned, authors_latinized)
+    publication_authors_cleaned += [(id, authors, authors_latinized)]
 
-regex.match(f"^{name_initial}[\s,]{name_initial}", "Liiv, Juhan Runnel, Hando")
-regex.match(f"^{initial_name}[\s,]+{initial_name}", "Liiv, Juhan Runnel, Hando")
-regex.match(f"^{full_name}[\s,]+{full_name}", "Liiv, Juhan Runnel, Hando")
-regex.match(f"^{last_first}[\s,]+{last_first}", "Liiv, Juhan Runnel, Hando")
-
-
-parse_patterns("Liiv, Juhan Runnel, Hando", last_first_single)
