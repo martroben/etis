@@ -1,16 +1,15 @@
 # standard
 import logging
 
-def latinized(logger: logging.Logger) -> None:
+def latinized(log_entries: list[(str,str,str)] = None, logger: logging.Logger = None) -> None:
 
-    if not "log_latinized" in globals():
+    if not log_entries:
         return
 
     row_width = 50
-    latinized_entries = globals()["log_latinized"]
 
     latinized_rows = list()
-    for entry in latinized_entries:
+    for entry in log_entries:
         entry_string = f"| {repr(entry[1]) :<{row_width-2}} | {repr(entry[2]) :<{row_width-2}} |"
         if entry[0] and entry_string not in latinized_rows:
             latinized_rows += [entry_string]
@@ -26,19 +25,16 @@ def latinized(logger: logging.Logger) -> None:
     logger.info(f"+{'':-<{row_width}}+{'':-<{row_width}}+")
 
 
-def parse_fail(n_total: int, logger: logging.Logger) -> None:
+def parse_fail(n_total: int, log_entries: list[(str,str)] = None, logger: logging.Logger = None) -> None:
 
-    if not "log_parse_fail" in globals():
+    if not log_entries:
         return
-    
-    logger = logging.getLogger("etis")
 
     row_width = 50
-    parse_fail_entries = globals()["log_parse_fail"]
-    n_failed_entries = len(parse_fail_entries)
+    n_failed_entries = len(log_entries)
 
     parse_fail_rows = list()
-    for entry in parse_fail_entries:
+    for entry in log_entries:
         entry_string = f"| {repr(entry[0]) :<{row_width-2}} | {str(entry[1]) :<{row_width-2}} |"
         if entry[0] and entry_string not in parse_fail_rows:
             parse_fail_rows += [entry_string]

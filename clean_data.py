@@ -13,7 +13,7 @@ import transliterate
 # Setup logging #
 #################
 
-logger = logging.Logger("etis")
+logger = logging.getLogger("etis")
 logger.addHandler(logging.StreamHandler(sys.stdout))
 logger.setLevel(logging.getLevelName("INFO"))
 
@@ -247,5 +247,5 @@ for id, authors, authors_string in publication_authors:
 ###############
 
 total_entries = len(publication_authors_parsed)
-log.parse_fail(total_entries, logging.getLogger("etis"))
-log.latinized(logging.getLogger("etis"))
+log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
+log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
