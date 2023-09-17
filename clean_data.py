@@ -68,7 +68,7 @@ class AuthorsCleaner():
 
     def clean(self, string: str) -> str:
         # Remove substrings in parentheses: "Peel, E. (text in parentheses.)" --> "Peel, E. "
-        string = regex.sub(r"\s*\(.*?\)\s*", " ", string)
+        string = regex.sub(r"\s*\(.*?\)\s*|^[^\(]*\)\s*|\s*\([^\)]*$", " ", string)
         # Remove substrings in brackets: "Steed, J. [text in brackets.]" --> "Steed, J. "
         string = regex.sub(r"\s*\[.*?\]\s*", " ", string)
         # Remove all digits and periods following digits: " 1990. " --> " "
@@ -79,16 +79,14 @@ class AuthorsCleaner():
         string = regex.sub(r"(\p{Lu}\.)\s+(-?\p{Lu}\b\.?)", "\g<1>\g<2>", string)
         # Remove whitespace before comma: "Duke , Raoul" --> "Duke, Raoul"
         string = regex.sub(r"\s+,\s", r", ", string)
-        # Remove consecutive, trailing and leading whitespaces: " Dornic,  G" --> "Dornic, G"
-        string = regex.sub(r"\s{2,}", " ", string).strip()
+        # Remove consecutive whitespaces: " Dornic,  G" --> "Dornic, G"
+        string = regex.sub(r"\s{2,}", " ", string)
         # Remove duplicate commas: "Malyanov,,, Dmitri" --> "Malyanov, Dmitri"
         string = regex.sub(r",{2,}", ",", string)
         # Remove quotation marks: ""Kreek, Valdis" --> "Kreek, Valdis"
         string = regex.sub(r"\"", "", string)
-        # Preserve only first letter from two letter initials: "Systra, Ju.J" --> "Systra, J.J"
-        # string = regex.sub(r"\b(\p{Lu})\p{L}\b", "\g<1>", string)
-        # Remove trailing and leading commas and periods: ", Sergey Vecherovski." --> " Sergey Vecherovski"
-        string = regex.sub(r"^\s*[,\.]+|[,\.]+\s*$", "", string)
+        # Remove trailing and leading commas, periods and whitespaces: ", Sergey Vecherovski." --> "Sergey Vecherovski"
+        string = regex.sub(r"^\s*[,\.]+|[,\.]+\s*$", "", string).strip()
         return string
     
     def latinize(self, string: str) -> str:
