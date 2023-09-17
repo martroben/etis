@@ -1,11 +1,13 @@
 # local
 import sql_operations
+import log
 # standard
 import logging
 import sys
 # external
 import regex
 import transliterate
+
 
 #################
 # Setup logging #
@@ -28,9 +30,9 @@ authors_sql = "SELECT Guid, Authors, AuthorsText FROM PublicationRaw"
 publication_authors = sql_connection.cursor().execute(authors_sql).fetchall()
 
 
-##########################################
-# Clean and transliterate authors string #
-##########################################
+#########################
+# Classes and functions #
+#########################
 
 class AuthorsCleaner():
 
@@ -137,6 +139,9 @@ class AuthorParser():
         return list()
 
 
+#####################################
+# Parse authors from authors string #
+#####################################
 
 unwanted_substrings = [
     r"\s*appendix\s*",
@@ -236,12 +241,11 @@ for id, authors, authors_string in publication_authors:
         globals()["log_parse_fail"] += [(authors_string, authors_cleaned)]
     publication_authors_parsed += [(id, authors, authors_string, authors_parsed)]
 
-print("\n".join([original for original, cleaned in log_parse_fail if original != ""]))
 
-failed_parses = list()
-for original, cleaned in log_parse_fail:
-    failed_parse = f"{original} | {cleaned}"
-    if failed_parse not in failed_parses:
-        failed_parses += [failed_parse]
+###############
+# Result logs #
+###############
 
-print("\n".join(failed_parses))
+total_entries = len(publication_authors_parsed)
+log.parse_fail(total_entries, logging.getLogger("etis"))
+log.latinized(logging.getLogger("etis"))
