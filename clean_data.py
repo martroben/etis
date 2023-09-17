@@ -246,6 +246,7 @@ for id, authors, authors_string in publication_authors:
 # Result logs #
 ###############
 
+log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
+
 total_entries = len(publication_authors_parsed)
 log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
-log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
