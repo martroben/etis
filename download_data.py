@@ -12,7 +12,7 @@ import sys
 # Initialize logger #
 #####################
 
-logger = logging.Logger("etis")
+logger = logging.getLogger("etis")
 logger.addHandler(logging.StreamHandler(sys.stdout))
 logger.setLevel(logging.getLevelName("INFO"))
 

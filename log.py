@@ -40,7 +40,7 @@ def parse_fail(n_total: int, log_entries: list[(str,str)] = None, logger: loggin
             rows += [entry_string]
 
     parse_fail_header = f"\nCOULD NOT PARSE AUTHORS FROM FOLLOWING ENTRIES\n"\
-    f"({round(n_failed_entries / n_total * 100)} % of {n_total}. {len(rows)} unique entries):\n"\
+    f"{round(n_failed_entries / n_total * 100)} % of {n_total}, {len(rows)} unique entries:\n"\
     f"+{'':-<{row_width}}+{'':-<{row_width}}+\n"\
     f"| {'raw authors string':<{row_width-2}} | {'cleaned authors string':<{row_width-2}} |\n"\
     f"+{'':-<{row_width}}+{'':-<{row_width}}+"
