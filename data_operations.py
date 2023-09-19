@@ -103,3 +103,24 @@ class AuthorParser():
                 if parsed := self.parse_pattern(rf"^{pattern_extract}", string):
                     return parsed
         return list()
+
+
+class AuthorStandardizer():
+
+    def __init__(self,patterns_standardize: list[(str,str)], pattern_initial: str) -> None:
+        self.patterns_standardize = patterns_standardize
+        self.pattern_initial = pattern_initial
+
+    def standardize(self, name: str) -> str:
+        """Standardize names to format First Last or F. Last"""
+        for pattern in self.patterns_standardize:
+            if match:= regex.match(pattern, name):
+                first = match.group("first")
+                last = match.group("last")
+                if regex.match(self.pattern_initial, first):
+                    # Initials format to: I. Name, I. J. Name or I-J. Name
+                    first = regex.sub("[\s\.]", "", first)
+                    first = regex.sub(r"(\p{Lu})(\p{Lu})", "\g<1>. \g<2>", first)
+                    first = f"{first}."
+                return f"{first} {last}"
+        return name

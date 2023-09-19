@@ -6,6 +6,7 @@ import log
 import logging
 import sys
 # external
+import Levenshtein
 import regex
 
 #################
@@ -82,7 +83,7 @@ patterns_extract = [
     full_name,
     last_first]
 
-# (detect_pattern, corresponding extract pattern)
+# tuple: (detect_pattern, corresponding extract pattern)
 patterns_detect = [
     (name_initial, name_initial),
     (initial_name, initial_name),
@@ -131,13 +132,8 @@ for id, authors, authors_string in publication_authors:
         globals()["log_parse_fail"] += [(authors_string, authors_cleaned)]
     publication_authors_parsed += [(id, authors, authors_string, authors_parsed)]
 
-
-###############
-# Result logs #
-###############
-
+# Log relevant information
 log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
-
 total_entries = len(publication_authors_parsed)
 log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
 
@@ -146,28 +142,25 @@ log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger
 # Standardize parsed names #
 ############################
 
-# Standardize names to format First Last or F. Last
 name_initial_groups = rf"(?P<last>({prefix})?\s?{name})[,\s]\s*(?P<first>{initial})"
 initial_name_groups = rf"(?P<first>{initial})[,\s]*\s*(?P<last>({prefix})?\s?{name})"
-last_first_groups = rf"(?P<last>({prefix})?\s?{name}),\s*(?P<first>{name}(\s*{name}))?"
-standardize_patterns = [name_initial_groups, initial_name_groups, last_first_groups]
+last_first_groups = rf"(?P<last>({prefix})?\s?{name}),\s*(?P<first>{name}(\s*{name})?)"
+patterns_standardize = [name_initial_groups, initial_name_groups, last_first_groups]
 
-def standardize(patterns: list[str], string: str) -> str:
-    for pattern in patterns:
-        if match:= regex.match(pattern, string):
-            first = match.group("first")
-            last = match.group("last")
-            if regex.match(initial, first):
-                # Initials format to: I. Name, I. J. Name or I-J. Name
-                first = regex.sub("[\s\.]", "", first)
-                first = regex.sub(r"(\p{Lu})(\p{Lu})", "\g<1>. \g<2>", first)
-                first = f"{first}."
-            return f"{first} {last}"
-    return string
+author_standardizer = data_operations.AuthorStandardizer(patterns_standardize, initial)
+
+publication_authors_standardized = list()
+for id, authors, authors_string, authors_parsed in publication_authors_parsed:
+    authors_standardized = [author_standardizer.standardize(author) for author in authors_parsed]
+    publication_authors_standardized += [(id, authors, authors_string, authors_parsed, authors_standardized)]
+
+# Plan:
+# Calculate Levenshtein rations for all authors
+# Select greatest
+# Arrange by ratio & check
+Levenshtein.ratio("Meeli Roosalu", "M. Roosalu", processor=lambda x: x.replace(".", ""))
 
 
-# Testing
-standardize(standardize_patterns, "Söök, Ken Kevin")
-
-publication_authors_parsed[0]
-publication_authors_parsed[62]
+# Test cases
+publication_authors_standardized[0]
+publication_authors_standardized[62]
