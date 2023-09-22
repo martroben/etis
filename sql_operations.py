@@ -1,5 +1,6 @@
 
 # standard
+import json
 import os
 import sqlite3
 
@@ -59,7 +60,7 @@ def insert_row(table: str, connection: sqlite3.Connection, **kwargs) -> int:
     values = tuple()
     for column_name, value in kwargs.items():
         column_names += [column_name]
-        values += (str(value),) if isinstance(value, (list, str)) else (value,)
+        values += (json.dumps(value),) if isinstance(value, (list, dict)) else (value,)
     column_names_string = ",".join(column_names)
     placeholder_string = ", ".join(["?"] * len(column_names))  # As many placeholders as columns. E.g (?, ?, ?, ?)
     sql_statement = f"""
