@@ -3,6 +3,7 @@ import data_operations
 import sql_operations
 import log
 # standard
+import json
 import logging
 import sys
 # external
@@ -130,7 +131,7 @@ for id, authors, authors_string in publication_authors:
             authors_parsed += successful_parse
     if not authors_parsed and "log_parse_fail" in globals():
         globals()["log_parse_fail"] += [(authors_string, authors_cleaned)]
-    publication_authors_parsed += [(id, authors, authors_string, authors_parsed)]
+    publication_authors_parsed += [(id, authors, authors_parsed)]
 
 # Log relevant information
 log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
@@ -149,18 +150,48 @@ patterns_standardize = [name_initial_groups, initial_name_groups, last_first_gro
 
 author_standardizer = data_operations.AuthorStandardizer(patterns_standardize, initial)
 
+####################### Could use some Pandas mutate equivalent?
+####################### Or just make into a dict and modify in place?
+
 publication_authors_standardized = list()
-for id, authors, authors_string, authors_parsed in publication_authors_parsed:
-    authors_standardized = [author_standardizer.standardize(author) for author in authors_parsed]
-    publication_authors_standardized += [(id, authors, authors_string, authors_parsed, authors_standardized)]
+for id, authors, authors_parsed in publication_authors_parsed:
+    authors_parsed_new = [author_standardizer.standardize(author) for author in authors_parsed]
+    publication_authors_standardized += [(id, authors, authors_parsed_new)]
 
-# Plan:
-# Calculate Levenshtein rations for all authors
-# Select greatest
-# Arrange by ratio & check
-Levenshtein.ratio("Meeli Roosalu", "M. Roosalu", processor=lambda x: x.replace(".", ""))
+publication_authors_json_parsed = list()
+for id, authors, authors_parsed in publication_authors_standardized:
+    publication_authors_json_parsed += [
+        (id,
+         json.loads(authors),
+         authors_parsed)]
+
+publication_authors_match_scores = list()
+for id, authors, authors_parsed in publication_authors_json_parsed:
+    authors_parsed_new = list()
+    for parsed_author in authors_parsed:
+        levenshtein_scores = dict()
+        for true_author in authors:
+            levenshtein_scores[true_author["Guid"]] = Levenshtein.ratio(true_author["Name"], parsed_author, processor=lambda x: x.replace(".", ""))
+        authors_parsed_new += [(parsed_author, levenshtein_scores)]
+    publication_authors_match_scores += [(id, authors, authors_parsed_new)]
+
+for id, authors, authors_parsed in publication_authors_match_scores:
+    for author in authors:
+        matches = sorted(authors_parsed, key=lambda x: x[1][author["Guid"]])
+        author["best_match"] = (matches[-1][0], matches[-1][1][author["Guid"]]) if matches else (str(), 0)
 
 
-# Test cases
-publication_authors_standardized[0]
-publication_authors_standardized[62]
+matches = list()
+for _, authors, _ in publication_authors_match_scores:
+    for author in authors:
+        item = (author["Name"], author["best_match"])
+        if item not in matches:
+            matches += [item]
+
+matches_sorted = sorted(matches, key=lambda x: x[1][1], reverse=True)
+for match in matches_sorted:
+    print(f"| {round(match[1][1], 2):<5} | {match[0]:<30} | {match[1][0]:<30} |")
+
+# Next up
+# Create reference table for known authors / their authorstrings.
+# Try parsing additional authorstrings with that.
