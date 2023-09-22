@@ -21,7 +21,8 @@ logger.setLevel(logging.getLevelName("INFO"))
 # Pull ETIS Publications #
 ##########################
 
-publication_session = api_operations.PublicationSession()
+base_url = "https://www.etis.ee:2346/api/"
+publication_session = api_operations.PublicationSession(base_url)
 
 publications = list()
 i = 0

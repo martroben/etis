@@ -1,15 +1,18 @@
 
 # external
 import requests
+import time
 # standard
 import urllib.parse
 
 
-
 class PublicationSession(requests.Session):
-    base_url = "https://www.etis.ee:2346/api/"
     service = "publication"
     failed_requests = []
+
+    def __init__(self, base_url: str) -> None:
+        super().__init__()
+        self.base_url = base_url
 
     def get_count(self) -> int:
         endpoint = "getcount"
