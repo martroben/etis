@@ -32,9 +32,16 @@ publications_raw = sql_connection.cursor().execute(authors_sql).fetchall()
 
 publications = list()
 for id, authors_data, authors_text in publications_raw:
+    authors_data_cleaned = list()
+    for author in json.loads(authors_data):
+        authors_data_cleaned += [dict(
+            id=author["Guid"],
+            name=author["Name"],
+            role=author["RoleNameEng"])]
+
     publications += [dict(
         id=id,
-        authors_data=json.loads(authors_data),
+        authors_data=authors_data_cleaned,
         authors_text=authors_text)]
 
 
@@ -103,10 +110,18 @@ author_cleaner = data_operations.AuthorCleaner(
     delimiter=";",
     unwanted_substrings=unwanted_substrings)
 
+
 author_parser = data_operations.AuthorParser(
     patterns_extract=patterns_extract,
     patterns_detect=patterns_detect,
     secondary_delimiters=[r"\s", ","])
+
+name_initial_groups = rf"(?P<last>({prefix})?\s?{name})[,\s]\s*(?P<first>{initial})"
+initial_name_groups = rf"(?P<first>{initial})[,\s]*\s*(?P<last>({prefix})?\s?{name})"
+last_first_groups = rf"(?P<last>({prefix})?\s?{name}),\s*(?P<first>{name}(\s*{name})?)"
+patterns_standardize = [name_initial_groups, initial_name_groups, last_first_groups]
+
+author_standardizer = data_operations.AuthorStandardizer(patterns_standardize, initial)
 
 globals()["log_latinized"] = list()
 globals()["log_parse_fail"] = list()
@@ -140,66 +155,67 @@ for pub in publications:
     # Add a new key with the result
     pub["authors_parsed"] = authors_parsed
 
+    # Bring to unified format: 'I. Name' or 'First Last'
+    pub["authors_clean"] = [author_standardizer.standardize(parsed_author) for parsed_author in pub["authors_parsed"]]
+
+    # Parse matches with best Levenshtein ratios
+    for author in pub["authors_data"]:
+        maximum_levenshtein_ratio = 0
+        best_levenshtein_match = str()
+        for parsed_author in pub["authors_clean"]:
+            levenshtein_ratio = Levenshtein.ratio(author["name"], parsed_author, processor=lambda x: x.replace(".", ""))
+            if levenshtein_ratio > maximum_levenshtein_ratio:
+                maximum_levenshtein_ratio = levenshtein_ratio
+                best_levenshtein_match = parsed_author
+        author["match"] = best_levenshtein_match
+        author["match_score"] = maximum_levenshtein_ratio
+
+
 # Log relevant information
 log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
 total_entries = len(publications)
 log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
 
 
-############################
-# Standardize parsed names #
-############################
+#########################################
+# Create entries for all parsed authors #
+#########################################
 
-# Bring to unified format: 'I. Name' or 'First Last'
-name_initial_groups = rf"(?P<last>({prefix})?\s?{name})[,\s]\s*(?P<first>{initial})"
-initial_name_groups = rf"(?P<first>{initial})[,\s]*\s*(?P<last>({prefix})?\s?{name})"
-last_first_groups = rf"(?P<last>({prefix})?\s?{name}),\s*(?P<first>{name}(\s*{name})?)"
-patterns_standardize = [name_initial_groups, initial_name_groups, last_first_groups]
+levenshtein_threshold = 0.6
 
-author_standardizer = data_operations.AuthorStandardizer(patterns_standardize, initial)
-
+author_reference_raw = dict()
 for pub in publications:
-    pub["authors_clean"] = [author_standardizer.standardize(parsed_author) for parsed_author in pub["authors_parsed"]]
+    for author in pub["authors_data"]:
+        if author["id"] not in author_reference_raw:
+            author_reference_raw[author["id"]] = list()
+        if author["match_score"] > levenshtein_threshold and author["match"] not in author_reference_raw[author["id"]]:
+            author_reference_raw[author["id"]] += [author["match"]]
+
+# Remove duplicate names that map to two different authors
+checked = list()
+duplicates = list()
+for aliases in author_reference_raw.values():
+    for alias in aliases:
+        if alias in checked:
+            duplicates += [alias]
+            continue
+        checked += [alias]
+
+author_reference = dict()
+for id, aliases in author_reference_raw.items():
+    author_reference[id] = [name for name in aliases if name not in duplicates]
+
+alias_reference = dict()
+for id, aliases in author_reference.items():
+    for alias in aliases:
+        alias_reference[alias] = id
+
+# Check if any duplicates are left:
+# [aliases for id, aliases in author_reference.items() if set(aliases) & set(duplicates)]
 
 
-######################
-# Levenshtein scores #
-######################
+# NEXT:
+# Remove all matches across levenshtein_threshold
+# Apply reference table to all other matches
+# 
 
-
-
-
-####################### Could use some Pandas mutate equivalent?
-####################### Or just make into a dict and modify in place?
-
-
-publication_authors_match_scores = list()
-for id, authors, authors_parsed in publication_authors_json_parsed:
-    authors_parsed_new = list()
-    for parsed_author in authors_parsed:
-        levenshtein_scores = dict()
-        for true_author in authors:
-            levenshtein_scores[true_author["Guid"]] = Levenshtein.ratio(true_author["Name"], parsed_author, processor=lambda x: x.replace(".", ""))
-        authors_parsed_new += [(parsed_author, levenshtein_scores)]
-    publication_authors_match_scores += [(id, authors, authors_parsed_new)]
-
-for id, authors, authors_parsed in publication_authors_match_scores:
-    for author in authors:
-        matches = sorted(authors_parsed, key=lambda x: x[1][author["Guid"]])
-        author["best_match"] = (matches[-1][0], matches[-1][1][author["Guid"]]) if matches else (str(), 0)
-
-
-matches = list()
-for _, authors, _ in publication_authors_match_scores:
-    for author in authors:
-        item = (author["Name"], author["best_match"])
-        if item not in matches:
-            matches += [item]
-
-matches_sorted = sorted(matches, key=lambda x: x[1][1], reverse=True)
-for match in matches_sorted:
-    print(f"| {round(match[1][1], 2):<5} | {match[0]:<30} | {match[1][0]:<30} |")
-
-# Next up
-# Create reference table for known authors / their authorstrings.
-# Try parsing additional authorstrings with that.
