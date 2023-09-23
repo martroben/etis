@@ -2,7 +2,7 @@
 import regex
 import transliterate
 
-class AuthorsCleaner():
+class AuthorCleaner():
 
     # transliterate package: https://pypi.org/project/transliterate/
     transliterate_ru = transliterate.get_translit_function("ru")
