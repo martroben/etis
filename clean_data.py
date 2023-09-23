@@ -9,6 +9,7 @@ import sys
 # external
 import Levenshtein
 import regex
+import uuid
 
 #################
 # Setup logging #
@@ -188,7 +189,7 @@ for pub in publications:
     for author in pub["authors_data"]:
         if author["id"] not in author_reference_raw:
             author_reference_raw[author["id"]] = list()
-        if author["match_score"] > levenshtein_threshold and author["match"] not in author_reference_raw[author["id"]]:
+        if author["match_score"] >= levenshtein_threshold and author["match"] not in author_reference_raw[author["id"]]:
             author_reference_raw[author["id"]] += [author["match"]]
 
 # Remove duplicate names that map to two different authors
@@ -210,12 +211,26 @@ for id, aliases in author_reference.items():
     for alias in aliases:
         alias_reference[alias] = id
 
-# Check if any duplicates are left:
-# [aliases for id, aliases in author_reference.items() if set(aliases) & set(duplicates)]
+publication_authors = list()
+for pub in publications:
+    authors_data = pub["authors_data"]
+    matched_authors = [author["match"] for author in pub["authors_data"] if author["match_score"] >= levenshtein_threshold]
+    unmatched_authors = [author for author in pub["authors_clean"] if author not in matched_authors]
+    for author in unmatched_authors:
+        if author not in alias_reference:
+            generated_id = str(uuid.uuid4())
+            alias_reference[author] = generated_id
+        authors_data += [dict(
+            id=alias_reference[author],
+            name=author,
+            role=str())]
+    authors = [dict(id=author["id"], name=author["name"], role=author["role"]) for author in authors_data]
+    publication_authors += [dict(id=pub["id"], authors=authors)]
 
 
-# NEXT:
-# Remove all matches across levenshtein_threshold
-# Apply reference table to all other matches
-# 
-
+# NEXT
+# Matrix on authors who have worked together
+# If Some with high Levenshtein match also have matching co-authors, merge them
+# Only initial_name plus full_name
+# Only when there is a single full name match
+publication_authors[158]
