@@ -9,6 +9,7 @@ import sys
 # external
 import Levenshtein
 import regex
+import tqdm
 import uuid
 
 #################
@@ -182,14 +183,14 @@ log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger
 # Create entries for all parsed authors #
 #########################################
 
-levenshtein_threshold = 0.6
+levenshtein_threshold_author_alias = 0.6
 
 author_reference_raw = dict()
 for pub in publications:
     for author in pub["authors_data"]:
         if author["id"] not in author_reference_raw:
             author_reference_raw[author["id"]] = list()
-        if author["match_score"] >= levenshtein_threshold and author["match"] not in author_reference_raw[author["id"]]:
+        if author["match_score"] >= levenshtein_threshold_author_alias and author["match"] not in author_reference_raw[author["id"]]:
             author_reference_raw[author["id"]] += [author["match"]]
 
 # Remove duplicate names that map to two different authors
@@ -214,7 +215,7 @@ for id, aliases in author_reference.items():
 publication_authors = list()
 for pub in publications:
     authors_data = pub["authors_data"]
-    matched_authors = [author["match"] for author in pub["authors_data"] if author["match_score"] >= levenshtein_threshold]
+    matched_authors = [author["match"] for author in pub["authors_data"] if author["match_score"] >= levenshtein_threshold_author_alias]
     unmatched_authors = [author for author in pub["authors_clean"] if author not in matched_authors]
     for author in unmatched_authors:
         if author not in alias_reference:
@@ -227,10 +228,42 @@ for pub in publications:
     authors = [dict(id=author["id"], name=author["name"], role=author["role"]) for author in authors_data]
     publication_authors += [dict(id=pub["id"], authors=authors)]
 
+# Identify similar aliases
+levenshtein_threshold_alias_alias = 0.8
+similar_aliases = list()
+for alias1 in tqdm.tqdm(alias_reference):
+    for alias2 in alias_reference:
+        # Only find alias pairs that start with the same letter
+        if alias1[0] != alias2[0]:
+            continue
+        if alias1 == alias2:
+            continue
+        if Levenshtein.ratio(alias1.replace(".", ""), alias2.replace(".", "")) > levenshtein_threshold_alias_alias and (alias1, alias2) not in similar_aliases:
+            similar_aliases += [(alias1, alias2)]
 
-# NEXT
-# Matrix on authors who have worked together
-# If Some with high Levenshtein match also have matching co-authors, merge them
-# Only initial_name plus full_name
-# Only when there is a single full name match
+# Identify collaborators
+collaborator_reference_raw = dict()
+for pub in publication_authors:
+    author_ids = [author["id"] for author in pub["authors"]]
+    for id in author_ids:
+        if id not in collaborator_reference_raw:
+            collaborator_reference_raw[id] = list()
+        collaborator_reference_raw[id] += author_ids
+
+collaborator_reference = {key: set([id for id in value if id != key]) for key, value in collaborator_reference_raw.items()}
+
+
+for alias1, alias2 in similar_aliases:
+    id1 = alias_reference[alias1]
+    id2 = alias_reference[alias2]
+
+    not collaborator_reference[id1].isdisjoint(collaborator_reference[id2])
+
+
+# Match criteria:
+# Common coathors
+# Begins with same letter
+
+# isdisjoint
+
 publication_authors[158]
