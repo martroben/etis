@@ -3,6 +3,9 @@ data.sql
 notes
 scratch*
 
+# folder created by networkx
+share/
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
 # Byte-compiled / optimized / DLL files
