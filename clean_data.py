@@ -8,6 +8,7 @@ import logging
 import sys
 # external
 import Levenshtein
+import networkx
 import regex
 import tqdm
 import uuid
@@ -160,7 +161,7 @@ for pub in publications:
     # Bring to unified format: 'I. Name' or 'First Last'
     pub["authors_clean"] = [author_standardizer.standardize(parsed_author) for parsed_author in pub["authors_parsed"]]
 
-    # Parse matches with best Levenshtein ratios
+    # Find matches with best Levenshtein ratios
     for author in pub["authors_data"]:
         maximum_levenshtein_ratio = 0
         best_levenshtein_match = str()
@@ -203,14 +204,18 @@ for aliases in author_reference_raw.values():
             continue
         checked += [alias]
 
+# author id: [alias1, alias2, ...]
 author_reference = dict()
 for id, aliases in author_reference_raw.items():
     author_reference[id] = [name for name in aliases if name not in duplicates]
 
+# alias: author_id
 alias_reference = dict()
 for id, aliases in author_reference.items():
     for alias in aliases:
         alias_reference[alias] = id
+
+generated_id_handle = "1010"
 
 publication_authors = list()
 for pub in publications:
@@ -219,7 +224,7 @@ for pub in publications:
     unmatched_authors = [author for author in pub["authors_clean"] if author not in matched_authors]
     for author in unmatched_authors:
         if author not in alias_reference:
-            generated_id = str(uuid.uuid4())
+            generated_id = generated_id_handle + str(uuid.uuid4())[len(generated_id_handle):]
             alias_reference[author] = generated_id
         authors_data += [dict(
             id=alias_reference[author],
@@ -228,8 +233,18 @@ for pub in publications:
     authors = [dict(id=author["id"], name=author["name"], role=author["role"]) for author in authors_data]
     publication_authors += [dict(id=pub["id"], authors=authors)]
 
-# Identify similar aliases
+
+###############################
+# Identify equivalent aliases #
+###############################
+
 levenshtein_threshold_alias_alias = 0.8
+
+# Pairs of aliases that are probably the same.
+# match criteria:
+# common coathors
+# begins with same letter
+# similarity by Levenshtein distance
 similar_aliases = list()
 for alias1 in tqdm.tqdm(alias_reference):
     for alias2 in alias_reference:
@@ -238,8 +253,8 @@ for alias1 in tqdm.tqdm(alias_reference):
             continue
         if alias1 == alias2:
             continue
-        if Levenshtein.ratio(alias1.replace(".", ""), alias2.replace(".", "")) > levenshtein_threshold_alias_alias and (alias1, alias2) not in similar_aliases:
-            similar_aliases += [(alias1, alias2)]
+        if Levenshtein.ratio(alias1.replace(".", ""), alias2.replace(".", "")) > levenshtein_threshold_alias_alias and {alias1, alias2} not in similar_aliases:
+            similar_aliases += [{alias1, alias2}]
 
 # Identify collaborators
 collaborator_reference_raw = dict()
@@ -252,18 +267,16 @@ for pub in publication_authors:
 
 collaborator_reference = {key: set([id for id in value if id != key]) for key, value in collaborator_reference_raw.items()}
 
-
+shared_collaborators = list()
 for alias1, alias2 in similar_aliases:
     id1 = alias_reference[alias1]
     id2 = alias_reference[alias2]
+    shared_collaborators += [not collaborator_reference[id1].isdisjoint(collaborator_reference[id2])]
 
-    not collaborator_reference[id1].isdisjoint(collaborator_reference[id2])
+equivalent_aliases_raw = [pair for pair, have_shared_collaborators in zip(similar_aliases, shared_collaborators) if have_shared_collaborators]
 
-
-# Match criteria:
-# Common coathors
-# Begins with same letter
-
-# isdisjoint
+aliases_graph = networkx.Graph()
+aliases_graph.add_edges_from(equivalent_aliases_raw)
+equivalent_aliases = list(networkx.connected_components(aliases_graph))
 
 publication_authors[158]
