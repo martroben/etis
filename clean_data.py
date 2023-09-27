@@ -168,28 +168,28 @@ total_entries = len(publications)
 log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
 
 
-#########################
-# Match similar authors #
-#########################
+####################################################
+# Identify parsed aliases to authors given in data #
+####################################################
 
-publication_authors = {pub["id"]: pub["authors_data"] for pub in publications}
-publication_authors_unamatched = {pub["id"]: pub["authors_clean"] for pub in publications}
+authors_processed = {pub["id"]: pub["authors_data"] for pub in publications}
+authors_unmatched = {pub["id"]: pub["authors_clean"] for pub in publications}
 
 author_aliases = dict()
-for pub in publication_authors.values():
+for pub in authors_processed.values():
     for author in pub:
         if author["id"] not in author_aliases:
             author_aliases[author["id"]] = set()
         author_aliases[author["id"]].update({author["name"]})
 
 author_names = dict()
-for authors in publication_authors.values():
+for authors in authors_processed.values():
     for author in authors:
         author_names[author["id"]] = author["name"]
 
 multi_author_aliases = dict()
 alias_author_ids = dict()
-for pub in publication_authors.values():
+for pub in authors_processed.values():
     for author in pub:
         if author["name"] in alias_author_ids and alias_author_ids[author["name"]] != author["id"]:
             other_author_id = alias_author_ids.pop(author["name"])
@@ -201,10 +201,10 @@ for pub in publication_authors.values():
 
 # Match parsed authors to true authors (authors given in data)
 levenshtein_threshold_author_vs_alias = 0.6
-for id, authors in publication_authors.items():
+for id, authors in authors_processed.items():
     for author in authors:
         best_match = {"alias": str(), "ratio": float()}
-        for unmatched_author in publication_authors_unamatched[id]:
+        for unmatched_author in authors_unmatched[id]:
             levenshtein_ratio = Levenshtein.ratio(author["name"], unmatched_author, processor=lambda x: x.replace(".", ""))
             if levenshtein_ratio > best_match["ratio"]:
                 best_match["alias"] = unmatched_author
@@ -212,7 +212,7 @@ for id, authors in publication_authors.items():
         # If unmatched author has highest ratio and is across threshold:
         if  best_match["ratio"] > levenshtein_threshold_author_vs_alias:
             # Remove alias from unmatched authors
-            publication_authors_unamatched[id] = [name for name in publication_authors_unamatched[id] if name != best_match["alias"]]
+            authors_unmatched[id] = [name for name in authors_unmatched[id] if name != best_match["alias"]]
             # Add alias to author id
             author_aliases[author["id"]].update({best_match["alias"]})
             # Add alias and author id to known aliases if some other author doesn't already have the same alias
@@ -224,17 +224,44 @@ for id, authors in publication_authors.items():
                 continue
             alias_author_ids[best_match["alias"]] = author["id"]
 
-# Match aliases identified in previous step to other parsed authors
-for id, authors in publication_authors_unamatched.items():
+# Match aliases identified in previous step to unmatched authors
+for id, authors in authors_unmatched.items():
     for author in authors:
         if author in alias_author_ids:
             # Remove alias from unmatched authors
-            publication_authors_unamatched[id] = [name for name in publication_authors_unamatched[id] if name != author]
+            authors_unmatched[id] = [name for name in authors_unmatched[id] if name != author]
             # Add author id to publication authors
-            publication_authors[id] += [
+            authors_processed[id] += [
                 {"id": alias_author_ids[author],
                  "name": author_names[alias_author_ids[author]],
                  "role": str()}]
+
+
+###############################
+# Identify equivalent aliases #
+###############################
+
+# Match criteria:
+# common coathors
+# begin with the same letter
+# similarity by Levenshtein ratio
+levenshtein_threshold_alias_alias = 0.8
+
+# Assign temporary id-s to all authors
+# Identificator to distinguish auto generated id-s
+generated_id_handle = "11111111"
+
+publication_authors = dict()
+for id, authors in authors_processed.items():
+    publication_authors[id] = [(author["id"], author["name"]) for author in authors]
+    publication_authors[id] += [(generated_id_handle + str(uuid.uuid4())[len(generated_id_handle):], author) for author in authors_unmatched[id]]
+
+author_publications = dict()
+for id, authors in publication_authors.items():
+    for author in authors:
+        if author[0] not in author_publications:
+            author_publications[author[0]] = list()
+        author_publications[author[0]] += [id]
 
 #####################################################################################
 # Next:
@@ -246,82 +273,8 @@ for id, authors in publication_authors_unamatched.items():
 
 
 
-print(json.dumps(publications_work[158], indent=2))
-
-# Find matches with best Levenshtein ratios
-for author in pub["authors_data"]:
-    maximum_levenshtein_ratio = 0
-    best_levenshtein_match = str()
-    for parsed_author in pub["authors_clean"]:
-        levenshtein_ratio = Levenshtein.ratio(author["name"], parsed_author, processor=lambda x: x.replace(".", ""))
-        if levenshtein_ratio > maximum_levenshtein_ratio:
-            maximum_levenshtein_ratio = levenshtein_ratio
-            best_levenshtein_match = parsed_author
-    author["match"] = best_levenshtein_match
-    author["match_score"] = maximum_levenshtein_ratio
 
 
-levenshtein_threshold_author_alias = 0.6
-
-author_reference_raw = dict()
-for pub in publications:
-    for author in pub["authors_data"]:
-        if author["id"] not in author_reference_raw:
-            author_reference_raw[author["id"]] = list()
-        if author["match_score"] >= levenshtein_threshold_author_alias and author["match"] not in author_reference_raw[author["id"]]:
-            author_reference_raw[author["id"]] += [author["match"]]
-
-# Remove duplicate names that map to two different authors
-checked = list()
-duplicates = list()
-for aliases in author_reference_raw.values():
-    for alias in aliases:
-        if alias in checked:
-            duplicates += [alias]
-            continue
-        checked += [alias]
-
-# author id: [alias1, alias2, ...]
-author_reference = dict()
-for id, aliases in author_reference_raw.items():
-    author_reference[id] = [name for name in aliases if name not in duplicates]
-
-# alias: author_id
-alias_reference = dict()
-for id, aliases in author_reference.items():
-    for alias in aliases:
-        alias_reference[alias] = id
-
-generated_id_handle = "1010"
-
-publication_authors = list()
-for pub in publications:
-    authors_data = pub["authors_data"]
-    matched_authors = [author["match"] for author in pub["authors_data"] if author["match_score"] >= levenshtein_threshold_author_alias]
-    unmatched_authors = [author for author in pub["authors_clean"] if author not in matched_authors]
-    for author in unmatched_authors:
-        if author not in alias_reference:
-            generated_id = generated_id_handle + str(uuid.uuid4())[len(generated_id_handle):]
-            alias_reference[author] = generated_id
-        authors_data += [dict(
-            id=alias_reference[author],
-            name=author,
-            role=str())]
-    authors = [dict(id=author["id"], name=author["name"], role=author["role"]) for author in authors_data]
-    publication_authors += [dict(id=pub["id"], authors=authors)]
-
-
-###############################
-# Identify equivalent aliases #
-###############################
-
-levenshtein_threshold_alias_alias = 0.8
-
-# Pairs of aliases that are probably the same.
-# match criteria:
-# common coathors
-# begins with same letter
-# similarity by Levenshtein distance
 similar_aliases = list()
 for alias1 in tqdm.tqdm(alias_reference):
     for alias2 in alias_reference:
@@ -355,13 +308,3 @@ equivalent_aliases_raw = [pair for pair, have_shared_collaborators in zip(simila
 aliases_graph = networkx.Graph()
 aliases_graph.add_edges_from(equivalent_aliases_raw)
 equivalent_aliases = list(networkx.connected_components(aliases_graph))
-
-publication_authors[158]
-
-
-
-# {author_id: author id 1, aliases: [alias1, alias2, ...], publications: [pub id 1, pub id 2, ...]}
-# Assign same id to publication matching parsed author(s)
-# For others, find pairs with matching Levenshtein scores + have same coauthors
-# Graph to get alias groups
-
