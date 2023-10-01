@@ -1,8 +1,10 @@
 # external
 import regex
 import transliterate
+import Levenshtein
 
-class AuthorCleaner():
+
+class AuthorStringCleaner():
 
     # transliterate package: https://pypi.org/project/transliterate/
     transliterate_ru = transliterate.get_translit_function("ru")
@@ -67,7 +69,7 @@ class AuthorCleaner():
         return string
 
 
-class AuthorParser():
+class AuthorStringParser():
 
     def __init__(
             self,
@@ -105,7 +107,7 @@ class AuthorParser():
         return list()
 
 
-class AuthorStandardizer():
+class AuthorStringStandardizer():
 
     def __init__(self,patterns_standardize: list[(str,str)], pattern_initial: str) -> None:
         self.patterns_standardize = patterns_standardize
@@ -124,3 +126,53 @@ class AuthorStandardizer():
                     first = f"{first}."
                 return f"{first} {last}"
         return name
+
+
+class Author:
+    def __init__(self, id: str, alias: str = str(), **kwargs) -> None:
+        self.id = id
+        self.aliases = {alias} if alias else set()
+        self.name = str() if "name" not in kwargs else kwargs["name"]
+        if self.name:
+            self.aliases.update({self.name})
+        self.to_be_removed = False
+
+    def __repr__(self) -> str:
+        if self.name:
+            aliases = '; '.join({alias for alias in self.aliases if alias != self.name})
+            return f"{self.name}{(len(aliases) > 0) * f' ({aliases})'}"
+        return "; ".join(self.aliases)
+
+    def __eq__(self, __value: object) -> bool:
+        if isinstance(__value, Author):
+            return self.id == __value.id
+        return self.id == __value
+    
+    def __hash__(self) -> int:
+        return hash(self.id)
+    
+    def similarity_ratio(self, other: 'Author', match_firstletter: bool = False) -> float:
+        ratios = list()
+        for alias1 in self.aliases:
+            for alias2 in other.aliases:
+                if match_firstletter and alias1[0] != alias2[0]:
+                    ratios += [0.0]
+                    continue
+                if alias1 == alias2:
+                    return 1.0
+                ratios += [Levenshtein.ratio(alias1, alias2, processor=lambda x: x.replace(".", ""))]
+        return max(ratios)
+    
+    def merge(self, other: 'Author') -> None:
+        if self.name and other.name and self.name != other.name:
+            # Don't merge authors with different names from given data
+            return
+        if not self.name and other.name:
+            # Use name and id from the one that has name defined
+            self.id = other.id
+            self.name = other.name
+        else:
+            # Otherwise use id that's alphabetically first
+            self.id = sorted([self.id, other.id])[0]
+        # Union aliases
+        self.aliases.update(other.aliases)

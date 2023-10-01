@@ -2,9 +2,7 @@
 import data_operations
 import sql_operations
 import log
-from author import Author
 # standard
-from collections import defaultdict
 import json
 import logging
 import sys
@@ -110,12 +108,12 @@ patterns_detect = [
     (last_first_single, last_first)]
 
 
-author_cleaner = data_operations.AuthorCleaner(
+author_cleaner = data_operations.AuthorStringCleaner(
     delimiter=";",
     unwanted_substrings=unwanted_substrings)
 
 
-author_parser = data_operations.AuthorParser(
+author_parser = data_operations.AuthorStringParser(
     patterns_extract=patterns_extract,
     patterns_detect=patterns_detect,
     secondary_delimiters=[r"\s", ","])
@@ -125,7 +123,7 @@ initial_name_groups = rf"(?P<first>{initial})[,\s]*\s*(?P<last>({prefix})?\s?{na
 last_first_groups = rf"(?P<last>({prefix})?\s?{name}),\s*(?P<first>{name}(\s*{name})?)"
 patterns_standardize = [name_initial_groups, initial_name_groups, last_first_groups]
 
-author_standardizer = data_operations.AuthorStandardizer(patterns_standardize, initial)
+author_standardizer = data_operations.AuthorStringStandardizer(patterns_standardize, initial)
 
 globals()["log_latinized"] = list()
 globals()["log_parse_fail"] = list()
@@ -169,24 +167,155 @@ total_entries = len(publications)
 log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
 
 
-#################################################
-# Match parsed aliases to authors given in data #
-#################################################
+# Parsing patterns
+prefix = r"|".join([
+"[Vv]an\s[Dd]er",
+"[Vv]an",
+"[Vv]on",
+"[Ll]a",
+"[Dd]e"])
+name = r"\p{Lu}[\p{L}'’\-\—]+"
+initial = r"(\p{Lu}\.*\-*\—*){1,2}(?!\p{Ll})"
+
+# Name, initial (e.g. Dickus, B.)
+name_initial = rf"({prefix})?\s?{name}[,\s]\s*{initial}"
+# Initial, name (e.g. F.G. Superman)
+initial_name = rf"{initial}[,\s]*\s*({prefix})?\s?{name}"
+# Full name (e.g. David Thomas Shore)
+full_name = rf"{name}\s+({prefix})?\s?{name}(\s+{name})?"
+# Last name, first name (e.g. Shore, David Thomas)
+last_first = rf"({prefix})?\s?{name},\s*{name}(\s*{name})?"
+# Single last name, first name (e.g. Lewis, Fiona)
+last_first_single = rf"({prefix})?\s?{name},\s*{name}"
+
+patterns_extract = [
+    name_initial,
+    initial_name,
+    full_name,
+    last_first]
+
+# tuple: (detect_pattern, corresponding extract pattern)
+patterns_detect = [
+    (name_initial, name_initial),
+    (initial_name, initial_name),
+    (full_name, full_name),
+    (last_first_single, last_first)]
 
 
+author_cleaner = data_operations.AuthorStringCleaner(
+    delimiter=";",
+    unwanted_substrings=unwanted_substrings)
+
+
+author_parser = data_operations.AuthorStringParser(
+    patterns_extract=patterns_extract,
+    patterns_detect=patterns_detect,
+    secondary_delimiters=[r"\s", ","])
+
+name_initial_groups = rf"(?P<last>({prefix})?\s?{name})[,\s]\s*(?P<first>{initial})"
+initial_name_groups = rf"(?P<first>{initial})[,\s]*\s*(?P<last>({prefix})?\s?{name})"
+last_first_groups = rf"(?P<last>({prefix})?\s?{name}),\s*(?P<first>{name}(\s*{name})?)"
+patterns_standardize = [name_initial_groups, initial_name_groups, last_first_groups]
+
+author_standardizer = data_operations.AuthorStringStandardizer(patterns_standardize, initial)
+
+globals()["log_latinized"] = list()
+globals()["log_parse_fail"] = list()
+
+for pub in publications:
+    # clean for splitting
+    text_cleaned = author_cleaner.clean_delimiter(pub["authors_text"])
+    # latinize
+    text_latinized = author_cleaner.latinize(text_cleaned)
+    if text_latinized != text_cleaned and "log_latinized" in globals():
+        globals()["log_latinized"] += [(id, text_cleaned, text_latinized)]
+    # split
+    authors_split = author_cleaner.split(text_latinized)
+    # remove unwanted substrings
+    authors_substrings_removed = [author_cleaner.remove_substrings(author) for author in authors_split]
+    # clean split strings
+    authors_cleaned = [author_cleaner.clean(author) for author in authors_substrings_removed]
+
+    # parse authors
+    exact_matches = [author_parser.check_exact_match(author) for author in authors_cleaned]
+    authors_parsed = [author for (author, is_exact_match) in zip(authors_cleaned, exact_matches) if is_exact_match]
+    if not_parsed_authors := [author for (author, is_exact_match) in zip(authors_cleaned, exact_matches) if not is_exact_match]:
+        for non_standard_author in not_parsed_authors:
+            successful_parse = author_parser.parse_bad_delimiter(non_standard_author)
+            if not successful_parse:
+                parsed_authors = list()
+                break
+            authors_parsed += successful_parse
+    if not authors_parsed and "log_parse_fail" in globals():
+        globals()["log_parse_fail"] += [(pub["authors_text"], authors_cleaned)]
+    # Add a new key with the result
+    pub["authors_parsed"] = authors_parsed
+
+    # Bring to unified format: 'I. Name' or 'First Last'
+    pub["authors_clean"] = [author_standardizer.standardize(parsed_author) for parsed_author in pub["authors_parsed"]]
+
+
+# Log relevant information
+log.latinized(globals().get("log_latinized"), logging.getLogger("etis"))
+total_entries = len(publications)
+log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger("etis"))
+
+
+#############################################################
+# Match parsed aliases to authors given in publication data #
+#############################################################
+
+# Successfully processed authors for each publication
+authors_processed = {pub["id"]: {data_operations.Author(**author) for author in pub["authors_data"]} for pub in publications}
+
+# Assign temporary id-s to all authors
+# Identificator to distinguish auto generated id-s
+def generate_id(handle: str = str()) -> str:
+    return handle + str(uuid.uuid4())[len(handle):]
+
+# Unmatched authors for each publication
+generated_id_handle = "11111111"
+authors_unmatched_in_publication = {
+    pub["id"]: {data_operations.Author(id=generate_id(generated_id_handle), alias=author) for author in pub["authors_clean"]}
+    for pub in publications}
+
+# Match parsed aliases to authors given in data
+similarity_threshold_in_publication = 0.6
+for pub_id, processed_authors in authors_processed.items():
+    for processed_author in processed_authors:
+        # Merge best match if it's across similarity threshold
+        best_match = (None, 0)
+        for unmatched_author in authors_unmatched_in_publication[pub_id]:
+            if (ratio := processed_author.similarity_ratio(unmatched_author)) > best_match[1]:
+                best_match = (unmatched_author, ratio)
+        if best_match[1] > similarity_threshold_in_publication:
+            processed_author.merge(best_match[0])
+            # Tag matched entry for removal
+            unmatched_author.to_be_removed = True
+
+# Remove successfully matched aliases from unmatched authors
+authors_unmatched_global = {
+    id: {author for author in authors if not author.to_be_removed}
+    for id, authors in authors_unmatched_in_publication.items()}
 
 
 ############################################################################
 # Next:
-# Test Author class
-# Rewrite matching with author class
+# Match aliases globally - if they share coauthors. (Maybe add coauthors field to class?)
+# Keep in mind different authors can have same aliases
 
 
-# Publications with successfully identified authors
-authors_processed = {pub["id"]: [Author(**author) for author in pub["authors_data"]] for pub in publications}
 
-# Publications with unmatched authors
-authors_unmatched = {pub["id"]: pub["authors_clean"] for pub in publications}
+
+for author in authors_unmatched_in_publication["14de7c9b-4691-47fa-9b46-7659aec03f88"]:
+    author.id
+for author in authors_processed['4dbfcebc-4180-431e-b06d-c06445fad037']:
+    author.aliases
+
+
+
+
+
 
 # Author id-s with corresponding aliases {author_id: {alias1, alias2, ...}}
 author_aliases = defaultdict(set)
@@ -263,9 +392,7 @@ for id, authors in authors_unmatched.items():
 # similarity by Levenshtein ratio
 levenshtein_threshold_alias_alias = 0.8
 
-# Assign temporary id-s to all authors
-# Identificator to distinguish auto generated id-s
-generated_id_handle = "11111111"
+
 
 publication_authors = dict()
 for id, authors in authors_processed.items():
