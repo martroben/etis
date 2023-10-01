@@ -2,14 +2,13 @@
 import data_operations
 import sql_operations
 import log
+from author import Author
 # standard
 from collections import defaultdict
 import json
 import logging
 import sys
-from typing import Self
 # external
-import Levenshtein
 import networkx
 import tqdm
 import uuid
@@ -174,52 +173,7 @@ log.parse_fail(total_entries, globals().get("log_parse_fail"), logging.getLogger
 # Match parsed aliases to authors given in data #
 #################################################
 
-roles = list()
-for pub in publications:
-    for author in pub["authors_data"]:
-        if author["role"] not in roles:
-            roles += [author["role"]]
 
-class Author:
-    def __init__(self, id: str, alias: str = str(), **kwargs) -> None:
-        self.id = id
-        self.aliases = {alias}
-        self.name = str()
-        if "name" in kwargs:
-            self.name = kwargs["name"]
-            self.aliases += [name]
-
-    def __str__(self) -> str:
-        if self.name:
-            return f"self.name ({' / '.join(alias for alias in self.aliases if alias != self.name)})"
-        return " / ".join(self.aliases)
-
-    def __eq__(self, __value: object) -> bool:
-        if isinstance(__value, Author):
-            return self.id == __value.id
-        return self.id == __value
-    
-    def __hash__(self) -> int:
-        return hash(self.id)
-    
-    def similarity_ratio(self, other: Self, match_firstletter: bool = False) -> float:
-        ratios = list()
-        for alias1 in self.aliases:
-            for alias2 in other:
-                if match_firstletter and alias1[0] != alias2[0]:
-                    ratios += [0.0]
-                    continue
-                if alias1 == alias2:
-                    return 1.0
-                ratios += [Levenshtein.ratio(alias1, alias2, processor=lambda x: x.replace(".", ""))]
-        return max(ratios)
-    
-    def merge(self, other: Self) -> None:
-        if not self.name and other.name:
-            other.merge(self)
-        else:
-            self.aliases.update(other.aliases)
-            other = self
 
 
 ############################################################################
