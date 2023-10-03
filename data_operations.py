@@ -129,13 +129,16 @@ class AuthorStringStandardizer():
 
 
 class Author:
-    def __init__(self, id: str, alias: str = str(), **kwargs) -> None:
+    def __init__(self, id: str = str(), alias: str = str(), **kwargs) -> None:
         self.id = id
         self.aliases = {alias} if alias else set()
-        self.name = str() if "name" not in kwargs else kwargs["name"]
+        self.name = kwargs["name"] if "name" in kwargs else str()
         if self.name:
             self.aliases.update({self.name})
-        self.to_be_removed = False
+        self.coauthors = kwargs["coauthors"] if "coauthors" in kwargs else set()
+        self.publications = kwargs["publications"] if "publications" in kwargs else set()
+        # Set to be removed if initialized without id
+        self.to_be_removed = not bool(id)
 
     def __repr__(self) -> str:
         if self.name:
@@ -161,6 +164,8 @@ class Author:
                 if alias1 == alias2:
                     return 1.0
                 ratios += [Levenshtein.ratio(alias1, alias2, processor=lambda x: x.replace(".", ""))]
+        if not ratios:
+            return 0.0
         return max(ratios)
     
     def merge(self, other: 'Author') -> None:
@@ -174,5 +179,7 @@ class Author:
         else:
             # Otherwise use id that's alphabetically first
             self.id = sorted([self.id, other.id])[0]
-        # Union aliases
+        # Union aliases, publications and coauthors
         self.aliases.update(other.aliases)
+        self.publications.update(other.publications)
+        self.coauthors.update(other.coauthors)
