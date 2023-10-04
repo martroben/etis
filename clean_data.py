@@ -176,9 +176,9 @@ def generate_id(handle: str = str()) -> str:
 generated_id_handle = "ffffffff"
 
 # Structure: {author id: Author object}
-all_authors = defaultdict(data_operations.Author)
+all_authors = dict()
 # Structure: {pub id: {"processed": {author1 id, author2 id, ...}, "raw": {author3 id, author4 id, ...}}}
-authors_by_publication = defaultdict(str)
+authors_by_publication = dict()
 
 # Create a source dict of all authors
 # Re-create publications so that authors would be references to all_authors dict
@@ -186,10 +186,9 @@ for pub in publications:
     authors_by_publication[pub["id"]] = {"processed": set(), "raw": set()}
     for processed_author in pub["authors_processed"]:
         id = processed_author["id"]
-        if id in all_authors:
-            all_authors[id].publications.update({pub["id"]})
-            continue
-        all_authors[id] = data_operations.Author(**processed_author)
+        if id not in all_authors:
+            all_authors[id] = data_operations.Author(**processed_author)
+        all_authors[id].publications.update({pub["id"]})
         authors_by_publication[pub["id"]]["processed"].update({id})
     for raw_author in pub["authors_raw"]:
         id = generate_id(generated_id_handle)
@@ -204,6 +203,8 @@ for pub_id, authors in authors_by_publication.items():
         # Merge best match if it's above similarity threshold
         best_match = (None, 0)
         for raw_author in authors["raw"]:
+            if raw_author not in all_authors:
+                continue
             similarity_ratio = all_authors[processed_author].similarity_ratio(all_authors[raw_author])
             if similarity_ratio > best_match[1]:
                 best_match = (raw_author, similarity_ratio)
@@ -211,34 +212,21 @@ for pub_id, authors in authors_by_publication.items():
             all_authors[processed_author].merge(all_authors[best_match[0]])
             del all_authors[best_match[0]]
 
-# Empty Author objects are created in all_authors, because 
-# id-s are not removed from authors_by_publication.
-# Going to be cleaned up later
+# Clean up merged authors
+for authors in authors_by_publication.values():
+    authors_to_remove = [author for author in authors["raw"] if author not in all_authors]
+    for author in authors_to_remove:
+        authors["raw"].discard(author)
+
+# Get coauthors
+for authors in authors_by_publication.values():
+    all_publication_authors = authors["processed"].union(authors["raw"])
+    for author in all_publication_authors:
+        coauthors = {coauthor for coauthor in all_publication_authors if coauthor != author}
+        for coauthor in coauthors:
+            all_authors[author].coauthors.update({all_authors[coauthor]})
 
 
-
-
-
-
-
-# Match parsed aliases to authors given in data
-similarity_threshold_in_publication = 0.6
-for pub_id, processed_authors in authors_processed.items():
-    for processed_author in processed_authors:
-        # Merge best match if it's above similarity threshold
-        best_match = (None, 0)
-        for unmatched_author in authors_unmatched_in_publication[pub_id]:
-            if (ratio := processed_author.similarity_ratio(unmatched_author)) > best_match[1]:
-                best_match = (unmatched_author, ratio)
-        if best_match[1] > similarity_threshold_in_publication:
-            processed_author.merge(best_match[0])
-            # Tag matched entry for removal
-            unmatched_author.to_be_removed = True
-
-# Remove successfully matched aliases from unmatched authors
-authors_unmatched_global = {
-    id: {author for author in authors if not author.to_be_removed}
-    for id, authors in authors_unmatched_in_publication.items()}
 
 
 ############################################################################
