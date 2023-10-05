@@ -218,21 +218,57 @@ for authors in authors_by_publication.values():
     for author in authors_to_remove:
         authors["raw"].discard(author)
 
-# Get coauthors
+# Create a reference for coauthors
+# Structure: {author id: set()}
+coauthors = dict()
 for authors in authors_by_publication.values():
     all_publication_authors = authors["processed"].union(authors["raw"])
     for author in all_publication_authors:
-        coauthors = {coauthor for coauthor in all_publication_authors if coauthor != author}
-        for coauthor in coauthors:
-            all_authors[author].coauthors.update({all_authors[coauthor]})
+        if author not in coauthors:
+            coauthors[author] = set()
+        coauthors[author] = coauthors[author].union({coauthor for coauthor in all_publication_authors if coauthor != author})
 
-
+all_authors = defaultdict(data_operations.Author, all_authors)
+ticks = 0
+coauthors_helper = dict()
+levenshtein_threshold_alias_vs_alias = 0.8
+for author_id1, coauthor_ids1 in tqdm.tqdm(coauthors.items()):
+    coauthors_helper[author_id1] = coauthor_ids1
+    for author_id2, coauthor_ids2 in coauthors_helper.items():
+        if author_id1 == author_id2:
+            continue
+        if all_authors[author_id1].similarity_ratio(all_authors[author_id2], match_firstletter = True) < levenshtein_threshold_alias_vs_alias:
+            continue
+        authors_merged = False
+        for coauthor_id1 in coauthor_ids1:
+            for coauthor_id2 in coauthor_ids2:
+                ticks += 1
+                coauthor_similarity_ratio = all_authors[coauthor_id1].similarity_ratio(all_authors[coauthor_id2], match_firstletter = True)
+                if coauthor_similarity_ratio > levenshtein_threshold_alias_vs_alias:
+                    all_authors[author_id1].merge(all_authors[author_id2])
+                    del all_authors[author_id2]
+                    authors_merged = True
+                    break
+            if authors_merged:
+                break
+        if authors_merged:
+            break
 
 
 ############################################################################
 # Next:
-# Match aliases globally - if they share coauthors. (Maybe add coauthors field to class?)
-# Keep in mind different authors can have same aliases
+# Try to calculate an operations number estimate
+# Loop while ticks change is within 1% or smth
+
+# 7741 -> 41954
+# 7741 -> 11278
+all_authors = {key: value for key, value in all_authors.items() if value.id != ""}
+
+
+
+
+
+
 
 
 test_authors = {data_operations.Author(id=1, alias="first"), data_operations.Author(id=2, alias="second"), data_operations.Author(id=3, alias="third")}
