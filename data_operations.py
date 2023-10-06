@@ -3,7 +3,6 @@ import regex
 import transliterate
 import Levenshtein
 
-
 class AuthorStringCleaner():
 
     # transliterate package: https://pypi.org/project/transliterate/
