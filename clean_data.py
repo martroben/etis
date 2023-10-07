@@ -3,10 +3,10 @@ import data_operations
 import sql_operations
 import log
 # standard
-from collections import defaultdict
 import json
 import logging
 import sys
+import time
 # external
 import networkx
 import tqdm
@@ -197,7 +197,12 @@ for pub in publications:
         all_authors[id].publications.update({pub["id"]})
         authors_by_publication[pub["id"]]["raw"].update({id})
 
+# Keep track of how many authors are merged
+n_total_aliases_initial = len(all_authors)
+n_total_aliases_merged = 0
+
 # Match parsed aliases to authors given in data
+match_pairs = set()
 similarity_threshold_within_publication = 0.6
 for pub_id, authors in authors_by_publication.items():
     for processed_author in authors["processed"]:
@@ -210,48 +215,7 @@ for pub_id, authors in authors_by_publication.items():
             if similarity_ratio > best_match[1]:
                 best_match = (raw_author, similarity_ratio)
         if best_match[1] > similarity_threshold_within_publication:
-            all_authors[processed_author].merge(all_authors[best_match[0]])
-            del all_authors[best_match[0]]
-
-# Clean up merged authors
-for authors in authors_by_publication.values():
-    authors_to_remove = [author for author in authors["raw"] if author not in all_authors]
-    for author in authors_to_remove:
-        authors["raw"].discard(author)
-
-# Create a reference for coauthors
-# Structure: {author id: set()}
-coauthors = dict()
-for authors in authors_by_publication.values():
-    all_publication_authors = authors["processed"].union(authors["raw"])
-    for author in all_publication_authors:
-        if author not in coauthors:
-            coauthors[author] = set()
-        coauthors[author] = coauthors[author].union({coauthor for coauthor in all_publication_authors if coauthor != author})
-
-all_authors = defaultdict(data_operations.Author, all_authors)
-match_pairs = set()
-coauthors_helper = dict()
-levenshtein_threshold_alias_vs_alias = 0.8
-for author_id1, coauthor_ids1 in tqdm.tqdm(coauthors.items()):
-    coauthors_helper[author_id1] = coauthor_ids1
-    for author_id2, coauthor_ids2 in coauthors_helper.items():
-        if author_id1 == author_id2:
-            continue
-        if all_authors[author_id1].similarity_ratio(all_authors[author_id2], match_firstletter = True) < levenshtein_threshold_alias_vs_alias:
-            continue
-        match_found = False
-        for coauthor_id1 in coauthor_ids1:
-            for coauthor_id2 in coauthor_ids2:
-                coauthor_similarity_ratio = all_authors[coauthor_id1].similarity_ratio(
-                    all_authors[coauthor_id2],
-                    match_firstletter = True)
-                if coauthor_similarity_ratio > levenshtein_threshold_alias_vs_alias:
-                    match_pairs.add((author_id1, author_id2))
-                    match_found = True
-                    break
-            if match_found:
-                break
+            match_pairs.add((processed_author, best_match[0]))
 
 # Use matched pairs as network graph edges
 # Then connected component fragments are aliases
@@ -259,12 +223,17 @@ aliases_graph = networkx.Graph()
 aliases_graph.add_edges_from(match_pairs)
 equivalent_alias_ids = list(networkx.connected_components(aliases_graph))
 
+for merge_group in equivalent_alias_ids:
+    # Number of authors in each group minus the one they're merged into
+    n_total_aliases_merged += len(merge_group) - 1
+
 # Keep a record of what was merged
 merged_alias_ids = dict()
 for alias_ids in equivalent_alias_ids:
     # Uses the fact that the Author.merge method keeps min id
     merged_id = min(alias_ids)
     for alias_id in alias_ids:
+        # Bypass alias that others will be merged to
         if alias_id == merged_id:
             continue
         all_authors[merged_id].merge(all_authors[alias_id])
@@ -281,9 +250,89 @@ for pub_id, authors in authors_by_publication_old.items():
         raw = {merged_alias_ids.get(author_id, author_id) for author_id in authors["raw"]})
     authors_by_publication[pub_id] = values
 
-#########################################
-# NEXT
-# re-create coauthors with merged aliases
-# loop everything until len(match_pairs) == 0
-# Add cycle descriptions to tdqm
-# Keep track of total aliases merged
+
+######################################
+# Match authors between publications #
+######################################
+
+# Cycle until no more authors are merged
+while(True):
+    # Create a reference for coauthors
+    # Structure: {author id: set()}
+    coauthors = dict()
+    for authors in authors_by_publication.values():
+        all_publication_authors = authors["processed"].union(authors["raw"])
+        for author in all_publication_authors:
+            if author not in coauthors:
+                coauthors[author] = set()
+            coauthors[author] = coauthors[author].union({coauthor for coauthor in all_publication_authors if coauthor != author})
+
+    # Counters for logging
+    n_total_aliases_initial = len(all_authors)
+    n_initial_merged = n_total_aliases_merged
+    start_time = time.time()
+
+    match_pairs = set()
+    coauthors_helper = dict()
+    levenshtein_threshold_alias_vs_alias = 0.8
+    for author_id1, coauthor_ids1 in tqdm.tqdm(coauthors.items()):
+        coauthors_helper[author_id1] = coauthor_ids1
+        for author_id2, coauthor_ids2 in coauthors_helper.items():
+            if author_id1 == author_id2:
+                continue
+            if all_authors[author_id1].similarity_ratio(all_authors[author_id2], match_firstletter = True) < levenshtein_threshold_alias_vs_alias:
+                continue
+            match_found = False
+            for coauthor_id1 in coauthor_ids1:
+                for coauthor_id2 in coauthor_ids2:
+                    coauthor_similarity_ratio = all_authors[coauthor_id1].similarity_ratio(
+                        other=all_authors[coauthor_id2],
+                        match_firstletter=True)
+                    if coauthor_similarity_ratio > levenshtein_threshold_alias_vs_alias:
+                        match_pairs.add((author_id1, author_id2))
+                        match_found = True
+                        break
+                if match_found:
+                    break
+
+    # Use matched pairs as network graph edges
+    # Then connected component fragments are aliases
+    aliases_graph = networkx.Graph()
+    aliases_graph.add_edges_from(match_pairs)
+    equivalent_alias_ids = list(networkx.connected_components(aliases_graph))
+
+    for merge_group in equivalent_alias_ids:
+        # Number of authors in each group minus the one they're merged into
+        n_total_aliases_merged += len(merge_group) - 1
+
+    # Keep a record of what was merged
+    merged_alias_ids = dict()
+    for alias_ids in equivalent_alias_ids:
+        # Uses the fact that the Author.merge method keeps min id
+        merged_id = min(alias_ids)
+        for alias_id in alias_ids:
+            if alias_id == merged_id:
+                continue
+            all_authors[merged_id].merge(all_authors[alias_id])
+            del all_authors[alias_id]
+            merged_alias_ids[alias_id] = merged_id
+
+    # Update 'authors by publication' with merged aliases
+    authors_by_publication_old = authors_by_publication
+    authors_by_publication = dict()
+    for pub_id, authors in authors_by_publication_old.items():
+        values = dict(
+            # Get merged id if available, otherwise use original id
+            processed = {merged_alias_ids.get(author_id, author_id) for author_id in authors["processed"]},
+            raw = {merged_alias_ids.get(author_id, author_id) for author_id in authors["raw"]})
+        authors_by_publication[pub_id] = values
+
+    if len(match_pairs) == 0:
+        break
+    log.merge_cycle_result(
+        n_total_aliases_initial,
+        n_total_aliases_merged - n_initial_merged,
+        time.time() - start_time,
+        logging.getLogger("etis"))
+
+log.merge_total_result(n_total_aliases_initial, n_total_aliases_merged, logging.getLogger("etis"))

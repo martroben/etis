@@ -49,3 +49,15 @@ def parse_fail(n_total: int, log_entries: list[(str,str)] = None, logger: loggin
     for row in rows:
         logger.info(row)
     logger.info(f"+{'':-<{row_width}}+{'':-<{row_width}}+")
+
+
+def merge_total_result(n_initial: int, n_merged: int, logger: logging.Logger) -> None:
+    logger.info(f"\nMerging author aliases finished.\n"
+                f"Merged a total of {n_merged} out of {n_initial} initial aliases.")
+
+
+def merge_cycle_result(n_initial, n_merged, time_s, logger: logging.Logger) -> None:
+    time_string = f"{round(time_s)} seconds" if time_s < 120 else f"{round(time_s / 60, 1)} minutes"
+    logger.info(f"\nMerging author aliases cycle finished.\n"
+                f"Merged {n_merged} out of {n_initial} aliases during the cycle.\n"
+                f"Cycle time: {time_string}.")

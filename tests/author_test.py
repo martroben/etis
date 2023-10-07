@@ -1,4 +1,4 @@
-from author import Author
+from data_operations import Author
 
 def test_init_by_dict():
     author = Author(**{"id":"123", "alias":"J. Smith", "name":"John F. Smith"})
