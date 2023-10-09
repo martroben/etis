@@ -1,5 +1,6 @@
 # standard
 import logging
+import time
 
 def latinized(log_entries: list[(str,str,str)] = None, logger: logging.Logger = None) -> None:
 
@@ -61,3 +62,7 @@ def merge_cycle_result(n_initial, n_merged, time_s, logger: logging.Logger) -> N
     logger.info(f"\nMerging author aliases cycle finished.\n"
                 f"Merged {n_merged} out of {n_initial} aliases during the cycle.\n"
                 f"Cycle time: {time_string}.")
+
+
+def api_result(n_pulled, start_time, logger):
+    logger.info(f"records pulled: {n_pulled}, time elapsed: {round((time.time() - start_time) / 60, 2)} minutes")

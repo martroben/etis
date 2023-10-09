@@ -1,11 +1,14 @@
 # local
 import api_operations
+import log
 import sql_operations
 # standard
 import json
 import time
 import logging
 import sys
+# external
+import tqdm
 
 
 #####################
@@ -24,16 +27,24 @@ logger.setLevel(logging.getLevelName("INFO"))
 base_url = "https://www.etis.ee:2346/api/"
 publication_session = api_operations.PublicationSession(base_url)
 
-publications = list()
+log_message_frequency_cycles = 20
 i = 0
-n = 500
+items_per_request = 500
 limit = 10000
+publications = list()
 start_time = time.time()
-while i < limit:
-    publications += publication_session.get_items(n, i)
-    i += n
-    log_message = f"records pulled: {i}, time elapsed: {round((time.time() - start_time) / 60, 2)} minutes"
-    logger.info(log_message)
+with tqdm.tqdm(total=limit/items_per_request) as progress_bar:
+    while i < limit:
+        items = publication_session.get_items(items_per_request, i)
+        publications += items
+        i += items_per_request
+        _ = progress_bar.update()
+        if i % (log_message_frequency_cycles * items_per_request) == 0:
+            log.api_result(i, start_time, logging.getLogger("etis"))
+        if not items:
+            break
+
+log.api_result(i, start_time, logging.getLogger("etis"))
 
 
 ############################
@@ -62,3 +73,28 @@ for row in publications:
         **row)
 
 sql_connection.commit()
+
+
+##############################
+# Save publications to neo4j #
+##############################
+
+from neo4j import GraphDatabase
+
+neo4j_uri = str()
+neo4j_user = str()
+neo4j_password = str()
+
+neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
+neo4j_driver.verify_connectivity()
+
+def create_publication_node(transaction, **kwargs):
+    properties_string = ", ".join([f"{key}: ${key}" for key in kwargs.keys()])
+    cypher_pattern = f"CREATE (pub:Publication {properties_string}) RETURN id(a)"
+    # Return id of the new node as verification
+    node_id = transaction.run(cypher_pattern, **kwargs).single().value()
+    return node_id
+
+with neo4j_driver.session() as session:
+    for pub in publications:
+        session.write_transaction(create_publication_node, pub)
