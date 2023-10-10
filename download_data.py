@@ -8,6 +8,7 @@ import time
 import logging
 import sys
 # external
+from neo4j import GraphDatabase
 import tqdm
 
 
@@ -51,50 +52,60 @@ log.api_result(i, start_time, logging.getLogger("etis"))
 # Save publications to SQL #
 ############################
 
-database_path = "./data.sql"
-settings_path = "./settings.json"
-publications_raw_table = "PublicationRaw"
+# database_path = "./data.sql"
+# settings_path = "./settings.json"
+# publications_raw_table = "PublicationRaw"
 
-# Create Publication table
-with open(settings_path) as settings_file:
-    settings = json.loads("\n".join(settings_file.readlines()))
+# # Create Publication table
+# with open(settings_path) as settings_file:
+#     settings = json.loads("\n".join(settings_file.readlines()))
 
-sql_connection = sql_operations.get_connection(database_path)
-sql_operations.create_table(
-    table=publications_raw_table,
-    columns=settings["publication_columns"],
-    connection=sql_connection)
+# sql_connection = sql_operations.get_connection(database_path)
+# sql_operations.create_table(
+#     table=publications_raw_table,
+#     columns=settings["publication_columns"],
+#     connection=sql_connection)
 
-succeeded_rows = 0
-for row in publications:
-    succeeded_rows += sql_operations.insert_row(
-        table=publications_raw_table,
-        connection=sql_connection,
-        **row)
+# succeeded_rows = 0
+# for row in publications:
+#     succeeded_rows += sql_operations.insert_row(
+#         table=publications_raw_table,
+#         connection=sql_connection,
+#         **row)
 
-sql_connection.commit()
+# sql_connection.commit()
 
 
 ##############################
 # Save publications to neo4j #
 ##############################
 
-from neo4j import GraphDatabase
-
-neo4j_uri = str()
+neo4j_uri = "bolt://localhost:7687"
 neo4j_user = str()
 neo4j_password = str()
 
 neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
+# Raises exception if connection can't be established
 neo4j_driver.verify_connectivity()
 
 def create_publication_node(transaction, **kwargs):
-    properties_string = ", ".join([f"{key}: ${key}" for key in kwargs.keys()])
-    cypher_pattern = f"CREATE (pub:Publication {properties_string}) RETURN id(a)"
+    property_placeholders_string = ", ".join([f"{key}: ${key}" for key in kwargs.keys()])
+    cypher_pattern = f"CREATE (pub:Publication {{{property_placeholders_string}}}) RETURN id(pub)"
+    values = dict()
+    for key, value in kwargs.items():
+        values[key] = json.dumps(value) if isinstance(value, (list, dict)) else value
+    node_id = transaction.run(cypher_pattern, values).single().value()
     # Return id of the new node as verification
-    node_id = transaction.run(cypher_pattern, **kwargs).single().value()
     return node_id
 
+def delete_all(transaction):
+    transaction.run("MATCH (n) DETACH DELETE n")
+
+def get_all(transaction):
+    result = transaction.run("MATCH (n) RETURN n")
+    values = [record.values() for record in result]
+    return values
+
 with neo4j_driver.session() as session:
-    for pub in publications:
-        session.write_transaction(create_publication_node, pub)
+    for pub in tqdm.tqdm(publications):
+        _ = session.execute_write(create_publication_node, **pub)
