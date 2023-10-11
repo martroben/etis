@@ -1,13 +1,15 @@
 # local
 import data_operations
-import sql_operations
 import log
+import neo4j_operations
+import sql_operations
 # standard
 import json
 import logging
 import sys
 import time
 # external
+from neo4j import GraphDatabase
 import networkx
 import tqdm
 import uuid
@@ -21,19 +23,28 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 logger.setLevel(logging.getLevelName("INFO"))
 
 
-###########################
-# Pull data from database #
-###########################
+########################
+# Pull data from neo4j #
+########################
 
-database_path = "./data.sql"
-publications_raw_table = "PublicationRaw"
+# neo4j
+neo4j_uri = "bolt://localhost:7687"
+neo4j_user = str()
+neo4j_password = str()
 
-sql_connection = sql_operations.get_connection(database_path)
-authors_sql = "SELECT Guid, Authors, AuthorsText FROM PublicationRaw"
-publications_raw = sql_connection.cursor().execute(authors_sql).fetchall()
+neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
+# Raises exception if connection can't be established
+neo4j_driver.verify_connectivity()
+
+with neo4j_driver.session() as session:
+    publications_raw = session.execute_read(neo4j_operations.get_publications)
 
 publications = list()
-for id, authors_data, authors_text in publications_raw:
+for pub in publications_raw:
+    id = pub[0]
+    authors_data = pub[1]
+    authors_text = pub[2]
+
     authors_data_cleaned = list()
     for author in json.loads(authors_data):
         authors_data_cleaned += [dict(
@@ -45,6 +56,32 @@ for id, authors_data, authors_text in publications_raw:
         "id": id,
         "authors_processed": authors_data_cleaned,
         "authors_text": authors_text}]
+
+
+######################
+# Pull data from sql #
+######################
+
+# database_path = "./data.sql"
+# publications_raw_table = "PublicationRaw"
+
+# sql_connection = sql_operations.get_connection(database_path)
+# authors_sql = "SELECT Guid, Authors, AuthorsText FROM PublicationRaw"
+# publications_raw = sql_connection.cursor().execute(authors_sql).fetchall()
+
+# publications = list()
+# for id, authors_data, authors_text in publications_raw:
+#     authors_data_cleaned = list()
+#     for author in json.loads(authors_data):
+#         authors_data_cleaned += [dict(
+#             id=author["Guid"],
+#             name=author["Name"],
+#             role=author["RoleNameEng"])]
+
+#     publications += [{
+#         "id": id,
+#         "authors_processed": authors_data_cleaned,
+#         "authors_text": authors_text}]
 
 
 #####################################
@@ -336,3 +373,7 @@ while(True):
         logging.getLogger("etis"))
 
 log.merge_total_result(n_total_aliases_initial, n_total_aliases_merged, logging.getLogger("etis"))
+
+##########################################################################
+# Problem:
+# Merged a total of 12055 out of 5285 initial aliases.

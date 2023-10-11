@@ -1,6 +1,7 @@
 # local
 import api_operations
 import log
+import neo4j_operations
 import sql_operations
 # standard
 import json
@@ -52,6 +53,8 @@ log.api_result(i, start_time, logging.getLogger("etis"))
 # Save publications to SQL #
 ############################
 
+# Much faster for temporary storing downloaded data
+
 # database_path = "./data.sql"
 # settings_path = "./settings.json"
 # publications_raw_table = "PublicationRaw"
@@ -88,24 +91,6 @@ neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password)
 # Raises exception if connection can't be established
 neo4j_driver.verify_connectivity()
 
-def create_publication_node(transaction, **kwargs):
-    property_placeholders_string = ", ".join([f"{key}: ${key}" for key in kwargs.keys()])
-    cypher_pattern = f"CREATE (pub:Publication {{{property_placeholders_string}}}) RETURN id(pub)"
-    values = dict()
-    for key, value in kwargs.items():
-        values[key] = json.dumps(value) if isinstance(value, (list, dict)) else value
-    node_id = transaction.run(cypher_pattern, values).single().value()
-    # Return id of the new node as verification
-    return node_id
-
-def delete_all(transaction):
-    transaction.run("MATCH (n) DETACH DELETE n")
-
-def get_all(transaction):
-    result = transaction.run("MATCH (n) RETURN n")
-    values = [record.values() for record in result]
-    return values
-
 with neo4j_driver.session() as session:
     for pub in tqdm.tqdm(publications):
-        _ = session.execute_write(create_publication_node, **pub)
+        _ = session.execute_write(neo4j_operations.create_publication_node, **pub)
