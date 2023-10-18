@@ -94,3 +94,11 @@ neo4j_driver.verify_connectivity()
 with neo4j_driver.session() as session:
     for pub in tqdm.tqdm(publications):
         _ = session.execute_write(neo4j_operations.create_publication_node, **pub)
+
+
+##################
+# Clean database #
+##################
+
+# with neo4j_driver.session() as session:
+#     session.execute_write(neo4j_operations.delete_all)

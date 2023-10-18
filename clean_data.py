@@ -381,3 +381,40 @@ log.merge_total_result(
     n_aliases_initial,
     n_aliases_merged_between_publication + n_aliases_merged_within_publication,
     logging.getLogger("etis"))
+
+
+#########################
+# Save authors to neo4j #
+#########################
+
+neo4j_driver.verify_connectivity()
+
+with neo4j_driver.session() as session:
+    for author in tqdm.tqdm(all_authors.values()):
+        author_insert_values = {
+            "id": author.id,
+            "name": author.name,
+            "aliases": list(author.aliases)}
+        _ = session.execute_write(
+            neo4j_operations.create_author_node,
+            **author_insert_values)
+
+
+############################################
+# Save author - publication edges to neo4j #
+############################################
+
+neo4j_driver.verify_connectivity()
+
+with neo4j_driver.session() as session:
+    for author in tqdm.tqdm(all_authors.values()):
+        for publication_id in author.publications:
+            _ = session.execute_write(
+                neo4j_operations.create_author_publication_edge,
+                author_id=author.id,
+                publication_id=publication_id)
+
+
+######################################################
+# Problem
+# Can't see any connections in query environment

@@ -136,8 +136,6 @@ class Author:
             self.aliases.update({self.name})
         self.coauthors = kwargs["coauthors"] if "coauthors" in kwargs else set()
         self.publications = kwargs["publications"] if "publications" in kwargs else set()
-        # Set to be removed if initialized without id
-        self.to_be_removed = not bool(id)
 
     def __repr__(self) -> str:
         if self.name:
