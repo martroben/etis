@@ -235,8 +235,8 @@ for pub in publications:
         authors_by_publication[pub["id"]]["raw"].update({id})
 
 # Keep track of how many authors are merged
-n_total_aliases_initial = len(all_authors)
-n_total_aliases_merged = 0
+n_aliases_initial = len(all_authors)
+n_aliases_merged_within_publication = 0
 
 # Match parsed aliases to authors given in data
 match_pairs = set()
@@ -262,7 +262,7 @@ equivalent_alias_ids = list(networkx.connected_components(aliases_graph))
 
 for merge_group in equivalent_alias_ids:
     # Number of authors in each group minus the one they're merged into
-    n_total_aliases_merged += len(merge_group) - 1
+    n_aliases_merged_within_publication += len(merge_group) - 1
 
 # Keep a record of what was merged
 merged_alias_ids = dict()
@@ -287,10 +287,15 @@ for pub_id, authors in authors_by_publication_old.items():
         raw = {merged_alias_ids.get(author_id, author_id) for author_id in authors["raw"]})
     authors_by_publication[pub_id] = values
 
+log.within_publication_merge_result(n_aliases_initial, n_aliases_merged_within_publication, logger)
+
 
 ######################################
 # Match authors between publications #
 ######################################
+
+n_aliases_initial_between_publication = len(all_authors)
+n_aliases_merged_between_publication = 0
 
 # Cycle until no more authors are merged
 while(True):
@@ -306,7 +311,7 @@ while(True):
 
     # Counters for logging
     n_total_aliases_initial = len(all_authors)
-    n_initial_merged = n_total_aliases_merged
+    n_initial_merged = n_aliases_merged_between_publication
     start_time = time.time()
 
     match_pairs = set()
@@ -340,7 +345,7 @@ while(True):
 
     for merge_group in equivalent_alias_ids:
         # Number of authors in each group minus the one they're merged into
-        n_total_aliases_merged += len(merge_group) - 1
+        n_aliases_merged_between_publication += len(merge_group) - 1
 
     # Keep a record of what was merged
     merged_alias_ids = dict()
@@ -368,12 +373,11 @@ while(True):
         break
     log.merge_cycle_result(
         n_total_aliases_initial,
-        n_total_aliases_merged - n_initial_merged,
+        n_aliases_merged_between_publication - n_initial_merged,
         time.time() - start_time,
         logging.getLogger("etis"))
 
-log.merge_total_result(n_total_aliases_initial, n_total_aliases_merged, logging.getLogger("etis"))
-
-##########################################################################
-# Problem:
-# Merged a total of 12055 out of 5285 initial aliases.
+log.merge_total_result(
+    n_aliases_initial,
+    n_aliases_merged_between_publication + n_aliases_merged_within_publication,
+    logging.getLogger("etis"))

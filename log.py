@@ -66,3 +66,8 @@ def merge_cycle_result(n_initial, n_merged, time_s, logger: logging.Logger) -> N
 
 def api_result(n_pulled, start_time, logger):
     logger.info(f"records pulled: {n_pulled}, time elapsed: {round((time.time() - start_time) / 60, 2)} minutes")
+
+
+def within_publication_merge_result(n_initial, n_merged, logger):
+    logger.info(f"Completed merging aliases within publication.\n"
+                f"Merged a total of {n_merged} out of {n_initial} initial aliases.")
