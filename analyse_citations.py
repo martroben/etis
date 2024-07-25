@@ -92,3 +92,7 @@ with open (publications_save_path, "w") as publications_save_file:
 
 publications_with_DOI = [pub for pub in publications if pub["Doi"]]
 
+
+# CrossRef
+# https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+# https://api.crossref.org/swagger-ui/index.html#/Works/get_works__doi_
