@@ -47,7 +47,6 @@ class EtisSession(requests.Session):
         return response.json()
 
 
-
 ##########################
 # Pull ETIS Publications #
 ##########################
@@ -96,3 +95,4 @@ publications_with_DOI = [pub for pub in publications if pub["Doi"]]
 # CrossRef
 # https://www.crossref.org/documentation/retrieve-metadata/rest-api/
 # https://api.crossref.org/swagger-ui/index.html#/Works/get_works__doi_
+# https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service
