@@ -1,5 +1,6 @@
 # standard
 import json
+import os
 import re
 import time
 import urllib
@@ -8,6 +9,15 @@ import warnings
 import requests
 import yaml
 import tqdm
+
+
+##########
+# Inputs #
+##########
+
+ETIS_DATA_SAVE_PATH = "./ETIS_data.json"
+CROSSREF_DATA_SAVE_PATH = "./crossref_data.json"
+INI_PATH = "./ini.yaml"
 
 
 #########################
@@ -37,7 +47,7 @@ class EtisSession(requests.Session):
 
 
 class CrossrefWorksSession(requests.Session):
-    BASE_URL = "https://api.crossref.org/"
+    BASE_URL = "https://api.crossref.org"
 
     def __init__(self, app_name: str, app_version: str, app_URL: str, mailto: str) -> None:
         super().__init__()
@@ -109,7 +119,8 @@ classification_codes = ["1.1.", "1.2.", "1.3."]
 
 items_per_request = 500
 bad_response_threshold = 10
-publications = list()
+bad_responses = []
+publications = []
 
 with tqdm.tqdm() as ETIS_progress_bar:
     n_bad_responses = 0
@@ -118,17 +129,17 @@ with tqdm.tqdm() as ETIS_progress_bar:
         ETIS_publication_parameters["ClassificationCode"] = classification_code
         i = 0
         while n_bad_responses < bad_response_threshold:
-            items_response = ETIS_publication_session.get_items(
+            response = ETIS_publication_session.get_items(
                 n=items_per_request,
                 i_start=i,
                 parameters=ETIS_publication_parameters)
             
-            if not items_response:
+            if not response:
+                bad_responses += [response]
                 n_bad_responses += 1
-                print(items_response)
                 continue
 
-            items = items_response.json()
+            items = response.json()
             publications += items
             i += items_per_request
             _ = ETIS_progress_bar.update()
@@ -136,15 +147,11 @@ with tqdm.tqdm() as ETIS_progress_bar:
             if not items:
                 break
 
-publications_save_path = "./publications.json"
+
 publications_json = json.dumps(publications, indent=2)
 
-with open (publications_save_path, "w") as publications_save_file:
-    publications_save_file.write(publications_json)
-
-
-with open (publications_save_path) as publications_save_file:
-    publications = json.loads(publications_save_file.read())
+with open (ETIS_DATA_SAVE_PATH, "w") as ETIS_data_save_file:
+    ETIS_data_save_file.write(publications_json)
 
 
 #####################
@@ -154,14 +161,23 @@ with open (publications_save_path) as publications_save_file:
 # https://www.crossref.org/documentation/retrieve-metadata/rest-api/
 # https://api.crossref.org/swagger-ui/index.html#/Works/get_works__doi_
 
+with open(ETIS_DATA_SAVE_PATH) as ETIS_data_save_file:
+    publications = json.loads(ETIS_data_save_file.read())
+
+if os.path.exists(CROSSREF_DATA_SAVE_PATH):
+    # Load already processed data.
+    # Applicable if a previous run failed in the middle of the process.
+    with open(CROSSREF_DATA_SAVE_PATH) as crossref_data_save_file:
+        publications = json.loads(crossref_data_save_file.read())
+
 # Try to load identifying information to get the "polite" API pool (more reliable than public pool)
 # https://github.com/CrossRef/rest-api-doc#good-manners--more-reliable-service
-ini_path = "./ini.yaml"
+
 try:
-    with open(ini_path) as ini_file:
+    with open(INI_PATH) as ini_file:
         ini_str = ini_file.read()
         ini = yaml.safe_load(ini_str)
-except FileNotFoundError:
+except (FileNotFoundError, yaml.YAMLError):
     ini = {}
 
 crossref_works_session = CrossrefWorksSession(
@@ -172,22 +188,33 @@ crossref_works_session = CrossrefWorksSession(
 )
 
 n_bad_responses = 0
+bad_responses = []
 bad_response_threshold = 10
 
 lap_timestamp = time.time()
 for publication in tqdm.tqdm(publications, desc="CrossRef requests"):
-    DOI = publication.get("Doi")
+
+    if "CrossrefInfo" in publication:
+        # Don't reprocess publications that already have Crossref info.
+        continue
     publication["CrossrefInfo"] = {}
 
+    DOI = publication.get("Doi")
     if not DOI:
         continue
 
-    response = crossref_works_session.get_work_by_DOI(DOI)
+    try:
+        response = crossref_works_session.get_work_by_DOI(DOI)
+    except Exception as e:
+        with open(CROSSREF_DATA_SAVE_PATH, "w") as crossref_data_save_file:
+            crossref_data_save_file.write(json.dumps(publications, indent=2))
+        raise e
 
     if not response:
         if response.status_code == 404:
             continue
         n_bad_responses += 1
+        bad_responses += [response]
         if n_bad_responses >= bad_response_threshold:
             raise ConnectionError(f"Reached bad response threshold: {bad_response_threshold}")
         continue
@@ -202,6 +229,5 @@ for publication in tqdm.tqdm(publications, desc="CrossRef requests"):
     publication["CrossrefInfo"] = response.json().get("message") or {}
 
 
-with open (publications_save_path, "w") as publications_save_file:
-    publications_save_file.write(publications_json)
-
+with open(CROSSREF_DATA_SAVE_PATH, "w") as crossref_data_save_file:
+    crossref_data_save_file.write(json.dumps(publications, indent=2))
