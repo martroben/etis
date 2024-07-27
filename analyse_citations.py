@@ -8,7 +8,6 @@ import urllib
 import warnings
 # external
 import plotly
-import plotly.graph_objects
 import requests
 import yaml
 import tqdm
@@ -296,9 +295,9 @@ with open(CROSSREF_DATA_SAVE_PATH, "w") as crossref_data_save_file:
     crossref_data_save_file.write(json.dumps(publications, indent=2))
 
 
-#######################
-# Plot article counts #
-#######################
+################
+# Process data #
+################
 
 # # Uncomment to start with previously saved CrossRef data
 # with open(CROSSREF_DATA_SAVE_PATH) as crossref_data_save_file:
@@ -333,7 +332,11 @@ for key, value in counts.items():
     cumulative_sum += value
     cumulative_frequencies[key] = cumulative_sum / sum(counts.values())
 
-# Set up plots
+
+################
+# Plot results #
+################
+
 count_plot = plotly.graph_objects.Bar(
     x=list(counts.keys()),
     y=list(counts.values())
@@ -368,9 +371,12 @@ overview_annotation = {
     "yanchor": "top"
 }
 
+figure_title = f'Articles by citation count {PUBLISHING_YEAR_MIN}-{PUBLISHING_YEAR_MAX}'
+figure_subtitle = f'date created: {datetime.datetime.strftime(datetime.datetime.today(), "%Y-%m-%d")}'
+
 figure = plotly.graph_objects.Figure()
 figure.update_layout(
-    title=f'Articles by citation count {PUBLISHING_YEAR_MIN}-{PUBLISHING_YEAR_MAX}<br><sub>date created: {datetime.datetime.strftime(datetime.datetime.today(), "%Y-%m-%d")}</sub>',
+    title=f'{figure_title}<br><sub>{figure_subtitle}</sub>',
     xaxis=get_xaxis_ticks(x_max=max(counts), n_steps=5),
     xaxis_title="citation count",
     yaxis_title="number of articles",
@@ -388,5 +394,9 @@ figure.update_layout(
 figure.add_trace(count_plot)
 figure.add_trace(cumulative_frequencies_plot)
 
-# Save plot on disk
+
+#############
+# Save plot #
+#############
+
 plotly.io.write_image(figure, PLOT_SAVE_PATH)
