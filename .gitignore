@@ -1,5 +1,6 @@
+.venv
+.vscode
 ETIS_data.json
 crossref_data.json
-.venv
 ini.yaml
 settings.json
