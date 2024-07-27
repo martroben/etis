@@ -354,7 +354,7 @@ source_reference_annotation = {
     "y": -0.23,
     "xref": "paper",
     "yref": "paper",
-    "text": f'Source: {SOURCE_REFERENCE}',
+    "text": f'Source: ETIS, CrossRef | {SOURCE_REFERENCE}',
     "showarrow": False,
     "xanchor": "left",
     "yanchor": "bottom"
