@@ -133,7 +133,7 @@ def adjust_rate(last_lap_timestamp: float, limit: str, interval: str) -> None:
     limit = int(limit or standard_limit)
     interval = int((interval or "").strip("s")) or standard_interval
 
-    requests_per_second = 1 / (time.time() - last_lap_timestamp)
+    requests_per_second = 1 / (time.monotonic() - last_lap_timestamp)
     requests_per_second_limit = limit / interval * (1 - safety_margin)
     if requests_per_second >= requests_per_second_limit:
         warnings.warn(f'Delaying requests. Requests per second too close to rate limit: ({round(requests_per_second, 2)} / {round(requests_per_second_limit, 2)})')
@@ -247,7 +247,7 @@ n_bad_responses = 0
 bad_responses = []
 bad_response_threshold = 10
 
-lap_timestamp = time.time()
+lap_timestamp = time.monotonic()
 for publication in tqdm.tqdm(publications, desc="CrossRef requests"):
 
     if "CrossrefInfo" in publication:
@@ -285,7 +285,7 @@ for publication in tqdm.tqdm(publications, desc="CrossRef requests"):
         limit=response.headers.get("x-rate-limit-limit"),
         interval=response.headers.get("x-rate-limit-interval")
     )
-    lap_timestamp = time.time()
+    lap_timestamp = time.monotonic()
 
     publication["CrossrefInfo"] = response.json().get("message") or {}
 
