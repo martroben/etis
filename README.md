@@ -25,10 +25,10 @@ python3 analyse_citations.py
 ```
 It probably takes several hours to run.
 
-## Documentation
+## API Documentation
 ### ETIS API
 - https://avaandmed.eesti.ee/datasets/eesti-teadusinfosusteemi-avaandmed
 
 ### CrossRef API
 - https://www.crossref.org/documentation/retrieve-metadata/rest-api/
-- https://api.crossref.org/swagger-ui/index.html#/Works/get_works__doi_
+- [https://api.crossref.org/swagger-ui/index.html#/Works/get_works__doi_](https://api.crossref.org/swagger-ui/index.html#/Works/get_works__doi_)
