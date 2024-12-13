@@ -38,6 +38,8 @@ class EtisSession(requests.Session):
     """
     Class for requesting info from ETIS API.
     """
+    # https://www.etis.ee:2346/api - test
+    # https://www.etis.ee:7443/api - live
     BASE_URL = "https://www.etis.ee:2346/api"
 
     def __init__(self, service: str) -> None:
