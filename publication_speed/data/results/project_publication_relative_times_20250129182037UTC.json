@@ -1,0 +1,9741 @@
+[
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      734,
+      734,
+      564,
+      564,
+      336,
+      375,
+      375,
+      460,
+      375,
+      105,
+      341,
+      -493,
+      -253,
+      105,
+      -87,
+      734
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -493,
+    "FUNDING_EUR": 66162.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      562,
+      428,
+      428,
+      479,
+      426,
+      562
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 426,
+    "FUNDING_EUR": 66787.67,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1076,
+    "RELATIVE_TIME_DAYS": [
+      183,
+      330,
+      231,
+      206,
+      934
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 183,
+    "FUNDING_EUR": 56186.01,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1096,
+    "RELATIVE_TIME_DAYS": [
+      -234,
+      -455
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -455,
+    "FUNDING_EUR": 788580.27,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      464,
+      -1685
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 464,
+    "FUNDING_EUR": 36889.8,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      246,
+      467,
+      433,
+      -33,
+      433,
+      664
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -33,
+    "FUNDING_EUR": 51078.2,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      110,
+      716,
+      727
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 110,
+    "FUNDING_EUR": 30987.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      328
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 328,
+    "FUNDING_EUR": 41414.52,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      194
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 194,
+    "FUNDING_EUR": 54000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      -22,
+      119,
+      618,
+      -14,
+      821
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -22,
+    "FUNDING_EUR": 52780.79,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -226,
+      552
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -226,
+    "FUNDING_EUR": 16800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      333,
+      559,
+      450
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 333,
+    "FUNDING_EUR": 22701.42,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      630,
+      832
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 630,
+    "FUNDING_EUR": 17602.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      460,
+      -3202
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 460,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      187,
+      638,
+      1004
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 187,
+    "FUNDING_EUR": 121800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      914,
+      474,
+      234,
+      -46
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -46,
+    "FUNDING_EUR": 15500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      455,
+      351,
+      351
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 351,
+    "FUNDING_EUR": 55986.59,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      706,
+      666,
+      295,
+      215,
+      849,
+      -58,
+      -58,
+      -199,
+      -41,
+      -70
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -199,
+    "FUNDING_EUR": 154800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      394,
+      681,
+      477,
+      1247,
+      814,
+      -1006
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1006,
+    "FUNDING_EUR": 28676.65,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      442,
+      448,
+      450,
+      448,
+      444,
+      -25,
+      444,
+      792,
+      417
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -25,
+    "FUNDING_EUR": 41537.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      50,
+      446,
+      547,
+      481
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 50,
+    "FUNDING_EUR": 13804.92,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      120,
+      683,
+      573,
+      630,
+      563,
+      89,
+      -33,
+      -33,
+      -350,
+      -454
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -454,
+    "FUNDING_EUR": 49489.1,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      58,
+      96,
+      641,
+      81
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 58,
+    "FUNDING_EUR": 26966.06,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      628,
+      382,
+      425,
+      45,
+      254,
+      335,
+      210,
+      338,
+      673,
+      458,
+      848,
+      837,
+      786,
+      848,
+      670,
+      591,
+      684,
+      712,
+      1117,
+      848,
+      848
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 45,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      470
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 470,
+    "FUNDING_EUR": 32748.34,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      881,
+      1296,
+      1359,
+      550,
+      862
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 550,
+    "FUNDING_EUR": 27700.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      209,
+      92,
+      -26,
+      451,
+      559,
+      723,
+      1172
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -26,
+    "FUNDING_EUR": 41276.7,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      84,
+      1037,
+      -10,
+      547
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -10,
+    "FUNDING_EUR": 15209.96,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      819,
+      657,
+      112,
+      112
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 112,
+    "FUNDING_EUR": 27695.74,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      136
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 136,
+    "FUNDING_EUR": 25200.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      20
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 20,
+    "FUNDING_EUR": 18615.17,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      772,
+      340,
+      122,
+      133,
+      8,
+      130,
+      334,
+      311,
+      363,
+      311,
+      311,
+      363,
+      311,
+      173,
+      220,
+      -72,
+      -72,
+      836,
+      961,
+      1086,
+      1086,
+      1086,
+      1086,
+      836,
+      836,
+      315,
+      697,
+      828,
+      828,
+      -25,
+      707,
+      -25,
+      836
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -72,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      830,
+      473,
+      479,
+      475,
+      398
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 398,
+    "FUNDING_EUR": 25500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      111,
+      111,
+      111,
+      111,
+      467,
+      467,
+      467,
+      830,
+      718,
+      575,
+      830,
+      455,
+      455,
+      -73
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -73,
+    "FUNDING_EUR": 74776.62,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      613,
+      -868
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -868,
+    "FUNDING_EUR": 25682.4,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      356,
+      356,
+      113,
+      252,
+      478,
+      478,
+      477,
+      478,
+      478
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 113,
+    "FUNDING_EUR": 56701.39,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -20,
+      -20,
+      428,
+      428,
+      700,
+      350,
+      700
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -20,
+    "FUNDING_EUR": 13804.92,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      374,
+      280,
+      278,
+      277,
+      271
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 271,
+    "FUNDING_EUR": 35661.97,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      119,
+      701,
+      468
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 119,
+    "FUNDING_EUR": 40635.53,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1215,
+    "RELATIVE_TIME_DAYS": [
+      157,
+      571,
+      745,
+      1436,
+      1004,
+      941,
+      250,
+      252,
+      644,
+      991,
+      757,
+      1046,
+      1079,
+      1058,
+      -47,
+      -48,
+      -48,
+      -48,
+      -49,
+      -49,
+      -48,
+      1445,
+      -165
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -165,
+    "FUNDING_EUR": 173297.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      188,
+      344,
+      45,
+      -4,
+      97,
+      451
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -4,
+    "FUNDING_EUR": 34759.25,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -49,
+      75,
+      113,
+      185,
+      -214,
+      -102,
+      108,
+      850,
+      41
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -214,
+    "FUNDING_EUR": 61100.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      1088,
+      815,
+      714,
+      30
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 30,
+    "FUNDING_EUR": 35340.8,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      130
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 130,
+    "FUNDING_EUR": 24560.12,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 973,
+    "RELATIVE_TIME_DAYS": [
+      168
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 168,
+    "FUNDING_EUR": 60825.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      442
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 442,
+    "FUNDING_EUR": 79250.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      816,
+      694,
+      819,
+      819,
+      606
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 606,
+    "FUNDING_EUR": 20771.28,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      100,
+      -32
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -32,
+    "FUNDING_EUR": 44175.68,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      467,
+      447
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 447,
+    "FUNDING_EUR": 31279.65,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      203
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 203,
+    "FUNDING_EUR": 19948.11,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -256
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -256,
+    "FUNDING_EUR": 19511.17,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276,
+      235
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 235,
+    "FUNDING_EUR": 26286.11,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      190,
+      138,
+      235
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 138,
+    "FUNDING_EUR": 14833.51,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      238
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 238,
+    "FUNDING_EUR": 19149.42,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276,
+      143,
+      235,
+      235
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 143,
+    "FUNDING_EUR": 21854.17,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -13,
+      801,
+      -48
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -48,
+    "FUNDING_EUR": 44040.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 276,
+    "FUNDING_EUR": 21155.51,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      185,
+      238,
+      276,
+      -2781
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 185,
+    "FUNDING_EUR": 12979.33,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276,
+      276,
+      276,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 276,
+    "FUNDING_EUR": 28643.32,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      138,
+      138,
+      138,
+      454
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 138,
+    "FUNDING_EUR": 28572.27,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      235,
+      195,
+      84,
+      131,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 84,
+    "FUNDING_EUR": 18541.89,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      177,
+      418,
+      177,
+      177,
+      177,
+      419,
+      418,
+      177,
+      177,
+      177,
+      346,
+      333,
+      460,
+      641,
+      641,
+      418,
+      418
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 177,
+    "FUNDING_EUR": 45715.64,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      537,
+      125,
+      125,
+      439,
+      516,
+      564,
+      505,
+      156,
+      564,
+      641,
+      600
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 125,
+    "FUNDING_EUR": 32000.94,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      143,
+      133,
+      213,
+      213
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 133,
+    "FUNDING_EUR": 18541.89,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      861,
+      861,
+      96
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 96,
+    "FUNDING_EUR": 95228.35,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      887,
+      887,
+      865,
+      999,
+      817,
+      717,
+      611,
+      489,
+      528,
+      528,
+      613,
+      -275,
+      258,
+      355,
+      494,
+      494,
+      240,
+      -340,
+      -100,
+      -103,
+      66,
+      -102,
+      -179,
+      -179,
+      46,
+      -23,
+      25,
+      -102,
+      66,
+      -107,
+      262,
+      258,
+      -102,
+      262,
+      -380,
+      -258,
+      -380,
+      -380,
+      -380,
+      -380,
+      -43,
+      66,
+      -100,
+      -100,
+      887,
+      481,
+      -1038
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1038,
+    "FUNDING_EUR": 432000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -67
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -67,
+    "FUNDING_EUR": 35831.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      124
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 124,
+    "FUNDING_EUR": 447009.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1032,
+    "RELATIVE_TIME_DAYS": [
+      -274
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -274,
+    "FUNDING_EUR": 186200.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      238,
+      9,
+      450
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 9,
+    "FUNDING_EUR": 145800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      599
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 599,
+    "FUNDING_EUR": 50646.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      80
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 80,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -375
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -375,
+    "FUNDING_EUR": 207722.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      379
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 379,
+    "FUNDING_EUR": 105000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      980,
+      1321,
+      1812,
+      2539
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 980,
+    "FUNDING_EUR": 23400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1124,
+    "RELATIVE_TIME_DAYS": [
+      -1394
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 207177.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      -194
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -194,
+    "FUNDING_EUR": 73154.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      386
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 386,
+    "FUNDING_EUR": 4370.72,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      779
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 779,
+    "FUNDING_EUR": 182500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1277
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 156025.24,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      1124,
+      1124,
+      1124,
+      398,
+      355
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 355,
+    "FUNDING_EUR": 102000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      394,
+      472,
+      756
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 394,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      407,
+      246,
+      194
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 194,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      555,
+      176
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 176,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      281,
+      254,
+      521,
+      17,
+      17,
+      633,
+      633
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 17,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -313
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -313,
+    "FUNDING_EUR": 67107.23,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      9,
+      -447,
+      317,
+      -751,
+      -821,
+      -1038
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1038,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      447,
+      675,
+      557,
+      333,
+      235,
+      795,
+      263,
+      -221,
+      -248,
+      515,
+      557,
+      378,
+      426
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -248,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -161,
+      -68,
+      419
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -161,
+    "FUNDING_EUR": 81538.1,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      408,
+      852,
+      622,
+      752,
+      891,
+      -248
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -248,
+    "FUNDING_EUR": 92376.49,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -282,
+      -186,
+      81,
+      81,
+      710,
+      710
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -282,
+    "FUNDING_EUR": 80440.48,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      496,
+      330,
+      581,
+      122,
+      122,
+      233,
+      704,
+      -482,
+      -195,
+      -307,
+      7,
+      7,
+      -150
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -482,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      255,
+      105,
+      213,
+      945
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 105,
+    "FUNDING_EUR": 83107.13,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      844,
+      193,
+      197,
+      190,
+      87
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 87,
+    "FUNDING_EUR": 94080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      282,
+      617,
+      -39,
+      -39,
+      -39
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -39,
+    "FUNDING_EUR": 94080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      596,
+      670,
+      670,
+      670,
+      -88,
+      73,
+      -293
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -293,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      644
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 644,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      93
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 93,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      484,
+      922,
+      32
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 32,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      785,
+      785,
+      725,
+      704
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 704,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1015,
+    "RELATIVE_TIME_DAYS": [
+      -277
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -277,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -80
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -80,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      543,
+      721,
+      472,
+      375,
+      160,
+      913
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 160,
+    "FUNDING_EUR": 9408.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1063,
+    "RELATIVE_TIME_DAYS": [
+      433
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 433,
+    "FUNDING_EUR": 97963.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1063,
+    "RELATIVE_TIME_DAYS": [
+      860,
+      646,
+      646,
+      750,
+      643,
+      335
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 335,
+    "FUNDING_EUR": 90489.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      553,
+      -41
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -41,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      558,
+      386
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 386,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      205
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 205,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      835,
+      813,
+      466,
+      369,
+      11,
+      -38,
+      -290
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -290,
+    "FUNDING_EUR": 188750.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      506
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 506,
+    "FUNDING_EUR": 43715.06,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      430,
+      430,
+      675
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 430,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      456,
+      641
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 456,
+    "FUNDING_EUR": 45715.64,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1002,
+    "RELATIVE_TIME_DAYS": [
+      81,
+      79,
+      435,
+      771,
+      435,
+      -95
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -95,
+    "FUNDING_EUR": 102294.1,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      993,
+      859,
+      839,
+      264,
+      227,
+      197,
+      259
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 197,
+    "FUNDING_EUR": 176400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 970,
+    "RELATIVE_TIME_DAYS": [
+      133,
+      279,
+      515
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 133,
+    "FUNDING_EUR": 167033.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      371
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 371,
+    "FUNDING_EUR": 429510.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1849,
+      -1850
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 29450.49,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      711,
+      711,
+      531,
+      445,
+      504,
+      448
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 445,
+    "FUNDING_EUR": 47509.23,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      696,
+      279,
+      577,
+      336,
+      94,
+      358,
+      -143,
+      149
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -143,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      168,
+      -1618
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 168,
+    "FUNDING_EUR": 166250.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      107,
+      707,
+      336
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 107,
+    "FUNDING_EUR": 52634.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      106
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 106,
+    "FUNDING_EUR": 300000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      235
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 235,
+    "FUNDING_EUR": 23784.91,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      691,
+      691,
+      400
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 400,
+    "FUNDING_EUR": 239058.39,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      975,
+      1158
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 975,
+    "FUNDING_EUR": 91172.4,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1184,
+    "RELATIVE_TIME_DAYS": [
+      794,
+      966
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 794,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      484
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 484,
+    "FUNDING_EUR": 30414.53,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      984,
+      1031,
+      858,
+      1050,
+      925,
+      869,
+      847,
+      501,
+      501,
+      336,
+      312,
+      109,
+      312,
+      347,
+      347,
+      138,
+      181,
+      466,
+      109,
+      490,
+      501,
+      673,
+      328,
+      362,
+      683,
+      845,
+      241,
+      640,
+      640,
+      349,
+      -24,
+      365,
+      329,
+      51,
+      469,
+      -24,
+      -24,
+      469,
+      -24,
+      604,
+      482,
+      604,
+      407,
+      407,
+      398,
+      975,
+      811
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -24,
+    "FUNDING_EUR": 349080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1093,
+    "RELATIVE_TIME_DAYS": [
+      9,
+      -2,
+      129,
+      495,
+      -21
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -21,
+    "FUNDING_EUR": 270000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      142,
+      108,
+      438,
+      493,
+      457,
+      600,
+      -54,
+      -3680,
+      -3217,
+      -4051,
+      -4427,
+      -4727
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -54,
+    "FUNDING_EUR": 34286.73,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -31,
+      -586,
+      -452
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -586,
+    "FUNDING_EUR": 195655.63,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      686,
+      568,
+      683,
+      939,
+      -61
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -61,
+    "FUNDING_EUR": 40474.08,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      347,
+      537,
+      537
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 347,
+    "FUNDING_EUR": 36000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      847,
+      471,
+      117,
+      107,
+      120,
+      87,
+      -6,
+      147
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -6,
+    "FUNDING_EUR": 300000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      849,
+      846,
+      500,
+      500,
+      136
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 136,
+    "FUNDING_EUR": 300000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      676,
+      -447
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -447,
+    "FUNDING_EUR": 96473.91,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      766,
+      634,
+      189,
+      -24,
+      -39,
+      -169,
+      -324,
+      -455
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -455,
+    "FUNDING_EUR": 70000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      199
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 199,
+    "FUNDING_EUR": 94080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      85
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 85,
+    "FUNDING_EUR": 47588.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      611
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 611,
+    "FUNDING_EUR": 181602.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1033,
+    "RELATIVE_TIME_DAYS": [
+      53
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 53,
+    "FUNDING_EUR": 32972.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1000,
+    "RELATIVE_TIME_DAYS": [
+      614
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 614,
+    "FUNDING_EUR": 94782.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      589,
+      186,
+      0,
+      -70
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -70,
+    "FUNDING_EUR": 122400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      1000,
+      812,
+      641,
+      641,
+      691,
+      257,
+      122,
+      146,
+      -1317
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 122,
+    "FUNDING_EUR": 142200.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      402,
+      -264
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -264,
+    "FUNDING_EUR": 224162.56,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      135,
+      -78,
+      -157,
+      -245,
+      -506,
+      -948
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -948,
+    "FUNDING_EUR": 152517.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      425,
+      92,
+      118,
+      -348,
+      -348,
+      -600,
+      -160,
+      -924
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -600,
+    "FUNDING_EUR": 65637.82,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1283
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 12500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1123,
+    "RELATIVE_TIME_DAYS": [
+      -174,
+      -406,
+      -621,
+      -2419,
+      -2538
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -621,
+    "FUNDING_EUR": 236940.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      42,
+      -15,
+      9
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -15,
+    "FUNDING_EUR": 172500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      421
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 421,
+    "FUNDING_EUR": 253750.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 941,
+    "RELATIVE_TIME_DAYS": [
+      391,
+      117,
+      -207
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -207,
+    "FUNDING_EUR": 200000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      42,
+      398
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 42,
+    "FUNDING_EUR": 42475.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -99,
+      -107
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -107,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1277,
+    "RELATIVE_TIME_DAYS": [
+      1109,
+      520
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 520,
+    "FUNDING_EUR": 82500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      468,
+      -206
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -206,
+    "FUNDING_EUR": 200000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      445,
+      440,
+      432,
+      537,
+      543,
+      537,
+      543,
+      641,
+      641,
+      641,
+      459,
+      446
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 432,
+    "FUNDING_EUR": 32686.67,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      834
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 834,
+    "FUNDING_EUR": 71581.04,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      348,
+      372
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 348,
+    "FUNDING_EUR": 125370.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1036,
+    "RELATIVE_TIME_DAYS": [
+      995,
+      379,
+      339,
+      286,
+      132,
+      -855
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -855,
+    "FUNDING_EUR": 117810.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1156,
+    "RELATIVE_TIME_DAYS": [
+      742
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 742,
+    "FUNDING_EUR": 120120.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      916,
+      341,
+      173,
+      429
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 173,
+    "FUNDING_EUR": 137380.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -35,
+      109,
+      412
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -35,
+    "FUNDING_EUR": 158070.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1036,
+    "RELATIVE_TIME_DAYS": [
+      965,
+      49
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 49,
+    "FUNDING_EUR": 145650.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      45,
+      -25,
+      -27,
+      680
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -27,
+    "FUNDING_EUR": 143080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      202,
+      145,
+      -1,
+      -229,
+      -56
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -229,
+    "FUNDING_EUR": 127050.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      327,
+      -755
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -755,
+    "FUNDING_EUR": 35187.2,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      118,
+      106,
+      478,
+      -1056,
+      -1491,
+      -6
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1056,
+    "FUNDING_EUR": 28676.65,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      -40
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -40,
+    "FUNDING_EUR": 44000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      456,
+      515
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 456,
+    "FUNDING_EUR": 40001.18,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -12
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -12,
+    "FUNDING_EUR": 36050.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -571,
+      282,
+      1121,
+      273,
+      960,
+      1499,
+      872,
+      860
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -571,
+    "FUNDING_EUR": 83107.13,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      875,
+      841,
+      1028,
+      1281,
+      1185,
+      841,
+      841,
+      1016,
+      833,
+      336,
+      224,
+      221,
+      228,
+      669,
+      464,
+      483,
+      321,
+      -37,
+      274,
+      629,
+      505,
+      461,
+      239,
+      475,
+      105,
+      274,
+      575,
+      708,
+      369,
+      281,
+      754,
+      229,
+      595,
+      286,
+      -27,
+      578,
+      -6,
+      211,
+      118,
+      750
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -37,
+    "FUNDING_EUR": 446640.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 941,
+    "RELATIVE_TIME_DAYS": [
+      -38
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -38,
+    "FUNDING_EUR": 279965.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      334,
+      320,
+      456,
+      718,
+      726,
+      486,
+      718,
+      105,
+      649,
+      40,
+      200
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 40,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      640
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 640,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      534,
+      296,
+      114,
+      94
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 94,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      482,
+      106,
+      84,
+      -647
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -647,
+    "FUNDING_EUR": 105000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -73,
+      -108,
+      -473,
+      -474,
+      -1137
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -474,
+    "FUNDING_EUR": 197037.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -11,
+      120,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -11,
+    "FUNDING_EUR": 11125.14,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      866,
+      606,
+      649,
+      67,
+      -221,
+      -148,
+      -47
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -221,
+    "FUNDING_EUR": 187200.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      453,
+      155,
+      27,
+      587,
+      546,
+      469,
+      797,
+      858
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 27,
+    "FUNDING_EUR": 24787.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      716,
+      553,
+      904,
+      383,
+      485,
+      469,
+      70,
+      6,
+      6,
+      127,
+      5,
+      14
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 5,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1105,
+    "RELATIVE_TIME_DAYS": [
+      564,
+      369,
+      206,
+      557,
+      36,
+      138,
+      122,
+      -277,
+      -341,
+      -341,
+      -220,
+      -342,
+      -333
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -342,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1031,
+    "RELATIVE_TIME_DAYS": [
+      624,
+      406,
+      320,
+      695,
+      576,
+      940,
+      -43,
+      -230,
+      -271
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -271,
+    "FUNDING_EUR": 127674.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1248,
+    "RELATIVE_TIME_DAYS": [
+      861,
+      -62,
+      228,
+      127,
+      267,
+      196,
+      -433,
+      1265,
+      255
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -433,
+    "FUNDING_EUR": 238620.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1036,
+    "RELATIVE_TIME_DAYS": [
+      770,
+      753,
+      776,
+      979,
+      406,
+      343,
+      13
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 13,
+    "FUNDING_EUR": 206271.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      288,
+      201,
+      280,
+      -24,
+      358,
+      694,
+      368,
+      -6
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -24,
+    "FUNDING_EUR": 23008.2,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      482,
+      -860
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -860,
+    "FUNDING_EUR": 91200.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      147,
+      137,
+      -474,
+      -416,
+      -643
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -643,
+    "FUNDING_EUR": 22857.82,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      345,
+      345,
+      115,
+      -19,
+      -20,
+      115,
+      457,
+      358,
+      815
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -20,
+    "FUNDING_EUR": 35831.44,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      532,
+      -196,
+      -50
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -196,
+    "FUNDING_EUR": 105000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      641
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 641,
+    "FUNDING_EUR": 40001.18,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      833
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 833,
+    "FUNDING_EUR": 21218.67,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      610,
+      872,
+      -14,
+      450
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -14,
+    "FUNDING_EUR": 45402.84,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      339,
+      481,
+      857
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 339,
+    "FUNDING_EUR": 46015.6,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      209
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 209,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1216,
+    "RELATIVE_TIME_DAYS": [
+      356,
+      648,
+      410,
+      290,
+      857,
+      748,
+      144,
+      125,
+      125,
+      80
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 80,
+    "FUNDING_EUR": 426668.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      373,
+      -61,
+      -22,
+      715,
+      952,
+      761,
+      373,
+      1455,
+      1345,
+      278,
+      446,
+      396,
+      47,
+      463,
+      393,
+      341,
+      756,
+      78,
+      -77
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -77,
+    "FUNDING_EUR": 120450.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      701,
+      243,
+      186
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 186,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -23,
+      -116
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -116,
+    "FUNDING_EUR": 11495.82,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -46,
+      443,
+      1689,
+      968
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -46,
+    "FUNDING_EUR": 32785.69,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1081,
+    "RELATIVE_TIME_DAYS": [
+      238,
+      644,
+      198
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 198,
+    "FUNDING_EUR": 155127.53,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1216,
+    "RELATIVE_TIME_DAYS": [
+      870,
+      644,
+      -53
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -53,
+    "FUNDING_EUR": 382750.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      819
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 819,
+    "FUNDING_EUR": 24394.83,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      845,
+      481,
+      236
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 236,
+    "FUNDING_EUR": 37548.46,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      966,
+      1065,
+      985,
+      305,
+      305,
+      150,
+      846,
+      505,
+      670,
+      89,
+      680,
+      679,
+      -57,
+      -57,
+      0,
+      141,
+      110,
+      -8,
+      -63
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -63,
+    "FUNDING_EUR": 266460.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      999,
+      373,
+      86,
+      -267,
+      -255,
+      -153
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -267,
+    "FUNDING_EUR": 455380.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1186,
+    "RELATIVE_TIME_DAYS": [
+      105,
+      -99,
+      -724
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -724,
+    "FUNDING_EUR": 191814.8,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      615
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 615,
+    "FUNDING_EUR": 358187.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 916,
+    "RELATIVE_TIME_DAYS": [
+      712
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 712,
+    "FUNDING_EUR": 117748.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      144,
+      -749
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -749,
+    "FUNDING_EUR": 150473.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      906,
+      144
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 144,
+    "FUNDING_EUR": 162187.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      913,
+      992,
+      801,
+      796,
+      365,
+      660,
+      -40,
+      101,
+      202,
+      254,
+      226,
+      242,
+      258,
+      486,
+      434,
+      1060,
+      847
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -40,
+    "FUNDING_EUR": 169200.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      67,
+      -122,
+      -459
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -459,
+    "FUNDING_EUR": 267000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      421,
+      785,
+      113,
+      358,
+      752,
+      677,
+      -28,
+      234,
+      144
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -28,
+    "FUNDING_EUR": 136800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      439,
+      439,
+      602,
+      313,
+      313,
+      313,
+      62,
+      -286,
+      -462,
+      -107,
+      -60,
+      -225,
+      -261,
+      -136
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -462,
+    "FUNDING_EUR": 140400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      505
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 505,
+    "FUNDING_EUR": 16678.38,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      713
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 713,
+    "FUNDING_EUR": 332407.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      79
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 79,
+    "FUNDING_EUR": 89000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      1012,
+      949,
+      935,
+      928,
+      -19,
+      523,
+      746,
+      550,
+      550,
+      751,
+      93,
+      -24,
+      -1407
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -24,
+    "FUNDING_EUR": 426668.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      363,
+      289,
+      314,
+      291,
+      -348,
+      356,
+      -178,
+      -963,
+      -1170
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -963,
+    "FUNDING_EUR": 157500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      472,
+      9,
+      -293,
+      -312,
+      -640
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -640,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 943,
+    "RELATIVE_TIME_DAYS": [
+      680
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 680,
+    "FUNDING_EUR": 59400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1186,
+    "RELATIVE_TIME_DAYS": [
+      632
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 632,
+    "FUNDING_EUR": 103570.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      89,
+      -19,
+      338,
+      533,
+      461,
+      134
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -19,
+    "FUNDING_EUR": 16457.63,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1187,
+    "RELATIVE_TIME_DAYS": [
+      732,
+      -93,
+      -203
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -203,
+    "FUNDING_EUR": 95944.13,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      442
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 442,
+    "FUNDING_EUR": 23391.66,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      506,
+      404,
+      45,
+      348
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 45,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -259
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -259,
+    "FUNDING_EUR": 323450.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      489,
+      -97
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -97,
+    "FUNDING_EUR": 179987.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      89,
+      276,
+      89,
+      276,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 89,
+    "FUNDING_EUR": 30350.51,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      -721
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -721,
+    "FUNDING_EUR": 15000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      434,
+      -1488
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 434,
+    "FUNDING_EUR": 765768.4,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      124,
+      121,
+      -20,
+      -82
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -82,
+    "FUNDING_EUR": 20060.74,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      584,
+      639,
+      353,
+      353,
+      353,
+      -17,
+      -169,
+      -356
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -356,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      -6,
+      229,
+      214,
+      113,
+      113,
+      115,
+      1,
+      20,
+      362,
+      362,
+      612,
+      493,
+      1049,
+      862,
+      736,
+      1201,
+      73,
+      832,
+      617,
+      313,
+      202,
+      68,
+      81,
+      -309,
+      -309,
+      -376,
+      1056,
+      -211,
+      -107
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -376,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1187,
+    "RELATIVE_TIME_DAYS": [
+      266,
+      235,
+      -52,
+      -161,
+      -49,
+      -49,
+      -306,
+      -190
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -306,
+    "FUNDING_EUR": 254332.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      463
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 463,
+    "FUNDING_EUR": 41189.58,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1248,
+    "RELATIVE_TIME_DAYS": [
+      18
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 18,
+    "FUNDING_EUR": 100062.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      763,
+      464,
+      -180,
+      345,
+      -40,
+      37,
+      98,
+      304,
+      547,
+      74
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -180,
+    "FUNDING_EUR": 31650.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 943,
+    "RELATIVE_TIME_DAYS": [
+      479
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 479,
+    "FUNDING_EUR": 40455.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      530,
+      406
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 406,
+    "FUNDING_EUR": 90217.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      541,
+      469,
+      392,
+      221,
+      221,
+      -198,
+      -494
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -494,
+    "FUNDING_EUR": 275500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1647
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 70000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1019
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1019,
+    "FUNDING_EUR": 205000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1198,
+    "RELATIVE_TIME_DAYS": [
+      -167
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -167,
+    "FUNDING_EUR": 221676.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -278
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -278,
+    "FUNDING_EUR": 143809.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -21,
+      21,
+      703,
+      21,
+      -106,
+      767,
+      1070,
+      1035,
+      1188
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -106,
+    "FUNDING_EUR": 33120.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1216,
+    "RELATIVE_TIME_DAYS": [
+      109,
+      29,
+      226,
+      185,
+      339,
+      647,
+      859,
+      438,
+      1087,
+      297,
+      1016,
+      -198,
+      -276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -276,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 944,
+    "RELATIVE_TIME_DAYS": [
+      134,
+      134,
+      318,
+      314,
+      -306,
+      -380
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -380,
+    "FUNDING_EUR": 121845.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1085,
+    "RELATIVE_TIME_DAYS": [
+      -605
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -605,
+    "FUNDING_EUR": 75000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1033,
+    "RELATIVE_TIME_DAYS": [
+      631,
+      687,
+      1000,
+      955,
+      1000,
+      471,
+      210,
+      114,
+      -35,
+      -358
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -358,
+    "FUNDING_EUR": 519180.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      175,
+      181
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 175,
+    "FUNDING_EUR": 549720.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      206
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 206,
+    "FUNDING_EUR": 13333.02,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      79,
+      264,
+      100,
+      -38,
+      460,
+      339,
+      545
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -38,
+    "FUNDING_EUR": 57542.29,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      24,
+      -23,
+      -32,
+      -32,
+      454,
+      -86,
+      -86,
+      -92
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -92,
+    "FUNDING_EUR": 50111.59,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1277,
+    "RELATIVE_TIME_DAYS": [
+      102
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 102,
+    "FUNDING_EUR": 62720.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      465,
+      -778
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -778,
+    "FUNDING_EUR": 197971.9,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      172,
+      305,
+      118,
+      -47,
+      623,
+      118,
+      460,
+      715,
+      830,
+      278,
+      866,
+      993,
+      1119,
+      1072,
+      195,
+      195,
+      461,
+      218,
+      489,
+      202,
+      469,
+      489,
+      469,
+      1343,
+      838,
+      750,
+      958,
+      374,
+      278,
+      911,
+      459,
+      1138,
+      819,
+      943,
+      829,
+      666,
+      319,
+      320
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -47,
+    "FUNDING_EUR": 306870.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      686
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 686,
+    "FUNDING_EUR": 81806.91,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      700,
+      469,
+      562,
+      590,
+      428,
+      428
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 428,
+    "FUNDING_EUR": 79889.57,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      242,
+      182,
+      179,
+      116,
+      423,
+      394,
+      361,
+      92
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 92,
+    "FUNDING_EUR": 100662.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      552,
+      815,
+      815,
+      715
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 552,
+    "FUNDING_EUR": 38861.22,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      471,
+      348,
+      210
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 210,
+    "FUNDING_EUR": 41414.52,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      499
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 499,
+    "FUNDING_EUR": 25143.6,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 973,
+    "RELATIVE_TIME_DAYS": [
+      624,
+      748,
+      258,
+      360
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 258,
+    "FUNDING_EUR": 685664.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 941,
+    "RELATIVE_TIME_DAYS": [
+      513
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 513,
+    "FUNDING_EUR": 664237.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      553,
+      538,
+      621,
+      302,
+      -578,
+      -34
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -578,
+    "FUNDING_EUR": 300000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1246,
+    "RELATIVE_TIME_DAYS": [
+      849,
+      1020,
+      796,
+      117,
+      117,
+      -284,
+      -1216,
+      -1565
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1216,
+    "FUNDING_EUR": 93855.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      649,
+      456
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 456,
+    "FUNDING_EUR": 411000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -389,
+      -724
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -724,
+    "FUNDING_EUR": 248700.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      860,
+      473,
+      662,
+      564,
+      190,
+      88,
+      208,
+      -160,
+      -29,
+      -349
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -349,
+    "FUNDING_EUR": 246375.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      208
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 208,
+    "FUNDING_EUR": 392175.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1245,
+    "RELATIVE_TIME_DAYS": [
+      480,
+      74,
+      -126,
+      -169
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -169,
+    "FUNDING_EUR": 129150.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1073,
+    "RELATIVE_TIME_DAYS": [
+      443
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 443,
+    "FUNDING_EUR": 201336.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      447
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 447,
+    "FUNDING_EUR": 192000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -989
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -989,
+    "FUNDING_EUR": 175000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1187,
+    "RELATIVE_TIME_DAYS": [
+      23
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 23,
+    "FUNDING_EUR": 128262.61,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      926,
+      1192,
+      1220,
+      933,
+      949,
+      686,
+      543,
+      -10,
+      -36,
+      -81,
+      257,
+      926
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -81,
+    "FUNDING_EUR": 176400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      308,
+      314,
+      658,
+      425,
+      76,
+      -272,
+      -1022
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1022,
+    "FUNDING_EUR": 94080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      502,
+      277,
+      502,
+      90,
+      -225,
+      161,
+      -399
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -399,
+    "FUNDING_EUR": 25000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      650,
+      540,
+      289,
+      207,
+      207,
+      207,
+      129,
+      -58,
+      -107,
+      -117,
+      759,
+      -208,
+      -395,
+      -394
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -395,
+    "FUNDING_EUR": 531528.3,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      586,
+      471,
+      353
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 353,
+    "FUNDING_EUR": 37962.51,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      138,
+      276,
+      276,
+      276,
+      276,
+      276,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 138,
+    "FUNDING_EUR": 44393.03,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      785,
+      943,
+      697,
+      785,
+      425,
+      425,
+      354,
+      -43,
+      -39,
+      -43,
+      39,
+      -770
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -770,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      608,
+      263,
+      44
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 44,
+    "FUNDING_EUR": 251812.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      973,
+      830,
+      973,
+      724,
+      654,
+      752,
+      551,
+      -129
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -129,
+    "FUNDING_EUR": 69000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1019,
+      290,
+      236,
+      215,
+      916,
+      -82,
+      619
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -82,
+    "FUNDING_EUR": 25488.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -3
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -3,
+    "FUNDING_EUR": 151625.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      275,
+      460,
+      259,
+      19,
+      829,
+      558,
+      797,
+      552,
+      868,
+      1018,
+      992,
+      1018,
+      94,
+      -22,
+      -22,
+      -7,
+      -29,
+      283,
+      694,
+      593,
+      622,
+      936
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -29,
+    "FUNDING_EUR": 135130.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -22,
+      -7,
+      283,
+      -29,
+      694,
+      593,
+      622
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -29,
+    "FUNDING_EUR": 30600.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      494,
+      806,
+      6
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 6,
+    "FUNDING_EUR": 29736.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      124,
+      460,
+      131,
+      117,
+      -74,
+      -74
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -74,
+    "FUNDING_EUR": 34286.73,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -21
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -21,
+    "FUNDING_EUR": 63500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      20,
+      260,
+      387,
+      -29
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -29,
+    "FUNDING_EUR": 33030.55,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      87,
+      447,
+      128,
+      202,
+      446,
+      128,
+      128,
+      641,
+      641,
+      641,
+      641,
+      641,
+      641,
+      641
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 87,
+    "FUNDING_EUR": 46099.11,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      229,
+      67,
+      514,
+      797,
+      615,
+      482,
+      1201,
+      -597
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -597,
+    "FUNDING_EUR": 41414.52,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1040,
+      1040,
+      1029,
+      204,
+      -42,
+      -42,
+      171,
+      263,
+      559,
+      474,
+      446,
+      832,
+      778,
+      446,
+      1030,
+      -3,
+      -80,
+      -189,
+      -218
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -218,
+    "FUNDING_EUR": 374340.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      334,
+      789,
+      675,
+      892,
+      57,
+      508,
+      413,
+      -57
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -57,
+    "FUNDING_EUR": 190800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      542,
+      702,
+      542,
+      -89,
+      68
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -89,
+    "FUNDING_EUR": 176400.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      444,
+      875
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 444,
+    "FUNDING_EUR": 580887.7,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      173,
+      132,
+      15,
+      126,
+      319,
+      124,
+      544
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 15,
+    "FUNDING_EUR": 286799.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      627
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 627,
+    "FUNDING_EUR": 413125.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      143
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 143,
+    "FUNDING_EUR": 196068.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      137,
+      144,
+      276,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 137,
+    "FUNDING_EUR": 51098.19,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1277,
+    "RELATIVE_TIME_DAYS": [
+      1064,
+      45
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 45,
+    "FUNDING_EUR": 375000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      278,
+      339,
+      958,
+      -16,
+      679,
+      703,
+      942,
+      883,
+      850,
+      839,
+      942,
+      -617,
+      -1279
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -617,
+    "FUNDING_EUR": 36730.63,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      734,
+      734,
+      969,
+      969,
+      969,
+      399,
+      249,
+      265,
+      235
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 235,
+    "FUNDING_EUR": 9600.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      554
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 554,
+    "FUNDING_EUR": 100480.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      105,
+      214,
+      455,
+      -76,
+      -76,
+      -76,
+      -32,
+      -32,
+      334,
+      -80
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -80,
+    "FUNDING_EUR": 11504.1,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -300
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -300,
+    "FUNDING_EUR": 50458.3,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1100,
+    "RELATIVE_TIME_DAYS": [
+      540,
+      505,
+      325,
+      565
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 325,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 912,
+    "RELATIVE_TIME_DAYS": [
+      502,
+      221,
+      66,
+      -114,
+      -877
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -877,
+    "FUNDING_EUR": 307656.96,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      641,
+      318,
+      94,
+      94,
+      -10
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -10,
+    "FUNDING_EUR": 26066.37,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1289,
+      -1349,
+      -1456,
+      -2324,
+      -1238
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 1325049.15,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -472,
+      -499
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -499,
+    "FUNDING_EUR": 100480.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      728,
+      728,
+      649,
+      559,
+      473,
+      649,
+      369,
+      369,
+      361,
+      361,
+      193,
+      96,
+      96,
+      3,
+      -1,
+      -2,
+      963,
+      -8,
+      -8
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -8,
+    "FUNDING_EUR": 72000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      489,
+      320
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 320,
+    "FUNDING_EUR": 300000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1234,
+      -899,
+      -346,
+      -795,
+      -986,
+      -188,
+      -861,
+      140,
+      -5394
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -986,
+    "FUNDING_EUR": 80760.04,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      558,
+      558,
+      368
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 368,
+    "FUNDING_EUR": 100480.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      144,
+      -126
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -126,
+    "FUNDING_EUR": 100375.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      22
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 22,
+    "FUNDING_EUR": 29220.42,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      382,
+      -3,
+      382
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -3,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1033,
+    "RELATIVE_TIME_DAYS": [
+      -962,
+      -1230
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -962,
+    "FUNDING_EUR": 3000000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1187,
+    "RELATIVE_TIME_DAYS": [
+      -48,
+      -1604
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -48,
+    "FUNDING_EUR": 757600.23,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      472,
+      42,
+      273,
+      273,
+      29
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 29,
+    "FUNDING_EUR": 100375.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1020,
+    "RELATIVE_TIME_DAYS": [
+      206,
+      -13,
+      -141
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -141,
+    "FUNDING_EUR": 283727.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      690,
+      146
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 146,
+    "FUNDING_EUR": 68000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1033,
+    "RELATIVE_TIME_DAYS": [
+      -1817
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 351514.07,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      13
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 13,
+    "FUNDING_EUR": 280000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      15,
+      -79
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -79,
+    "FUNDING_EUR": 567315.66,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1044
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1044,
+    "FUNDING_EUR": 164899.98,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      286,
+      462
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 286,
+    "FUNDING_EUR": 24848.84,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      605,
+      405,
+      528
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 405,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      678,
+      248
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 248,
+    "FUNDING_EUR": 92800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1277,
+    "RELATIVE_TIME_DAYS": [
+      -55
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -55,
+    "FUNDING_EUR": 149072.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      8,
+      -245
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -245,
+    "FUNDING_EUR": 76738.14,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1033,
+    "RELATIVE_TIME_DAYS": [
+      -237,
+      -1951
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -237,
+    "FUNDING_EUR": 393700.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      140,
+      -1126,
+      -1444
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 140,
+    "FUNDING_EUR": 401566.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      448,
+      172,
+      10,
+      10,
+      245,
+      699,
+      724,
+      -188,
+      581,
+      -727,
+      -741,
+      -953,
+      -1079,
+      -1314,
+      -389,
+      -1123,
+      -522,
+      -1533,
+      -1806,
+      -1806,
+      -1694,
+      -2515
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1079,
+    "FUNDING_EUR": 56160.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1082,
+    "RELATIVE_TIME_DAYS": [
+      -1653
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 37223.1,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -534
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -534,
+    "FUNDING_EUR": 151515.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      826
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 826,
+    "FUNDING_EUR": 17463.21,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      315,
+      315,
+      735,
+      1018,
+      675,
+      675
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 315,
+    "FUNDING_EUR": 84000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1005,
+    "RELATIVE_TIME_DAYS": [
+      -1871,
+      -2307
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 289800.02,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      22,
+      -170
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -170,
+    "FUNDING_EUR": 179896.33,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1060,
+    "RELATIVE_TIME_DAYS": [
+      485
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 485,
+    "FUNDING_EUR": 90526.91,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      -1390
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 138449.96,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 930,
+    "RELATIVE_TIME_DAYS": [
+      453,
+      453,
+      86,
+      -291,
+      -332
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -332,
+    "FUNDING_EUR": 92800.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -43
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -43,
+    "FUNDING_EUR": 431892.45,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      -166,
+      -166,
+      -449
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -449,
+    "FUNDING_EUR": 406915.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1279,
+    "RELATIVE_TIME_DAYS": [
+      127
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 127,
+    "FUNDING_EUR": 217680.01,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      57,
+      -77,
+      295,
+      691
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -77,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      603,
+      -1488
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 603,
+    "FUNDING_EUR": 1500000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -161
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -161,
+    "FUNDING_EUR": 321134.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      739,
+      363,
+      739,
+      -176
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -176,
+    "FUNDING_EUR": 100375.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 944,
+    "RELATIVE_TIME_DAYS": [
+      124
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 124,
+    "FUNDING_EUR": 107030.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      922
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 922,
+    "FUNDING_EUR": 83877.71,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -115,
+      -442,
+      -761,
+      -883
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -883,
+    "FUNDING_EUR": 50039.88,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      954,
+      975,
+      1006,
+      496
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 496,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1033,
+      1070,
+      887,
+      1073,
+      418,
+      320,
+      261,
+      98,
+      -128
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -128,
+    "FUNDING_EUR": 76000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      380
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 380,
+    "FUNDING_EUR": 82000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      343,
+      -167,
+      -189,
+      -168
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -189,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -304
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -304,
+    "FUNDING_EUR": 16068.03,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -80,
+      444,
+      777
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -80,
+    "FUNDING_EUR": 94080.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -18
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -18,
+    "FUNDING_EUR": 96240.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      447,
+      201,
+      201,
+      -1468,
+      -654,
+      -633,
+      -529,
+      -470,
+      -447,
+      54,
+      25,
+      -1071,
+      -1440,
+      -1640,
+      -2454,
+      -2543,
+      -2551
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1071,
+    "FUNDING_EUR": 711888.3,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      63
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 63,
+    "FUNDING_EUR": 34512.3,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1154,
+    "RELATIVE_TIME_DAYS": [
+      -174,
+      -226,
+      -265,
+      -2033,
+      -3276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -265,
+    "FUNDING_EUR": 733181.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1247,
+    "RELATIVE_TIME_DAYS": [
+      576,
+      941,
+      110,
+      19,
+      19,
+      19,
+      -96,
+      -430,
+      -528,
+      -80,
+      -897,
+      -789,
+      -535,
+      -1240
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1240,
+    "FUNDING_EUR": 524506.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      725,
+      429,
+      244,
+      178,
+      -43,
+      65,
+      -512,
+      -147
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -512,
+    "FUNDING_EUR": 418573.4,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 276,
+    "FUNDING_EUR": 24652.75,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -317,
+      -602
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -602,
+    "FUNDING_EUR": 120000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      543,
+      133
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 133,
+    "FUNDING_EUR": 385106.25,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      33,
+      -177,
+      -470,
+      -82
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -470,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      316,
+      176,
+      148,
+      -8,
+      323,
+      925,
+      569
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -8,
+    "FUNDING_EUR": 83292.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      -325
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -325,
+    "FUNDING_EUR": 402467.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1124,
+    "RELATIVE_TIME_DAYS": [
+      -7,
+      -208,
+      -491,
+      -299,
+      -337
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -491,
+    "FUNDING_EUR": 573157.2,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      292,
+      362,
+      433,
+      397,
+      77,
+      -2,
+      -91,
+      -522,
+      -532,
+      -574,
+      -317,
+      -168,
+      -679,
+      -30,
+      -606,
+      -288,
+      -343,
+      -1122,
+      -389,
+      -303,
+      -387,
+      -343,
+      -1276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -679,
+    "FUNDING_EUR": 438035.5,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -680,
+      -1
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -680,
+    "FUNDING_EUR": 72500.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 943,
+    "RELATIVE_TIME_DAYS": [
+      -130,
+      -134,
+      -206,
+      -429,
+      -480,
+      -505,
+      -562
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -562,
+    "FUNDING_EUR": 162523.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      806,
+      530,
+      435,
+      224,
+      149,
+      142,
+      -432,
+      45
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -432,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      374,
+      107,
+      368,
+      13
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 13,
+    "FUNDING_EUR": 87206.25,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      923
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 923,
+    "FUNDING_EUR": 53668.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1078,
+      -1778
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1078,
+    "FUNDING_EUR": 138448.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1034,
+    "RELATIVE_TIME_DAYS": [
+      531
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 531,
+    "FUNDING_EUR": 216746.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      317,
+      -137
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -137,
+    "FUNDING_EUR": 75325.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      480,
+      -48
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -48,
+    "FUNDING_EUR": 43675.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      843,
+      739,
+      682,
+      7
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 7,
+    "FUNDING_EUR": 41843.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      653
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 653,
+    "FUNDING_EUR": 215441.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -16
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -16,
+    "FUNDING_EUR": 54207.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -638
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -638,
+    "FUNDING_EUR": 48880.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1216,
+    "RELATIVE_TIME_DAYS": [
+      758,
+      -95
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -95,
+    "FUNDING_EUR": 45400.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      247
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 247,
+    "FUNDING_EUR": 214700.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -995
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -995,
+    "FUNDING_EUR": 19590.2,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1067,
+      59,
+      343,
+      203
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 59,
+    "FUNDING_EUR": 26640.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      101,
+      339,
+      860,
+      1063
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 101,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -10,
+      720,
+      819
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -10,
+    "FUNDING_EUR": 27608.88,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1047,
+      1067,
+      343,
+      343,
+      59,
+      203,
+      1047
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 59,
+    "FUNDING_EUR": 26640.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -71,
+      650,
+      838
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -71,
+    "FUNDING_EUR": 30600.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      474,
+      568
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 474,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      588,
+      99,
+      466
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 99,
+    "FUNDING_EUR": 24388.68,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      302,
+      154,
+      433,
+      -91
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -91,
+    "FUNDING_EUR": 23391.66,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1003,
+    "RELATIVE_TIME_DAYS": [
+      -104,
+      602
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -104,
+    "FUNDING_EUR": 11350.71,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      616,
+      650,
+      650,
+      749,
+      946
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 616,
+    "FUNDING_EUR": 31096.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      266,
+      -231,
+      466,
+      455
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -231,
+    "FUNDING_EUR": 33120.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      331,
+      321,
+      847
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 321,
+    "FUNDING_EUR": 53299.25,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      800,
+      568,
+      197,
+      13,
+      -335,
+      -982,
+      -202,
+      -459,
+      -558
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -982,
+    "FUNDING_EUR": 526194.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -171,
+      804,
+      411,
+      154
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -171,
+    "FUNDING_EUR": 183600.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      612,
+      62,
+      -1444
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 62,
+    "FUNDING_EUR": 158079.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      560,
+      574,
+      1006,
+      846,
+      -38,
+      -38,
+      335,
+      622,
+      442,
+      560,
+      336,
+      -6,
+      442,
+      574,
+      855,
+      855,
+      863,
+      -59
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -59,
+    "FUNDING_EUR": 244462.05,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1186,
+    "RELATIVE_TIME_DAYS": [
+      410,
+      749
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 410,
+    "FUNDING_EUR": 416001.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      92
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 92,
+    "FUNDING_EUR": 32984.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1096,
+    "RELATIVE_TIME_DAYS": [
+      684
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 684,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      346,
+      -71,
+      458
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -71,
+    "FUNDING_EUR": 26286.49,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      187,
+      461,
+      841,
+      726,
+      92,
+      851,
+      90,
+      -99
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -99,
+    "FUNDING_EUR": 43200.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1087,
+      1087,
+      1093,
+      825,
+      825,
+      825,
+      87,
+      710,
+      -49
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -49,
+    "FUNDING_EUR": 33900.59,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276,
+      276,
+      276,
+      78,
+      275,
+      276,
+      275
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 78,
+    "FUNDING_EUR": 18541.89,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      837,
+      -990,
+      -990,
+      -997
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -997,
+    "FUNDING_EUR": 34280.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      313,
+      590,
+      495
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 313,
+    "FUNDING_EUR": 24832.31,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      560,
+      476
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 476,
+    "FUNDING_EUR": 28760.25,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      84,
+      32,
+      84
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 32,
+    "FUNDING_EUR": 28572.27,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      634,
+      -38
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -38,
+    "FUNDING_EUR": 169200.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      450,
+      450,
+      450,
+      450,
+      450,
+      640,
+      640,
+      640,
+      215,
+      499
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 215,
+    "FUNDING_EUR": 21714.93,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      257,
+      309,
+      158,
+      320,
+      126,
+      434,
+      901,
+      904,
+      357
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 126,
+    "FUNDING_EUR": 39344.01,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 943,
+    "RELATIVE_TIME_DAYS": [
+      90,
+      135,
+      213,
+      616,
+      533,
+      484,
+      699,
+      616,
+      609,
+      479,
+      699,
+      827,
+      45,
+      135,
+      818
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 45,
+    "FUNDING_EUR": 28760.25,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      660,
+      886
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 660,
+    "FUNDING_EUR": 37708.82,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      120,
+      288,
+      152,
+      508,
+      967,
+      287
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 120,
+    "FUNDING_EUR": 206400.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      469,
+      478,
+      821,
+      821
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 469,
+    "FUNDING_EUR": 28893.69,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      245,
+      304,
+      561,
+      609,
+      478,
+      709,
+      821,
+      821
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 245,
+    "FUNDING_EUR": 27155.81,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      158,
+      380,
+      713,
+      1088,
+      372,
+      697,
+      1052,
+      577
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 158,
+    "FUNDING_EUR": 37279.92,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      99,
+      415
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 99,
+    "FUNDING_EUR": 23382.46,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      359,
+      917
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 359,
+    "FUNDING_EUR": 24394.83,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1009,
+      1009,
+      1244,
+      563,
+      605,
+      621
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 563,
+    "FUNDING_EUR": 140400.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      345,
+      341
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 341,
+    "FUNDING_EUR": 292150.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      148,
+      198,
+      220
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 148,
+    "FUNDING_EUR": 26382.72,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      156,
+      188,
+      212,
+      156,
+      71
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 71,
+    "FUNDING_EUR": 11125.14,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      171,
+      275,
+      -33,
+      275,
+      275,
+      -88,
+      -33,
+      -114
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -114,
+    "FUNDING_EUR": 14042.52,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      170,
+      170,
+      170,
+      170,
+      170
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 170,
+    "FUNDING_EUR": 17614.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      203,
+      -74
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -74,
+    "FUNDING_EUR": 20076.53,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -114
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -114,
+    "FUNDING_EUR": 42858.4,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      127,
+      229
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 127,
+    "FUNDING_EUR": 22474.35,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      707,
+      603,
+      546,
+      349
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 349,
+    "FUNDING_EUR": 86958.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      160
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 160,
+    "FUNDING_EUR": 50000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      663,
+      596,
+      834,
+      828
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 596,
+    "FUNDING_EUR": 36889.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      834,
+      704,
+      610,
+      540,
+      -123,
+      -330,
+      -420
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -420,
+    "FUNDING_EUR": 21571.2,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      247
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 247,
+    "FUNDING_EUR": 21470.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      513,
+      308,
+      307,
+      249,
+      13
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 13,
+    "FUNDING_EUR": 298000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      112,
+      134
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 112,
+    "FUNDING_EUR": 37623.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      275,
+      -257
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -257,
+    "FUNDING_EUR": 29541.77,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      297
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 297,
+    "FUNDING_EUR": 190000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -278
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -278,
+    "FUNDING_EUR": 297000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      287
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 287,
+    "FUNDING_EUR": 58705.88,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      424,
+      424,
+      273,
+      424,
+      -45,
+      -442
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -442,
+    "FUNDING_EUR": 297160.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      309,
+      71,
+      269,
+      71,
+      685
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 71,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      257,
+      -210
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -210,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      255
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 255,
+    "FUNDING_EUR": 89176.56,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      508
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 508,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      666,
+      289,
+      763,
+      796,
+      796,
+      -286,
+      322,
+      -44
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -286,
+    "FUNDING_EUR": 91843.21,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      682,
+      878,
+      909
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 682,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1239,
+      707,
+      654,
+      708,
+      416
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 416,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      484,
+      121,
+      115,
+      -47,
+      820
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -47,
+    "FUNDING_EUR": 100480.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      346,
+      46
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 46,
+    "FUNDING_EUR": 538822.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      450,
+      -25,
+      99,
+      9,
+      238,
+      177,
+      454,
+      454,
+      1005,
+      720,
+      720,
+      920,
+      720,
+      668,
+      -1358
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -25,
+    "FUNDING_EUR": 39650.79,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      198,
+      138,
+      535,
+      640,
+      544
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 138,
+    "FUNDING_EUR": 29143.71,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      951,
+      -42
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -42,
+    "FUNDING_EUR": 27155.81,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      1029,
+      847,
+      314,
+      233,
+      125
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 125,
+    "FUNDING_EUR": 331154.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      640,
+      46
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 46,
+    "FUNDING_EUR": 32269.37,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      -112
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -112,
+    "FUNDING_EUR": 243967.06,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      909,
+      924,
+      851,
+      834,
+      162,
+      92,
+      -45,
+      648,
+      187,
+      726,
+      455,
+      411,
+      109,
+      109,
+      692,
+      106,
+      106,
+      138
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -45,
+    "FUNDING_EUR": 206400.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      549,
+      557,
+      1030
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 549,
+    "FUNDING_EUR": 172800.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      134,
+      194,
+      -268
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -268,
+    "FUNDING_EUR": 14833.51,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      134,
+      203,
+      -268
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -268,
+    "FUNDING_EUR": 39929.29,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      578,
+      333,
+      588
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 333,
+    "FUNDING_EUR": 471850.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      113,
+      34,
+      105,
+      140,
+      14,
+      -15,
+      1007,
+      -30,
+      287,
+      901,
+      862,
+      833,
+      -241,
+      631,
+      931,
+      453,
+      999,
+      1116,
+      946,
+      321,
+      866,
+      467,
+      301,
+      445,
+      861,
+      741,
+      939,
+      939,
+      392,
+      285,
+      629,
+      183,
+      -443
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -443,
+    "FUNDING_EUR": 125760.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      751,
+      -44,
+      264,
+      -260,
+      928,
+      581,
+      825
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -260,
+    "FUNDING_EUR": 27000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      87,
+      825
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 87,
+    "FUNDING_EUR": 28241.79,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      165,
+      159,
+      -5,
+      165,
+      232
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -5,
+    "FUNDING_EUR": 18177.37,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      183,
+      224,
+      208,
+      197,
+      276,
+      185,
+      99,
+      275,
+      192,
+      275
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 99,
+    "FUNDING_EUR": 29651.25,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      372,
+      -443
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -443,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      291,
+      117,
+      -1569
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 117,
+    "FUNDING_EUR": 99300.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      464,
+      -510
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -510,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      128,
+      -458,
+      -458
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -458,
+    "FUNDING_EUR": 21687.7,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      636,
+      663,
+      595,
+      534,
+      460,
+      155,
+      9,
+      0,
+      -478,
+      -98
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -478,
+    "FUNDING_EUR": 767311.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      79,
+      827,
+      1224
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 79,
+    "FUNDING_EUR": 22701.42,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      641,
+      640,
+      640
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 640,
+    "FUNDING_EUR": 21714.93,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      258,
+      -63,
+      -331
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -331,
+    "FUNDING_EUR": 231190.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1113,
+    "RELATIVE_TIME_DAYS": [
+      965
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 965,
+    "FUNDING_EUR": 95350.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      252,
+      193,
+      444
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 193,
+    "FUNDING_EUR": 153220.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      377,
+      -6,
+      570,
+      585,
+      731,
+      770
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -6,
+    "FUNDING_EUR": 153220.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1279,
+    "RELATIVE_TIME_DAYS": [
+      -90,
+      -90,
+      -90,
+      680
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -90,
+    "FUNDING_EUR": 69300.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -7,
+      -30,
+      203,
+      627,
+      370,
+      -242
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -242,
+    "FUNDING_EUR": 123200.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      257
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 257,
+    "FUNDING_EUR": 144050.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -3
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -3,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1215,
+    "RELATIVE_TIME_DAYS": [
+      191,
+      191,
+      267,
+      540,
+      -592,
+      -675,
+      -705
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -705,
+    "FUNDING_EUR": 226575.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      246,
+      584,
+      1114,
+      884
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 246,
+    "FUNDING_EUR": 79907.14,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      435,
+      -324,
+      -1582
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -324,
+    "FUNDING_EUR": 458495.65,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      91
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 91,
+    "FUNDING_EUR": 25143.6,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      2,
+      143,
+      95,
+      95,
+      230,
+      20,
+      95,
+      20,
+      -22,
+      942,
+      435,
+      435,
+      440,
+      381,
+      381,
+      -60,
+      -329,
+      -272
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -329,
+    "FUNDING_EUR": 41276.7,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1063,
+    "RELATIVE_TIME_DAYS": [
+      636,
+      610,
+      473,
+      460,
+      379,
+      191,
+      227,
+      107,
+      16,
+      842,
+      790,
+      728,
+      729,
+      854,
+      -65
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -65,
+    "FUNDING_EUR": 91463.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1072,
+    "RELATIVE_TIME_DAYS": [
+      -718
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -718,
+    "FUNDING_EUR": 83333.33,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      815,
+      133,
+      -57,
+      -467,
+      -483,
+      -862
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -862,
+    "FUNDING_EUR": 105900.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      558
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 558,
+    "FUNDING_EUR": 253500.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      615,
+      422,
+      615,
+      422,
+      422,
+      257,
+      257
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 257,
+    "FUNDING_EUR": 287602.42,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      444
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 444,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      77,
+      267,
+      -35,
+      -149
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -149,
+    "FUNDING_EUR": 771372.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -154
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -154,
+    "FUNDING_EUR": 119486.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -19
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -19,
+    "FUNDING_EUR": 33511.51,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      780,
+      455,
+      13,
+      743
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 13,
+    "FUNDING_EUR": 31066.43,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -380
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -380,
+    "FUNDING_EUR": 280000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1216,
+    "RELATIVE_TIME_DAYS": [
+      679,
+      663,
+      897,
+      590,
+      251,
+      360,
+      121,
+      140,
+      274,
+      330,
+      536,
+      513,
+      259,
+      588
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 121,
+    "FUNDING_EUR": 426668.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      939,
+      939,
+      741,
+      333,
+      333,
+      559,
+      -87,
+      504,
+      504,
+      504,
+      110,
+      699
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -87,
+    "FUNDING_EUR": 36000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      636,
+      507
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 507,
+    "FUNDING_EUR": 517830.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      636
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 636,
+    "FUNDING_EUR": 129070.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      524,
+      556,
+      579,
+      -228
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -228,
+    "FUNDING_EUR": 84898.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      -57,
+      47
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -57,
+    "FUNDING_EUR": 685664.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 941,
+    "RELATIVE_TIME_DAYS": [
+      -47,
+      -22,
+      584,
+      -357
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -357,
+    "FUNDING_EUR": 664237.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      596,
+      343,
+      288,
+      332
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 288,
+    "FUNDING_EUR": 27155.81,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      209,
+      221,
+      275,
+      275,
+      221,
+      209,
+      -23,
+      -90
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -90,
+    "FUNDING_EUR": 26292.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      73,
+      830,
+      92,
+      -575
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -575,
+    "FUNDING_EUR": 549720.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      148,
+      276,
+      275
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 148,
+    "FUNDING_EUR": 18784.91,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      156
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 156,
+    "FUNDING_EUR": 17356.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -349
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -349,
+    "FUNDING_EUR": 47515.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      78
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 78,
+    "FUNDING_EUR": 20592.93,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      873,
+      860,
+      865,
+      753,
+      651,
+      791,
+      525,
+      543,
+      511,
+      511,
+      437,
+      437,
+      223,
+      174,
+      122,
+      14,
+      13,
+      -79,
+      -148
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -148,
+    "FUNDING_EUR": 75000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      975,
+      905,
+      914,
+      745,
+      531,
+      456,
+      287,
+      242,
+      327,
+      35,
+      8,
+      -55,
+      -47,
+      260,
+      -13,
+      167
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -55,
+    "FUNDING_EUR": 400000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      1027,
+      653,
+      409,
+      449,
+      381,
+      364,
+      157,
+      130,
+      75,
+      382,
+      109,
+      289
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 75,
+    "FUNDING_EUR": 151855.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      737,
+      737,
+      741,
+      817,
+      822,
+      741,
+      711,
+      485,
+      415,
+      638,
+      570,
+      397,
+      394,
+      487,
+      709,
+      644,
+      537,
+      535,
+      -34,
+      310,
+      28,
+      209,
+      90,
+      445,
+      102,
+      102,
+      102,
+      1055,
+      478,
+      404,
+      -462,
+      -1024,
+      -462,
+      -462,
+      -462,
+      -462,
+      -282,
+      822,
+      822,
+      822,
+      822,
+      823,
+      1150,
+      -23,
+      1440,
+      823,
+      761,
+      761,
+      -183,
+      364
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1024,
+    "FUNDING_EUR": 126000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      806,
+      474,
+      470,
+      470,
+      470,
+      470,
+      470,
+      344,
+      54,
+      50,
+      50,
+      -82,
+      57,
+      344,
+      251,
+      482,
+      251,
+      251,
+      251,
+      804,
+      804,
+      804,
+      804,
+      8,
+      -273,
+      -273,
+      474,
+      54,
+      50,
+      482,
+      806,
+      806
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -273,
+    "FUNDING_EUR": 132600.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      913
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 913,
+    "FUNDING_EUR": 43142.4,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1003,
+    "RELATIVE_TIME_DAYS": [
+      699,
+      1052,
+      285
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 285,
+    "FUNDING_EUR": 65812.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      636
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 636,
+    "FUNDING_EUR": 43651.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      574
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 574,
+    "FUNDING_EUR": 59875.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -114
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -114,
+    "FUNDING_EUR": 13495.74,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      828,
+      576,
+      290,
+      193,
+      53,
+      -236
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -236,
+    "FUNDING_EUR": 277500.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      1011,
+      704,
+      1016,
+      781,
+      365,
+      262,
+      124,
+      941,
+      373
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 124,
+    "FUNDING_EUR": 251250.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1002,
+    "RELATIVE_TIME_DAYS": [
+      73,
+      412,
+      -223,
+      -241,
+      -459
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -459,
+    "FUNDING_EUR": 503910.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      962
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 962,
+    "FUNDING_EUR": 143080.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      -162,
+      -265
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -265,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      456
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 456,
+    "FUNDING_EUR": 174130.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      583,
+      -316
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -316,
+    "FUNDING_EUR": 1353166.36,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      436,
+      819,
+      452,
+      437
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 436,
+    "FUNDING_EUR": 35340.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      703,
+      131,
+      10,
+      312,
+      823,
+      720,
+      1055,
+      916,
+      740
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 10,
+    "FUNDING_EUR": 41414.52,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      496,
+      93,
+      -252
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -252,
+    "FUNDING_EUR": 291250.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      114,
+      114,
+      -106
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -106,
+    "FUNDING_EUR": 45909.01,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      184,
+      135,
+      -394
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -394,
+    "FUNDING_EUR": 1075450.16,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      151
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 151,
+    "FUNDING_EUR": 45555.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 914,
+    "RELATIVE_TIME_DAYS": [
+      1000
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 1000,
+    "FUNDING_EUR": 106579.17,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -35,
+      -196,
+      381,
+      670
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -196,
+    "FUNDING_EUR": 21600.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      751,
+      138
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 138,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      845,
+      840,
+      830,
+      659,
+      1076,
+      449,
+      1498,
+      466,
+      260,
+      234,
+      98,
+      92,
+      837,
+      1081,
+      158,
+      762,
+      830,
+      466,
+      852,
+      657,
+      -412,
+      -793
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -793,
+    "FUNDING_EUR": 514620.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 915,
+    "RELATIVE_TIME_DAYS": [
+      628,
+      566,
+      13
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 13,
+    "FUNDING_EUR": 116694.35,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      324,
+      382
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 324,
+    "FUNDING_EUR": 270000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      453,
+      328,
+      858,
+      858,
+      858,
+      831,
+      504,
+      504,
+      858,
+      858,
+      917,
+      452,
+      580,
+      452,
+      809,
+      452,
+      491,
+      447,
+      813,
+      818,
+      1006,
+      335,
+      615,
+      329,
+      426,
+      489,
+      860,
+      860,
+      484,
+      699,
+      858,
+      852,
+      1006,
+      1006,
+      824,
+      824,
+      824,
+      824,
+      1006,
+      916,
+      858,
+      824,
+      461,
+      449,
+      155,
+      155,
+      154,
+      286,
+      117,
+      98,
+      82,
+      82,
+      117,
+      211,
+      281,
+      84,
+      12,
+      83,
+      237,
+      460,
+      183,
+      237,
+      462,
+      462,
+      462
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 12,
+    "FUNDING_EUR": 32980.66,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      513,
+      447,
+      416,
+      52,
+      -52,
+      -109
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -109,
+    "FUNDING_EUR": 46097.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1126,
+    "RELATIVE_TIME_DAYS": [
+      695,
+      924,
+      764,
+      555,
+      429,
+      560
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 429,
+    "FUNDING_EUR": 89477.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      611,
+      605,
+      667,
+      747,
+      667,
+      368,
+      96,
+      40,
+      -366,
+      -809
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -809,
+    "FUNDING_EUR": 1595172.55,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      112
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 112,
+    "FUNDING_EUR": 21167.55,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      937,
+      283,
+      283,
+      252
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 252,
+    "FUNDING_EUR": 172800.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1186,
+    "RELATIVE_TIME_DAYS": [
+      839,
+      171
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 171,
+    "FUNDING_EUR": 255680.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1551,
+      -1551,
+      -1657,
+      -7778
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 6391.16,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      97,
+      719,
+      532,
+      531
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 97,
+    "FUNDING_EUR": 196458.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      -323
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -323,
+    "FUNDING_EUR": 148962.97,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -74,
+      417,
+      289,
+      225,
+      261,
+      704,
+      656
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -74,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1099,
+    "RELATIVE_TIME_DAYS": [
+      -119
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -119,
+    "FUNDING_EUR": 169598.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      650,
+      632,
+      455,
+      122
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 122,
+    "FUNDING_EUR": 144000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      351,
+      315,
+      256,
+      -1076
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1076,
+    "FUNDING_EUR": 31112.8,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      710,
+      -15,
+      -705
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -705,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      174,
+      512
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 174,
+    "FUNDING_EUR": 149700.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      291
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 291,
+    "FUNDING_EUR": 689970.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 939,
+    "RELATIVE_TIME_DAYS": [
+      -278,
+      -277
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -278,
+    "FUNDING_EUR": 166478.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      426,
+      442,
+      475,
+      383
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 383,
+    "FUNDING_EUR": 78950.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      835,
+      90,
+      86,
+      -14,
+      -799,
+      -281,
+      -33,
+      -467,
+      544,
+      202,
+      -304
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -799,
+    "FUNDING_EUR": 72450.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -414
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -414,
+    "FUNDING_EUR": 164608.99,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      651,
+      185
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 185,
+    "FUNDING_EUR": 210000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1096,
+    "RELATIVE_TIME_DAYS": [
+      434,
+      116,
+      -4,
+      43
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -4,
+    "FUNDING_EUR": 104428.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      232,
+      142,
+      118,
+      14,
+      -95,
+      -692,
+      -524
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -692,
+    "FUNDING_EUR": 1001839.6,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1224,
+    "RELATIVE_TIME_DAYS": [
+      -618
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -618,
+    "FUNDING_EUR": 7049.14,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -337
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -337,
+    "FUNDING_EUR": 226600.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1290
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 3195.58,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      593,
+      73,
+      -5,
+      523,
+      571,
+      604,
+      485,
+      195,
+      198,
+      -313
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -313,
+    "FUNDING_EUR": 125100.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -100
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -100,
+    "FUNDING_EUR": 355199.98,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      112
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 112,
+    "FUNDING_EUR": 83427.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -262
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -262,
+    "FUNDING_EUR": 355564.02,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      544,
+      644,
+      656,
+      726,
+      823,
+      937,
+      1062,
+      117,
+      318,
+      19,
+      14,
+      6,
+      6,
+      11,
+      -63,
+      -417,
+      1062
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -417,
+    "FUNDING_EUR": 125100.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      323
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 323,
+    "FUNDING_EUR": 100050.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1216,
+    "RELATIVE_TIME_DAYS": [
+      287
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 287,
+    "FUNDING_EUR": 4940370.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      600,
+      574,
+      151,
+      595,
+      698,
+      595,
+      965
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 151,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -35,
+      -72
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -72,
+    "FUNDING_EUR": 28824.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      291
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 291,
+    "FUNDING_EUR": 42486.1,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      -330,
+      -875,
+      -1840
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -875,
+    "FUNDING_EUR": 182889.15,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -561
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -561,
+    "FUNDING_EUR": 17447.88,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1096,
+    "RELATIVE_TIME_DAYS": [
+      790,
+      740,
+      373,
+      -134
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -134,
+    "FUNDING_EUR": 77000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      21,
+      830,
+      1015
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 21,
+    "FUNDING_EUR": 364865.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      672,
+      166
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 166,
+    "FUNDING_EUR": 377750.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      842,
+      739,
+      101,
+      101,
+      101,
+      101,
+      101,
+      101,
+      101,
+      101,
+      101,
+      101,
+      -221,
+      101,
+      101,
+      101,
+      101,
+      -300
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -300,
+    "FUNDING_EUR": 146140.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      587,
+      589,
+      -664
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -664,
+    "FUNDING_EUR": 270000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      459,
+      386,
+      187,
+      -424
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -424,
+    "FUNDING_EUR": 223018.76,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -484
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -484,
+    "FUNDING_EUR": 118320.53,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      818
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 818,
+    "FUNDING_EUR": 237043.25,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      231,
+      -39,
+      95,
+      -634,
+      4
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -634,
+    "FUNDING_EUR": 62550.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      176,
+      -16,
+      -35,
+      -48,
+      -150,
+      -178,
+      -794
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -794,
+    "FUNDING_EUR": 386229.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1201,
+    "RELATIVE_TIME_DAYS": [
+      259,
+      209
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 209,
+    "FUNDING_EUR": 740847.9,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      483,
+      454
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 454,
+    "FUNDING_EUR": 100341.29,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      488,
+      488,
+      487,
+      49,
+      26,
+      21
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 21,
+    "FUNDING_EUR": 459480.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      596,
+      669,
+      356,
+      375,
+      645,
+      540,
+      855,
+      439,
+      270,
+      138,
+      113,
+      55,
+      42,
+      102,
+      -48,
+      -23,
+      -189,
+      -209
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -209,
+    "FUNDING_EUR": 500396.16,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1096,
+    "RELATIVE_TIME_DAYS": [
+      70
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 70,
+    "FUNDING_EUR": 47430.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      721,
+      679,
+      420,
+      342,
+      176,
+      138,
+      41
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 41,
+    "FUNDING_EUR": 60000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1032,
+    "RELATIVE_TIME_DAYS": [
+      305
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 305,
+    "FUNDING_EUR": 855012.84,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      189,
+      181,
+      56,
+      -134,
+      -238,
+      -391,
+      -389,
+      -372,
+      -334,
+      -242,
+      -371
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -391,
+    "FUNDING_EUR": 143800.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1063,
+    "RELATIVE_TIME_DAYS": [
+      643,
+      745,
+      509,
+      556,
+      418,
+      509,
+      334,
+      291,
+      195,
+      136,
+      102,
+      38,
+      14,
+      223,
+      53
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 14,
+    "FUNDING_EUR": 461841.93,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1049,
+    "RELATIVE_TIME_DAYS": [
+      491,
+      608,
+      597,
+      -99,
+      -171
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -171,
+    "FUNDING_EUR": 48000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1217,
+    "RELATIVE_TIME_DAYS": [
+      -231,
+      -627
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -627,
+    "FUNDING_EUR": 212432.99,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1032,
+    "RELATIVE_TIME_DAYS": [
+      416,
+      108
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 108,
+    "FUNDING_EUR": 356034.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      150,
+      482
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 150,
+    "FUNDING_EUR": 20572.04,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      612,
+      505,
+      289,
+      -1229,
+      -3093
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 289,
+    "FUNDING_EUR": 47134.58,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1004,
+    "RELATIVE_TIME_DAYS": [
+      479,
+      444,
+      -46
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -46,
+    "FUNDING_EUR": 55081.55,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1278,
+    "RELATIVE_TIME_DAYS": [
+      -830
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -830,
+    "FUNDING_EUR": 447093.75,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      156
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 156,
+    "FUNDING_EUR": 33723.54,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -34,
+      -189
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -189,
+    "FUNDING_EUR": 223200.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      636,
+      136
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 136,
+    "FUNDING_EUR": 535253.4,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      205,
+      134,
+      194,
+      203,
+      203
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 134,
+    "FUNDING_EUR": 30426.45,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      385,
+      824
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 385,
+    "FUNDING_EUR": 33120.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1065,
+    "RELATIVE_TIME_DAYS": [
+      950,
+      -32,
+      -123,
+      -177,
+      -285,
+      -355,
+      -382,
+      -503
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -503,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      834
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 834,
+    "FUNDING_EUR": 33257.58,
+    "INSTITUTION": "Tallinn University of Technology"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      637,
+      629,
+      -146,
+      -121,
+      -325,
+      -419
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -419,
+    "FUNDING_EUR": 114264.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      656,
+      35,
+      -18,
+      -567,
+      -1653,
+      -1749
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -567,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      2
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 2,
+    "FUNDING_EUR": 116804.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      607,
+      100
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 100,
+    "FUNDING_EUR": 18135.52,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      87,
+      219
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 87,
+    "FUNDING_EUR": 10404.74,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      130
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 130,
+    "FUNDING_EUR": 5777.02,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      50,
+      446,
+      547,
+      481
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 50,
+    "FUNDING_EUR": 13804.92,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      75,
+      721
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 75,
+    "FUNDING_EUR": 43470.15,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      163,
+      577,
+      571
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 163,
+    "FUNDING_EUR": 22857.82,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      803,
+      574,
+      690,
+      379,
+      378,
+      922,
+      922,
+      844,
+      -98,
+      551,
+      498,
+      574
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -98,
+    "FUNDING_EUR": 36000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -10,
+      -25,
+      82,
+      353,
+      667,
+      259,
+      445,
+      356,
+      1019,
+      394,
+      -4,
+      470,
+      -81
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -81,
+    "FUNDING_EUR": 122694.53,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      454,
+      455,
+      -2136
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 454,
+    "FUNDING_EUR": 25309.02,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      709,
+      1552,
+      441,
+      441,
+      631,
+      441,
+      982,
+      192,
+      192,
+      181,
+      12,
+      7,
+      185,
+      -32,
+      114,
+      661,
+      -156
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -156,
+    "FUNDING_EUR": 41414.52,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      310,
+      -130
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -130,
+    "FUNDING_EUR": 20431.28,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      443,
+      528,
+      477
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 443,
+    "FUNDING_EUR": 44670.61,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      184,
+      491
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 184,
+    "FUNDING_EUR": 31554.96,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      716,
+      716,
+      1361,
+      381,
+      381
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 381,
+    "FUNDING_EUR": 30600.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      404
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 404,
+    "FUNDING_EUR": 34200.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      42,
+      467,
+      802,
+      843,
+      56,
+      48,
+      348,
+      348,
+      47
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 42,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 913,
+    "RELATIVE_TIME_DAYS": [
+      1356,
+      746
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 746,
+    "FUNDING_EUR": 22000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      203
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 203,
+    "FUNDING_EUR": 19948.11,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      504,
+      322,
+      -55,
+      1
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -55,
+    "FUNDING_EUR": 7135.36,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1125,
+    "RELATIVE_TIME_DAYS": [
+      887,
+      634,
+      500,
+      387,
+      283,
+      162,
+      162
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 162,
+    "FUNDING_EUR": 1000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -403
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -403,
+    "FUNDING_EUR": 157779.55,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1279,
+    "RELATIVE_TIME_DAYS": [
+      782,
+      640,
+      860,
+      349,
+      -9,
+      -51,
+      -84,
+      -187,
+      -367
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -367,
+    "FUNDING_EUR": 139037.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1155,
+    "RELATIVE_TIME_DAYS": [
+      -935
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -935,
+    "FUNDING_EUR": 105646.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      140,
+      -552,
+      -391,
+      362,
+      169,
+      6,
+      1029,
+      830,
+      1029,
+      851,
+      -391
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -552,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      612,
+      254,
+      995,
+      254
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 254,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      860,
+      203,
+      218,
+      157,
+      157,
+      44,
+      24,
+      16,
+      -10,
+      852,
+      962
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -10,
+    "FUNDING_EUR": 86400.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      591,
+      180,
+      -4,
+      -408,
+      -463
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -463,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      526,
+      909
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 526,
+    "FUNDING_EUR": 83843.26,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      111
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 111,
+    "FUNDING_EUR": 92702.82,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      544,
+      824,
+      503,
+      824
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 503,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      676,
+      276,
+      1085,
+      1601,
+      1069
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 276,
+    "FUNDING_EUR": 92671.89,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1063,
+    "RELATIVE_TIME_DAYS": [
+      281,
+      217
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 217,
+    "FUNDING_EUR": 90489.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1234,
+    "RELATIVE_TIME_DAYS": [
+      488,
+      1011,
+      982
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 488,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1220,
+      443
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 443,
+    "FUNDING_EUR": 43470.15,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      76,
+      188,
+      188,
+      42,
+      -63
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -63,
+    "FUNDING_EUR": 20975.79,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      715
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 715,
+    "FUNDING_EUR": 25309.02,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      332
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 332,
+    "FUNDING_EUR": 300075.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      496,
+      260,
+      260,
+      -692,
+      -2274
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -692,
+    "FUNDING_EUR": 125167.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      147,
+      142,
+      -136,
+      447,
+      447,
+      783,
+      447
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -136,
+    "FUNDING_EUR": 132500.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      680,
+      508,
+      1070
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 508,
+    "FUNDING_EUR": 136450.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1032,
+    "RELATIVE_TIME_DAYS": [
+      142
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 142,
+    "FUNDING_EUR": 15000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      174,
+      -2,
+      847,
+      698,
+      497,
+      487,
+      705,
+      726,
+      720,
+      410,
+      1005,
+      701,
+      838,
+      726,
+      151,
+      -2,
+      48,
+      736,
+      888,
+      888,
+      605,
+      155
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -2,
+    "FUNDING_EUR": 28800.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      44,
+      -100
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -100,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      604,
+      407,
+      407,
+      233,
+      826
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 233,
+    "FUNDING_EUR": 141100.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      158,
+      -656
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -656,
+    "FUNDING_EUR": 651281.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 912,
+    "RELATIVE_TIME_DAYS": [
+      -1637
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 1296270.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      395
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 395,
+    "FUNDING_EUR": 105000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1096,
+    "RELATIVE_TIME_DAYS": [
+      194,
+      194,
+      483,
+      577,
+      922,
+      120,
+      1315,
+      1113
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 120,
+    "FUNDING_EUR": 3000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      209,
+      235,
+      137,
+      136,
+      -82,
+      137,
+      -82
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -82,
+    "FUNDING_EUR": 20396.09,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      698,
+      307,
+      219,
+      120,
+      -3565
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 120,
+    "FUNDING_EUR": 79507.69,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 912,
+    "RELATIVE_TIME_DAYS": [
+      -332
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -332,
+    "FUNDING_EUR": 1200000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      -502
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -502,
+    "FUNDING_EUR": 373983.7,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      353
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 353,
+    "FUNDING_EUR": 115513.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      240,
+      1090,
+      637
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 240,
+    "FUNDING_EUR": 41307.38,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1278,
+    "RELATIVE_TIME_DAYS": [
+      122
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 122,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1234,
+    "RELATIVE_TIME_DAYS": [
+      1041,
+      -233
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -233,
+    "FUNDING_EUR": 15000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      299,
+      428,
+      946,
+      305,
+      769,
+      178,
+      142,
+      70,
+      239,
+      703,
+      470,
+      473,
+      731,
+      1673,
+      1664,
+      748,
+      658,
+      826,
+      817,
+      474,
+      -147,
+      -169,
+      263
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -169,
+    "FUNDING_EUR": 209130.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      43,
+      -44,
+      -161,
+      -29,
+      -307
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -307,
+    "FUNDING_EUR": 223730.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      766,
+      749,
+      61,
+      34,
+      14,
+      -62
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -62,
+    "FUNDING_EUR": 81000.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      427,
+      286,
+      133
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 133,
+    "FUNDING_EUR": 25309.02,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -15,
+      133,
+      872
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -15,
+    "FUNDING_EUR": 23491.38,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      345,
+      344,
+      306,
+      111,
+      -156
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -156,
+    "FUNDING_EUR": 88808.5,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      215,
+      227
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 215,
+    "FUNDING_EUR": 22857.82,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      589,
+      -2549
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 589,
+    "FUNDING_EUR": 34200.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      804,
+      479,
+      149,
+      86,
+      41
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 41,
+    "FUNDING_EUR": 339763.8,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -218
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -218,
+    "FUNDING_EUR": 1300.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      2069
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 2069,
+    "FUNDING_EUR": 38658.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -61
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -61,
+    "FUNDING_EUR": 195750.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      362
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 362,
+    "FUNDING_EUR": 298009.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 961,
+    "RELATIVE_TIME_DAYS": [
+      433
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 433,
+    "FUNDING_EUR": 15450.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      603,
+      -1488
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 603,
+    "FUNDING_EUR": 1500000.0,
+    "INSTITUTION": "University of Tartu"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      -909
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -909,
+    "FUNDING_EUR": 140744.91,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      -231
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -231,
+    "FUNDING_EUR": 203465.0,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1277,
+    "RELATIVE_TIME_DAYS": [
+      502,
+      172,
+      170
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 170,
+    "FUNDING_EUR": 198062.5,
+    "INSTITUTION": "Tallinn University"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      427
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 427,
+    "FUNDING_EUR": 49940.06,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1117,
+    "RELATIVE_TIME_DAYS": [
+      -199
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -199,
+    "FUNDING_EUR": 85000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      438
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 438,
+    "FUNDING_EUR": 22857.82,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      400
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 400,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -11,
+      -11,
+      184,
+      275
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -11,
+    "FUNDING_EUR": 18541.89,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      276,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 276,
+    "FUNDING_EUR": 18541.89,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      781,
+      757,
+      396,
+      362,
+      458,
+      276
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 276,
+    "FUNDING_EUR": 468500.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      479
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 479,
+    "FUNDING_EUR": 95000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      -909
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -909,
+    "FUNDING_EUR": 220048.95,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -921
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -921,
+    "FUNDING_EUR": 0.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      355
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 355,
+    "FUNDING_EUR": 95150.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      749,
+      -413
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -413,
+    "FUNDING_EUR": 100580.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      283,
+      251
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 251,
+    "FUNDING_EUR": 92900.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      51,
+      489
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 51,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -84,
+      -398,
+      50,
+      857,
+      -1145
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -398,
+    "FUNDING_EUR": 90776.53,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      1138,
+      23,
+      -273,
+      -666,
+      -666,
+      -689,
+      -726
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -726,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      771,
+      784,
+      784,
+      578,
+      784
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 578,
+    "FUNDING_EUR": 100375.74,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1247,
+    "RELATIVE_TIME_DAYS": [
+      699
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 699,
+    "FUNDING_EUR": 94080.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -1011
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1011,
+    "FUNDING_EUR": 40000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -384,
+      -590,
+      -599,
+      -761,
+      -814,
+      -1411
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -814,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1005
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1005,
+    "FUNDING_EUR": 144824.5,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      125,
+      194,
+      572
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 125,
+    "FUNDING_EUR": 29960.58,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      70,
+      -15,
+      9
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -15,
+    "FUNDING_EUR": 242500.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -626,
+      -972
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -972,
+    "FUNDING_EUR": 135571.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -2063
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 139111.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -22,
+      443,
+      594
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -22,
+    "FUNDING_EUR": 29960.58,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1288,
+    "RELATIVE_TIME_DAYS": [
+      255
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 255,
+    "FUNDING_EUR": 93450.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      -985
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 537384.5,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1278,
+    "RELATIVE_TIME_DAYS": [
+      532
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 532,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 911,
+    "RELATIVE_TIME_DAYS": [
+      -750
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -750,
+    "FUNDING_EUR": 87659.48,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1033,
+    "RELATIVE_TIME_DAYS": [
+      502,
+      502,
+      102,
+      502,
+      102,
+      89,
+      71,
+      -41
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -41,
+    "FUNDING_EUR": 221701.5,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -1066,
+      -1430
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1066,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      545
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 545,
+    "FUNDING_EUR": 215000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      -284
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -284,
+    "FUNDING_EUR": 190000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      606,
+      563,
+      591,
+      834,
+      -841
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -841,
+    "FUNDING_EUR": 36813.44,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      307,
+      11,
+      -456
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -456,
+    "FUNDING_EUR": 33120.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      -69
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -69,
+    "FUNDING_EUR": 75279.3,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      538
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 538,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 972,
+    "RELATIVE_TIME_DAYS": [
+      152,
+      63,
+      -56,
+      -56
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -56,
+    "FUNDING_EUR": 685664.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1209,
+    "RELATIVE_TIME_DAYS": [
+      -418
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -418,
+    "FUNDING_EUR": 184523.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1102,
+    "RELATIVE_TIME_DAYS": [
+      -392
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -392,
+    "FUNDING_EUR": 60000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      915,
+      778,
+      726,
+      694,
+      672,
+      639,
+      639,
+      363
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 363,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1154,
+    "RELATIVE_TIME_DAYS": [
+      -3262
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": null,
+    "FUNDING_EUR": 208144.05,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1185,
+    "RELATIVE_TIME_DAYS": [
+      224,
+      15
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 15,
+    "FUNDING_EUR": 220234.7,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      331,
+      105,
+      83,
+      -475,
+      -486,
+      -461,
+      -482,
+      -510,
+      -510,
+      -1604
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -510,
+    "FUNDING_EUR": 549104.94,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      652,
+      5
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 5,
+    "FUNDING_EUR": 90000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -12
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -12,
+    "FUNDING_EUR": 297465.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1187,
+    "RELATIVE_TIME_DAYS": [
+      -432
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -432,
+    "FUNDING_EUR": 108953.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1099,
+    "RELATIVE_TIME_DAYS": [
+      -519,
+      -751
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -751,
+    "FUNDING_EUR": 91193.49,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      27
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 27,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -743
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -743,
+    "FUNDING_EUR": 144600.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -73
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -73,
+    "FUNDING_EUR": 240278.75,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1276,
+    "RELATIVE_TIME_DAYS": [
+      169
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 169,
+    "FUNDING_EUR": 101360.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -5,
+      -248
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -248,
+    "FUNDING_EUR": 50000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1094,
+    "RELATIVE_TIME_DAYS": [
+      3,
+      -4
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -4,
+    "FUNDING_EUR": 139740.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -1021
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1021,
+    "FUNDING_EUR": 150000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1142,
+    "RELATIVE_TIME_DAYS": [
+      987,
+      987,
+      468,
+      560,
+      353,
+      238
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 238,
+    "FUNDING_EUR": 100000.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 910,
+    "RELATIVE_TIME_DAYS": [
+      255,
+      91,
+      428,
+      72,
+      594,
+      705,
+      80,
+      -166,
+      -281
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -281,
+    "FUNDING_EUR": 458100.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1204,
+    "RELATIVE_TIME_DAYS": [
+      -327,
+      -365,
+      -493,
+      -934,
+      -1131
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -1131,
+    "FUNDING_EUR": 95865.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1215,
+    "RELATIVE_TIME_DAYS": [
+      -61,
+      -66,
+      -118,
+      324,
+      -251,
+      -251,
+      -501,
+      -637,
+      -500
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -637,
+    "FUNDING_EUR": 400515.43,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1063,
+    "RELATIVE_TIME_DAYS": [
+      -188,
+      -602
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -602,
+    "FUNDING_EUR": 16125.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      -34,
+      -335
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": -335,
+    "FUNDING_EUR": 17960.7,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1095,
+    "RELATIVE_TIME_DAYS": [
+      953,
+      619,
+      218
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 218,
+    "FUNDING_EUR": 84376.54,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  },
+  {
+    "DURATION_DAYS": 1064,
+    "RELATIVE_TIME_DAYS": [
+      199,
+      221
+    ],
+    "EARLIEST_RELATIVE_TIME_DAYS": 199,
+    "FUNDING_EUR": 175108.0,
+    "INSTITUTION": "Estonian University of Life Sciences"
+  }
+]
