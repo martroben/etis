@@ -38,15 +38,19 @@ No hard requirement. Nothing in regards to other types of raw data.
 # Estonian Environment Agency
 Keskkonnaagentuur
 ### Most recent funded project
-~~Maa- ja mullakasutuse juhtimissüsteem mullastiku teenuste efektiivseks ja jätkusuutlikuks kasutamiseks, elurikkuse kaitseks ja kliimamõju vähendamiseks~~ _\[Project doesn't likely produce any raw scientific data. Skipping.\]_
-- Started on 30. Dec 2024
-- [ETIS link](https://www.etis.ee/Portal/Projects/Display/6f4533d9-6d36-43eb-8c7a-34697ace66e7)
-- No contract available in the Ministry of Climate document registry.
+~~Maa- ja mullakasutuse juhtimissüsteem mullastiku teenuste efektiivseks ja jätkusuutlikuks kasutamiseks, elurikkuse kaitseks ja kliimamõju vähendamiseks~~
+- ~~Started on 30. Dec 2024~~
+- ~~[ETIS link](https://www.etis.ee/Portal/Projects/Display/6f4533d9-6d36-43eb-8c7a-34697ace66e7)~~
+- ~~No contract available in the Ministry of Climate document registry.~~
 
-~~Creating a modern concept for a large-scale digital soil map and updating the existing soil map~~ _\[Project doesn't likely produce any raw scientific data. Skipping.\]_
-- Started on 1. Aug 2024
-- [ETIS link](https://www.etis.ee/Portal/Projects/Display/19db4358-1aef-415b-93e0-66f68d7ebc72)
-- No contract available in the Ministry of Climate document registry.
+_\[Project doesn't likely produce any raw scientific data. Skipping.\]_
+
+~~Creating a modern concept for a large-scale digital soil map and updating the existing soil map~~
+- ~~Started on 1. Aug 2024~~
+- ~~[ETIS link](https://www.etis.ee/Portal/Projects/Display/19db4358-1aef-415b-93e0-66f68d7ebc72)~~
+- ~~No contract available in the Ministry of Climate document registry.~~
+
+_\[Project doesn't likely produce any raw scientific data. Skipping.\]_
 
 Projekti „Statistilise metsainventuuri (SMI) ja maakasutuse, maakasutuse muutuse ja metsanduse (LULUCF) andmehõive ja metoodika arendamine“ tehnilise kirjelduse kuuenda punkti “Tellitava uuringu tegevused” esimese alapunkti täitmine.
 - Started on 19. Jul 2024
@@ -124,9 +128,11 @@ Organisation doesn't seem to have funded any projects.
 # Elering AS
 Elering AS
 ### Most recent funded project
-~~Cooperation analysis for Harku Estlink 1 and Kiisa reserve power plant~~ _\[There are additional later projects listed in https://www.elering.ee/uuringud\]_
-- Started on 18. Oct 2022
-- [ETIS link](https://www.etis.ee/Portal/Projects/Display/743ee4cc-5413-4a29-8ae8-e94da3cde923)
+~~Cooperation analysis for Harku Estlink 1 and Kiisa reserve power plant~~
+- ~~Started on 18. Oct 2022~~
+- ~~[ETIS link](https://www.etis.ee/Portal/Projects/Display/743ee4cc-5413-4a29-8ae8-e94da3cde923)~~
+
+_\[There are additional later projects listed in https://www.elering.ee/uuringud\]_
 
 Sensitivity analysis to Estonian electricity demand scenarios
 - Project date 15. Dec 2023
