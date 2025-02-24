@@ -1,11 +1,38 @@
 We selected the latest funded project by each organisation within the Ministry of Climate administrative area and analysed the open data policies.
 
 # Summary
-- 25 organisations (including the ministry itself) within the administrative area.
+- 24 organisations (including the ministry itself) within the administrative area.
 - 16 have actively funded scientific projects.
 - 5 have the project contracts publicly available.
 - 3 (Ministry of Climate, Environmental Board, Estonian Environment Agency) have data-related provisions in project contracts. Fortunately these account for 83% (2236/2688) of all projects.
 - 0 explicitly require making data publicly available.
+
+## Analysed organisations
+1. [Ministry of Climate](#ministry-of-climate)
+2. [Environmental Board](#environmental-board)
+3. [Estonian Environment Agency](#estonian-environment-agency)
+4. [Geological Survey of Estonia](#geological-survey-of-estonia)
+5. [Estonian Museum of Natural History](#estonian-museum-of-natural-history)
+6. [Ministry of Environment, Information Centre](#ministry-of-environment-information-centre)
+7. [Environmental Investment Center](#environmental-investment-center)
+8. [State Forest Management Centre](#state-forest-management-centre)
+9. [MTÜ Maailma Energeetikanõukogu Eesti Rahvuskomitee](#mtü-maailma-energeetikanõukogu-eesti-rahvuskomitee)
+10. [Elering AS](#elering-as)
+11. [AS Ökosil](#as-ökosil)
+12. [Estonian Environmental Research Centre](#estonian-environmental-research-centre)
+13. [AS A.L.A.R.A](#as-alara)
+14. [Port of Tallinn](#port-of-tallinn)
+15. [AS Tallinn Airport](#as-tallinn-airport)
+16. [AS Raudtee Varad](#as-raudtee-varad)
+17. [AS Nordic Aviation Group](#as-nordic-aviation-group)
+18. [OÜ Transpordi Varahaldus](#oü-transpordi-varahaldus)
+19. [Estonian Air Navigation Services](#estonian-air-navigation-services)
+20. [AS Saarte Liinid](#as-saarte-liinid)
+21. [OÜ Rail Baltic Estonia](#oü-rail-baltic-estonia)
+22. [Technical Center of Estonian Roads Ltd](#technical-center-of-estonian-roads-ltd)
+23. [Estonian Road Administration](#estonian-road-administration)
+24. [Riigilaevastik](#riigilaevastik)
+
 
 # Ministry of Climate
 Kliimaministeerium
