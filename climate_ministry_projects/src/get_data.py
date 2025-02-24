@@ -33,7 +33,8 @@ ETIS_FINANCIER_GUIDS = {
     "AS Tallinn Airport": "27bbfca2-956d-4c06-a747-baefa4880313",
     "Estonian Air Navigation Services": "8f60019a-7665-449f-9c6f-ca3548ba7bfe",
     "Saarte Liinid Ltd": "440435d3-85d5-45fa-9747-11d5abb1c54b",
-    "Technical Center of Estonian Roads Ltd": "fe012ed5-d8fe-4e0b-97e7-20754dfdc204"
+    "Technical Center of Estonian Roads Ltd": "fe012ed5-d8fe-4e0b-97e7-20754dfdc204",
+    "Estonian Road Administration": "8d1d97bb-1fa1-44f8-b510-d4916c428c78"
 }
 
 RAW_DATA_DIRECTORY_PATH = "./climate_ministry_projects/data/raw/"
