@@ -132,7 +132,7 @@ Elering AS
 - ~~Started on 18. Oct 2022~~
 - ~~[ETIS link](https://www.etis.ee/Portal/Projects/Display/743ee4cc-5413-4a29-8ae8-e94da3cde923)~~
 
-_\[There are additional later projects listed in https://www.elering.ee/uuringud\]_
+_\[There are additional later projects listed in https://www.elering.ee/uuringud \]_
 
 Sensitivity analysis to Estonian electricity demand scenarios
 - Project date 15. Dec 2023
